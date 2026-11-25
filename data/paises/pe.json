@@ -1462,7 +1462,7 @@
  ],
  "enaho_resumen": {
   "prima_pct": 60.5,
-  "etiqueta": "más gana quien tiene maestría/doctorado vs. universitario completo",
+  "etiqueta": "más gana, en promedio, quien tiene maestría/doctorado que un universitario completo comparable",
   "detalle": "ENAHO 2024, mismo sexo, edad y zona · IC95 50–72 %"
  },
  "enaho_panel": {
@@ -1470,7 +1470,7 @@
   "fuente": "INEI, Encuesta Nacional de Hogares 2019-2024, módulo 500. Cálculo propio: etl/enaho_prima_posgrado.py",
   "url": "https://proyectos.inei.gob.pe/microdatos/",
   "cifra": "+61 %",
-  "texto": "En 2024 la mediana mensual de quien tiene maestría o doctorado fue S/ 3,958 frente a S/ 2,567 del universitario completo. Controlando edad, sexo y zona, la prima es +61 % y casi no cambió desde 2019 (2019: +62 %, 2022: +58 %, 2023: +51 %, 2024: +60 %). La prima es mucho mayor en el sector privado (+73 %) que en el público (+28 %), donde trabaja el 57 % de los posgraduados.",
+  "texto": "En 2024 la mediana mensual de quien tiene maestría o doctorado fue S/ 3,958 frente a S/ 2,567 del universitario completo. Controlando edad, sexo y zona, la prima es +61 % y casi no cambió desde 2019 (2019: +62 %, 2022: +58 %, 2023: +51 %, 2024: +61 %). La prima es mucho mayor en el sector privado (+73 %) que en el público (+28 %), donde trabaja el 57 % de los posgraduados.",
   "advertencia": "ENAHO no registra la especialidad del posgrado: incluye MBA, maestrías en educación, gestión pública, etc. El nivel 11 mezcla maestría y doctorado, completos o no. Es una correlación: quien hace un posgrado ya ganaba más antes (sesgo de selección), así que la prima causal es menor. n = 1,062 posgraduados y 4,566 universitarios en la muestra.",
   "cortes": [
    {
@@ -1994,8 +1994,10 @@
   {
    "id": "enaho_bajo_mediana",
    "signo": "negativo",
-   "titulo": "Uno de cada cinco posgraduados gana menos que el universitario típico",
-   "hallazgo_clave": "En 2024 el 19 % de quienes tienen maestría/doctorado gana menos que la mediana de los universitarios completos (en 2019 era 23 %). Para ellos el posgrado, de hecho, no pagó.",
+   "pct": 19.1,
+   "pct_misma_edad": 25.0,
+   "titulo": "1 de cada 4 posgraduados gana menos que el universitario típico de su misma edad",
+   "hallazgo_clave": "Comparado con universitarios de su mismo tramo de edad, entre 24 % y 26 % de quienes tienen maestría o doctorado ganan menos que la mediana (frente a todos los universitarios: 19 %). Para ellos el posgrado no se tradujo en un sueldo por encima del promedio de quienes no lo tienen. No prueba que el posgrado les hizo perder: sin él podrían ganar aún menos; y la ENAHO incluye posgrados en curso.",
    "autores": "Cálculo propio con ENAHO",
    "anio": 2024,
    "tipo": "microdatos",
@@ -2024,28 +2026,36 @@
   {
    "etiqueta": "Universitario del 25 % mejor pagado (Lima)",
    "mensual": 4509.0
+  },
+  {
+   "etiqueta": "Postulante a escuela top (AméricaEconomía)",
+   "mensual": 10336
   }
  ],
  "presets_prima": [
   {
-   "etiqueta": "Programa no rankeado",
+   "etiqueta": "Pesimista",
    "valor": 0,
-   "fuente": "Altonji y Zhu (2021): retorno promedio negativo en programas no rankeados de EE.UU."
+   "tipo": "escenario",
+   "fuente": "Programa de baja calidad: el retorno es menor en programas peor rankeados y part-time (Altonji y Zhu 2025, Texas)"
   },
   {
-   "etiqueta": "Causal EE.UU.",
+   "etiqueta": "EE.UU., efectos fijos",
    "valor": 17,
-   "fuente": "Altonji y Zhu (2021): 0,156 log con efectos fijos = +17 %"
+   "tipo": "estimacion",
+   "fuente": "Altonji y Zhu: 0,156 log ≈ +17 % (efectos fijos, Texas; supuestos fuertes)"
   },
   {
-   "etiqueta": "AméricaEconomía, Pacífico/USIL",
+   "etiqueta": "Techo: AméricaEconomía",
    "valor": 44,
-   "fuente": "Variación bruta pre/post, autorreportada, 2024"
+   "tipo": "techo",
+   "fuente": "Variación pre/post autorreportada; incluye ~5 años de crecimiento normal. NO es atribuible al MBA"
   },
   {
-   "etiqueta": "ENAHO posgrado (correlación)",
-   "valor": 60,
-   "fuente": "Cálculo propio ENAHO 2024, no causal"
+   "etiqueta": "Techo: ENAHO",
+   "valor": 61,
+   "tipo": "techo",
+   "fuente": "Diferencia asociada a cualquier maestría/doctorado; incluye selección. NO es atribuible al MBA"
   }
  ],
  "textos": {
@@ -2055,7 +2065,7 @@
  "metodologia": [
   "Costos: precio total publicado por cada universidad (web, brochures, tarifarios TUPA/TUSNE) o por prensa y portales cuando la universidad no lo publica; cada fila indica su nivel de confianza y su fuente. Los precios en dólares se convierten al tipo de cambio indicado. No incluyen descuentos corporativos, becas ni intereses de financiamiento.",
   "Segmentos: «escuela con acreditación internacional» = el programa o la escuela tiene AACSB, AMBA o EQUIS; el resto se separa en universidad privada o pública según SUNEDU.",
-  "Prima salarial: regresión de Mincer ponderada con la ENAHO (INEI) de 2019, 2022, 2023 y 2024; ocupados de 25 a 64 años con ingreso positivo; maestría/doctorado (p301a = 11) frente a universitaria completa (p301a = 10); controles: edad, edad², sexo, Lima Metropolitana y área urbana; errores robustos. Prima = exp(β) − 1. Es una asociación, no un efecto causal.",
+  "Prima salarial: regresión de Mincer ponderada con la ENAHO (INEI) de 2019, 2022, 2023 y 2024; ocupados de 25 a 64 años con ingreso positivo; maestría/doctorado (p301a = 11) frente a universitaria completa (p301a = 10); controles: edad, edad², sexo, Lima Metropolitana y área urbana; errores agrupados por conglomerado (diseño muestral). Prima = exp(β) − 1. Es una asociación, no un efecto causal.",
   "Calculadora: flujo mensual descontado; el costo del programa se reparte en partes iguales durante su duración; en modalidad full-time se suma el sueldo que se deja de percibir; el aumento se aplica desde el mes siguiente al egreso. Sueldo anual = 14 sueldos.",
   "Todo el código y los datos están en el repositorio; los enlaces se verificaron el 25-nov-2026."
  ]

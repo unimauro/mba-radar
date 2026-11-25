@@ -4,7 +4,7 @@
   "tipo_cambio_usd_pen": 3.479,
   "tipo_cambio_fuente": "BCRP – serie PD04640PD 'TC Sistema bancario SBS (S/ por US$) – Venta', 24-nov-2026 (último dato disponible; 25-nov n.d.). https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04640PD/json/2026-11-10/2026-11-25/esp",
   "n_programas": 69,
-  "n_con_precio": 58,
+  "n_con_precio": 60,
   "notas": [
    "costo_total_soles_equiv = costo_total_soles si el precio está en soles; si está en USD, costo_total_usd x tipo_cambio_usd_pen. Úsese para ordenar/comparar.",
    "Cuando el total no estaba publicado, se calculó como inscripción/admisión + matrículas + cuotas; el cálculo está en 'nota'. Salvo indicación, no incluye derecho de grado, tesis, pasajes ni viáticos.",
@@ -46,6 +46,9 @@
    "fuente_url": "https://aacsb.edu/accredited/c/centrum-pucp-business-school",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "CENTRUM-MBA-presencial-blended-19739usd",
    "nota": "Precio total del programa reportado por la escuela al directorio AACSB (Survey Year 2024-25; 'Tuition for graduate programs is for the full program'). CENTRUM no publica precio en su web (centrum.pucp.edu.pe/programas/mba/mba-centrum/). Duración 24 meses lectivos (quincenal) o 18 (intensivo) según web oficial."
   },
   {
@@ -74,7 +77,10 @@
    "fuente_url": "https://aacsb.edu/accredited/c/centrum-pucp-business-school",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
-   "nota": "AACSB 2024-25 lista formato 'Hybrid' del MBA a 19,739 USD (mismo precio que presencial). Duración no publicada en la página de AACSB."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "CENTRUM-MBA-presencial-blended-19739usd",
+   "nota": "AACSB 2024-25 lista formato 'Hybrid' del MBA a 19,739 USD (mismo precio que presencial). Duración no publicada en la página de AACSB. Duración no publicada (página oficial carga datos por JS; AMBA tampoco la indica)."
   },
   {
    "id": 3,
@@ -102,6 +108,9 @@
    "fuente_url": "https://aacsb.edu/accredited/c/centrum-pucp-business-school",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g003",
    "nota": "AACSB 2024-25 'Fully online' 16,882 USD programa completo. Duración 22 meses según Emagister (emagister.pe/mba-centrum-online-cursos-2799542.htm), que lista derecho de admisión S/ 420. Un directorio de terceros cita S/ 76,700 sin fecha (no usado)."
   },
   {
@@ -110,7 +119,7 @@
    "siglas": "CENTRUM PUCP",
    "tipo_gestion": "privada asociativa",
    "programa": "International MBA – International Business (MBA Gerencial Internacional)",
-   "modalidad": "full-time",
+   "modalidad": "full-time / part-time",
    "sede": "Lima",
    "duracion_meses": null,
    "moneda": "USD",
@@ -124,13 +133,16 @@
    "monto_cuota": null,
    "incluye_viaje_internacional": null,
    "costo_viaje_adicional_usd": null,
-   "acreditaciones": "AACSB, AMBA, EQUIS, BGA; SUNEDU licenciada (PUCP)",
+   "acreditaciones": "AACSB, EQUIS, BGA (escuela); SUNEDU licenciada (PUCP)",
    "ranking": "QS Global MBA 2025: 251+ mundo, 8.º LatAm",
    "anio_precio": "2024-25",
    "fuente_url": "https://aacsb.edu/accredited/c/centrum-pucp-business-school",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
-   "nota": "AACSB 2024-25: 'International MBA' 19,739 USD (Full-Time, Part-Time). Programa orientado también a estudiantes internacionales."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g004",
+   "nota": "AACSB 2024-25: 'International MBA' 19,739 USD (Full-Time, Part-Time). Programa orientado también a estudiantes internacionales. Modalidad: AACSB lo lista como 'Full-Time, Part-Time' (presencial); la web de CENTRUM no permite confirmar cuál domina. Duración: terceros discrepan (TopMBA 24 meses; TopUniversities 15 meses), no se registra. No figura en la lista de programas acreditados por AMBA."
   },
   {
    "id": 5,
@@ -152,13 +164,16 @@
    "monto_cuota": null,
    "incluye_viaje_internacional": null,
    "costo_viaje_adicional_usd": null,
-   "acreditaciones": "AACSB, AMBA, EQUIS, BGA; SUNEDU licenciada (PUCP)",
+   "acreditaciones": "AACSB, EQUIS, BGA (escuela); SUNEDU licenciada (PUCP)",
    "ranking": "QS Global MBA 2025: 251+ mundo, 8.º LatAm",
    "anio_precio": "2024-25",
    "fuente_url": "https://aacsb.edu/accredited/c/centrum-pucp-business-school",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
-   "nota": "AACSB 2024-25: Executive MBA 24,600 USD programa completo. Web oficial (centrum.pucp.edu.pe/programas/mba/modalidad-ejecutiva/): 21 meses lectivos, clases mensuales. Una búsqueda previa mostró en AACSB cifras ligeramente distintas (24,873 USD), probablemente de otro año de encuesta; se usa el valor vigente en la página al 25-nov-2026."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g005",
+   "nota": "AACSB 2024-25: Executive MBA 24,600 USD programa completo. Web oficial (centrum.pucp.edu.pe/programas/mba/modalidad-ejecutiva/): 21 meses lectivos, clases mensuales. Una búsqueda previa mostró en AACSB cifras ligeramente distintas (24,873 USD), probablemente de otro año de encuesta; se usa el valor vigente en la página al 25-nov-2026. No figura en la lista de programas acreditados por AMBA de CENTRUM."
   },
   {
    "id": 6,
@@ -180,13 +195,16 @@
    "monto_cuota": null,
    "incluye_viaje_internacional": true,
    "costo_viaje_adicional_usd": null,
-   "acreditaciones": "AACSB, AMBA, EQUIS, BGA; SUNEDU licenciada (PUCP)",
+   "acreditaciones": "AACSB, EQUIS, BGA (escuela); SUNEDU licenciada (PUCP)",
    "ranking": "QS Global MBA 2025: 251+ mundo, 8.º LatAm",
    "anio_precio": null,
    "fuente_url": "https://centrum.pucp.edu.pe/programas/double-degree/mba-centrum-tulane/",
    "fecha_consulta": "2026-11-25",
    "confianza": "baja",
-   "nota": "Sin precio oficial publicado. Web oficial: 20 meses lectivos, clases mensuales en Lima + módulos en Tulane. TopUniversities lista '65,300 SOL por año' (sin fecha ni claridad de programa), no usado como costo total."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g006",
+   "nota": "Sin precio oficial publicado (web oficial, AACSB —que no lista este programa— ni Wayback). Web oficial: 20 meses lectivos, clases en Lima una vez al mes durante 4 días + módulos en Tulane. Terceros sin fecha: TopUniversities '65,300 SOL por año'; Unimy EUR 31,625 (19 meses). No usados por ambiguos."
   },
   {
    "id": 7,
@@ -214,6 +232,9 @@
    "fuente_url": "https://www.esan.edu.pe/mba/tiempo-parcial",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g007",
    "nota": "Web oficial: 'Inversión S/ 96,500'; 20 meses + periodo de trabajo de investigación; miércoles y sábados; inauguración 21-abr-2027 (landing esan.edu.pe/landings/mba/presencial). ESAN promociona 'el mayor componente internacional' pero la web no precisa si el viaje está incluido."
   },
   {
@@ -242,7 +263,10 @@
    "fuente_url": "https://www.esan.edu.pe/mba/weekends",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Web oficial: 'Inversión S/ 98,500'; 23 meses + investigación; sábados y domingos; inauguración 21-ago-2027."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g008",
+   "nota": "Web oficial: 'Inversión S/ 98,500'; 23 meses + investigación; sábados y domingos; inauguración 21-ago-2027. Duración verificada (25-nov-2026): el índice oficial esan.edu.pe/mba dice 'Weekends – 23 meses + Tesis' (inauguración 21-ago-2027). La página del programa muestra '17 meses' en un bloque de plantilla (mismo texto, fecha 15-abr-2026 y horario Mar./Sáb. en todas las sedes), incompatible con un formato de fin de semana; se mantiene 23."
   },
   {
    "id": 9,
@@ -252,7 +276,7 @@
    "programa": "MBA Semipresencial (Lima)",
    "modalidad": "semipresencial",
    "sede": "Lima",
-   "duracion_meses": null,
+   "duracion_meses": 18,
    "moneda": "PEN",
    "costo_total_soles": 81500,
    "costo_total_usd": null,
@@ -270,7 +294,10 @@
    "fuente_url": "https://www.esan.edu.pe/mba/semipresencial",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Web oficial: 'Inversión S/ 81,500'. La duración '17 meses' de la plantilla web parece genérica; no se registra."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g009",
+   "nota": "Web oficial (página 'Flex MBA'): 'Inversión S/ 81,500'. Duración 18 meses aprox. según índice oficial esan.edu.pe/mba ('Flex – Semipresencial – 18 meses aprox.', inauguración 21-abr-2027)."
   },
   {
    "id": 10,
@@ -280,7 +307,7 @@
    "programa": "MBA Accelerated (Online)",
    "modalidad": "online",
    "sede": "Online",
-   "duracion_meses": 17,
+   "duracion_meses": 14,
    "moneda": "PEN",
    "costo_total_soles": 76500,
    "costo_total_usd": null,
@@ -292,13 +319,16 @@
    "monto_cuota": null,
    "incluye_viaje_internacional": null,
    "costo_viaje_adicional_usd": null,
-   "acreditaciones": "AACSB, AMBA, BGA; SUNEDU licenciada",
+   "acreditaciones": "AACSB, BGA (escuela); SUNEDU licenciada",
    "ranking": "QS Global MBA 2025: 201-250 mundo, 7.º LatAm (1.º Perú)",
    "anio_precio": "2026",
    "fuente_url": "https://www.esan.edu.pe/mba/accelerated",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Web oficial: 'Inversión S/ 76,500'; 17 meses lectivos + periodo de tesis; inauguración 15-abr-2026; mínimo 20 participantes."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g010",
+   "nota": "Web oficial: 'Inversión S/ 76,500'; mínimo 20 participantes. Duración: el índice oficial esan.edu.pe/mba indica 'Accelerated – Online – 14 meses aprox.' (convocatoria 21-abr-2027); la página del programa decía 17 meses lectivos + tesis (inauguración 15-abr-2026). No figura en la lista de programas acreditados por AMBA."
   },
   {
    "id": 11,
@@ -320,13 +350,16 @@
    "monto_cuota": null,
    "incluye_viaje_internacional": null,
    "costo_viaje_adicional_usd": null,
-   "acreditaciones": "AACSB, AMBA, BGA; SUNEDU licenciada",
+   "acreditaciones": "AACSB, BGA (escuela); SUNEDU licenciada",
    "ranking": "QS Global MBA 2025: 201-250 mundo, 7.º LatAm (1.º Perú)",
    "anio_precio": "2026-2027",
    "fuente_url": "https://www.esan.edu.pe/mba/arequipa",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Web oficial: 'Inversión S/ 68,000'; 18 meses según página índice esan.edu.pe/mba (inauguración 15-mar-2027)."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g011",
+   "nota": "Web oficial: 'Inversión S/ 68,000'; 18 meses según página índice esan.edu.pe/mba (inauguración 15-mar-2027). AMBA lista 'Blended Learning MBA' y 'MBA Regions' de ESAN sin precisar si incluye el semipresencial de Arequipa; no se marca AMBA."
   },
   {
    "id": 12,
@@ -336,7 +369,7 @@
    "programa": "MBA Arequipa Presencial",
    "modalidad": "part-time",
    "sede": "Arequipa",
-   "duracion_meses": 17,
+   "duracion_meses": 23,
    "moneda": "PEN",
    "costo_total_soles": 78950,
    "costo_total_usd": null,
@@ -354,7 +387,10 @@
    "fuente_url": "https://www.esan.edu.pe/mba/arequipa-presencial",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Web oficial: 'Inversión S/ 78,950'; 17 meses (martes noche y sábado mañana)."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "ESAN-regiones-presencial-78950",
+   "nota": "Web oficial: 'Inversión S/ 78,950'; 17 meses (martes noche y sábado mañana). Duración según el índice oficial esan.edu.pe/mba (convocatorias 2027, 'duración aproximada en meses lectivos'). El bloque 'Detalles generales' de cada página de programa muestra '17 meses / Mar.-Sáb. / 15-abr-2026' idéntico en todas las sedes (plantilla), por lo que no se usa para la duración. AMBA: cubierto como 'MBA Regions'."
   },
   {
    "id": 13,
@@ -364,7 +400,7 @@
    "programa": "MBA Cusco Presencial",
    "modalidad": "part-time",
    "sede": "Cusco",
-   "duracion_meses": 17,
+   "duracion_meses": 23,
    "moneda": "PEN",
    "costo_total_soles": 78950,
    "costo_total_usd": null,
@@ -382,7 +418,10 @@
    "fuente_url": "https://www.esan.edu.pe/mba/cusco",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Web oficial: 'Inversión S/ 78,950'; 17 meses (martes noche y sábado mañana)."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "ESAN-regiones-presencial-78950",
+   "nota": "Web oficial: 'Inversión S/ 78,950'; 17 meses (martes noche y sábado mañana). Duración según el índice oficial esan.edu.pe/mba (convocatorias 2027, 'duración aproximada en meses lectivos'). El bloque 'Detalles generales' de cada página de programa muestra '17 meses / Mar.-Sáb. / 15-abr-2026' idéntico en todas las sedes (plantilla), por lo que no se usa para la duración. AMBA: cubierto como 'MBA Regions'."
   },
   {
    "id": 14,
@@ -392,7 +431,7 @@
    "programa": "MBA Huancayo Presencial",
    "modalidad": "part-time",
    "sede": "Huancayo",
-   "duracion_meses": 17,
+   "duracion_meses": 23,
    "moneda": "PEN",
    "costo_total_soles": 78950,
    "costo_total_usd": null,
@@ -410,7 +449,10 @@
    "fuente_url": "https://www.esan.edu.pe/mba/huancayo",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Web oficial: 'Inversión S/ 78,950'; 17 meses (martes noche y sábado mañana)."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "ESAN-regiones-presencial-78950",
+   "nota": "Web oficial: 'Inversión S/ 78,950'; 17 meses (martes noche y sábado mañana). Duración según el índice oficial esan.edu.pe/mba (convocatorias 2027, 'duración aproximada en meses lectivos'). El bloque 'Detalles generales' de cada página de programa muestra '17 meses / Mar.-Sáb. / 15-abr-2026' idéntico en todas las sedes (plantilla), por lo que no se usa para la duración. AMBA: cubierto como 'MBA Regions'."
   },
   {
    "id": 15,
@@ -420,7 +462,7 @@
    "programa": "MBA Piura Presencial",
    "modalidad": "part-time",
    "sede": "Piura",
-   "duracion_meses": 17,
+   "duracion_meses": 23,
    "moneda": "PEN",
    "costo_total_soles": 78950,
    "costo_total_usd": null,
@@ -438,7 +480,10 @@
    "fuente_url": "https://www.esan.edu.pe/mba/piura",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Web oficial: 'Inversión S/ 78,950'; 17 meses (martes noche y sábado mañana)."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "ESAN-regiones-presencial-78950",
+   "nota": "Web oficial: 'Inversión S/ 78,950'; 17 meses (martes noche y sábado mañana). Duración según el índice oficial esan.edu.pe/mba (convocatorias 2027, 'duración aproximada en meses lectivos'). El bloque 'Detalles generales' de cada página de programa muestra '17 meses / Mar.-Sáb. / 15-abr-2026' idéntico en todas las sedes (plantilla), por lo que no se usa para la duración. AMBA: cubierto como 'MBA Regions'."
   },
   {
    "id": 16,
@@ -448,7 +493,7 @@
    "programa": "MBA Trujillo Presencial",
    "modalidad": "part-time",
    "sede": "Trujillo",
-   "duracion_meses": 17,
+   "duracion_meses": 23,
    "moneda": "PEN",
    "costo_total_soles": 78950,
    "costo_total_usd": null,
@@ -466,7 +511,10 @@
    "fuente_url": "https://www.esan.edu.pe/mba/trujillo",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Web oficial: 'Inversión S/ 78,950'; 17 meses (martes noche y sábado mañana)."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "ESAN-regiones-presencial-78950",
+   "nota": "Web oficial: 'Inversión S/ 78,950'; 17 meses (martes noche y sábado mañana). Duración según el índice oficial esan.edu.pe/mba (convocatorias 2027, 'duración aproximada en meses lectivos'). El bloque 'Detalles generales' de cada página de programa muestra '17 meses / Mar.-Sáb. / 15-abr-2026' idéntico en todas las sedes (plantilla), por lo que no se usa para la duración. AMBA: cubierto como 'MBA Regions'."
   },
   {
    "id": 17,
@@ -476,7 +524,7 @@
    "programa": "MBA Ica Presencial",
    "modalidad": "part-time",
    "sede": "Ica",
-   "duracion_meses": 17,
+   "duracion_meses": null,
    "moneda": "PEN",
    "costo_total_soles": 76500,
    "costo_total_usd": null,
@@ -488,13 +536,16 @@
    "monto_cuota": null,
    "incluye_viaje_internacional": null,
    "costo_viaje_adicional_usd": null,
-   "acreditaciones": "AACSB, AMBA, BGA; SUNEDU licenciada",
+   "acreditaciones": "AACSB, BGA (escuela); SUNEDU licenciada",
    "ranking": "QS Global MBA 2025: 201-250 mundo, 7.º LatAm (1.º Perú)",
    "anio_precio": "2026",
    "fuente_url": "https://esan.edu.pe/mba/ica",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
-   "nota": "Página oficial responde con 'Inversión S/ 76,500' (inicio 15-abr-2026) pero Ica ya no aparece en el índice esan.edu.pe/mba: posible convocatoria anterior/no vigente."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g017",
+   "nota": "Página oficial responde con 'Inversión S/ 76,500' (inicio 15-abr-2026) pero Ica ya no aparece en el índice esan.edu.pe/mba: posible convocatoria anterior/no vigente. Duración: la página solo muestra el bloque de plantilla (17 meses) e Ica no figura en el índice; no se registra. Sin AMBA verificable (programa no listado)."
   },
   {
    "id": 18,
@@ -504,7 +555,7 @@
    "programa": "Maestría en Administración (MBA)",
    "modalidad": "part-time",
    "sede": "Lima",
-   "duracion_meses": null,
+   "duracion_meses": 24,
    "moneda": "PEN",
    "costo_total_soles": 98500,
    "costo_total_usd": null,
@@ -522,7 +573,10 @@
    "fuente_url": "https://up.edu.pe/Documents/Inversion-por-maestria-2025.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Tabla oficial 'Inversión por Maestría 2025' (no se halló versión 2026; up.edu.pe/Documents/Inversion-por-maestria-2026.pdf no existe). Precio 2026 puede variar."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "UP-MBA-part-time-98500",
+   "nota": "Tabla oficial 'Inversión por Maestría 2025' (no se halló versión 2026; up.edu.pe/Documents/Inversion-por-maestria-2026.pdf no existe). Precio 2026 puede variar. Duración: 24 meses lectivos + fase de asesorías y sustentación según folleto oficial MBA 2025-II (https://sisisemail.up.edu.pe/sisisemail/docs/2025/1328/MBA_2025-II.pdf)."
   },
   {
    "id": 19,
@@ -550,6 +604,9 @@
    "fuente_url": "https://up.edu.pe/Documents/Inversion-por-maestria-2025.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "UP-MBA-part-time-98500",
    "nota": "Se asume el precio de 'Maestría en Administración' de la tabla 2025 (la tabla no separa Weekend). Duración 22 meses lectivos + tesis según folleto MBA Weekend 2026-I (sisisemail.up.edu.pe/sisisemail/docs/2026/24/MBA%20Weekend_2026-I.pdf), que no publica precio."
   },
   {
@@ -578,6 +635,9 @@
    "fuente_url": "https://up.edu.pe/Documents/Inversion-por-maestria-2025.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g020",
    "nota": "Tabla oficial 2025: S/ 69,800. Duración 24 meses lectivos según folleto MBA blended 2025-III."
   },
   {
@@ -606,6 +666,9 @@
    "fuente_url": "https://up.edu.pe/Documents/Inversion-por-maestria-2025.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g021",
    "nota": "Tabla oficial 2025: S/ 104,500 (sí, más caro que el presencial según la tabla; verificado con extracción de tabla pdfplumber). 24 meses lectivos según folleto MBA a distancia 2025-III."
   },
   {
@@ -628,13 +691,16 @@
    "monto_cuota": null,
    "incluye_viaje_internacional": null,
    "costo_viaje_adicional_usd": null,
-   "acreditaciones": "AACSB, AMBA; SUNEDU licenciada",
+   "acreditaciones": "AACSB (escuela); SUNEDU licenciada",
    "ranking": "QS Global MBA 2025: 251+ mundo, 9.º LatAm",
    "anio_precio": "2025",
    "fuente_url": "https://up.edu.pe/Documents/Inversion-por-maestria-2025.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Tabla oficial 2025."
+   "es_mba_generalista": false,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g022",
+   "nota": "Tabla oficial 2025. No figura en la lista de programas acreditados por AMBA de Pacífico Business School."
   },
   {
    "id": 23,
@@ -662,6 +728,9 @@
    "fuente_url": "https://up.edu.pe/Documents/Inversion-por-maestria-2025.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g023",
    "nota": "Tabla oficial 2025: S/ 157,000. 17 meses + módulo internacional (folleto Corporate 12 – 2026). AACSB 2024-25 lo reporta en 42,500 USD. Se marca viaje incluido por ser doble grado con módulo en ESADE; confirmar si pasajes/estadía están incluidos."
   },
   {
@@ -690,7 +759,10 @@
    "fuente_url": "https://up.edu.pe/Documents/Inversion-por-maestria-2025.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Tabla oficial 2025: S/ 120,000. (Libertify, terceros, cita S/ 98,500 para EMBA 2026 — no coincide con la tabla oficial.)"
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g024",
+   "nota": "Tabla oficial 2025: S/ 120,000. (Libertify, terceros, cita S/ 98,500 para EMBA 2026 — no coincide con la tabla oficial.) Duración no publicada en un folleto específico del EMBA (los folletos MBA de PBS indican ~24 meses lectivos)."
   },
   {
    "id": 25,
@@ -718,6 +790,9 @@
    "fuente_url": "https://pad.edu/maestria/mba",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g025",
    "nota": "Web oficial: inversión total S/ 79,000 sin Semana Internacional (USD 3,600 adicional); examen de admisión USD 100. Lunes noche y sábado mañana. Total con semana internacional ≈ S/ 79,000 + USD 3,600."
   },
   {
@@ -746,6 +821,9 @@
    "fuente_url": "https://pad.edu/maestria/executive-mba-medex",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g026",
    "nota": "Web oficial: S/ 117,000 sin semana internacional (USD 4,200 adicional); examen USD 100; requiere 8+ años de experiencia (3 directivos)."
   },
   {
@@ -774,6 +852,9 @@
    "fuente_url": "https://pad.edu/maestria/senior-executive-mba-semba",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g027",
    "nota": "Web oficial: S/ 132,000 'incluye todos los gastos, a excepción de la Semana Internacional' (USD 4,200 adicional, sujeto a variación). Clases 3 días consecutivos al mes. Requiere 10+ años en alta dirección."
   },
   {
@@ -785,24 +866,27 @@
    "modalidad": "ejecutivo",
    "sede": "Piura",
    "duracion_meses": 24,
-   "moneda": null,
-   "costo_total_soles": null,
+   "moneda": "PEN",
+   "costo_total_soles": 65000,
    "costo_total_usd": null,
-   "costo_total_soles_equiv": null,
+   "costo_total_soles_equiv": 65000,
    "costo_inscripcion": null,
    "costo_inscripcion_usd": 100,
    "costo_matricula": null,
    "n_cuotas": null,
    "monto_cuota": null,
-   "incluye_viaje_internacional": null,
-   "costo_viaje_adicional_usd": null,
+   "incluye_viaje_internacional": false,
+   "costo_viaje_adicional_usd": 3600,
    "acreditaciones": "AMBA; SUNEDU licenciada (UDEP)",
    "ranking": null,
-   "anio_precio": null,
-   "fuente_url": "https://pad.edu/maestria/mba-piura",
+   "anio_precio": "2025-2026",
+   "fuente_url": "https://web.archive.org/web/20260809100211id_/https://pad.edu/maestria/mba-piura",
    "fecha_consulta": "2026-11-25",
-   "confianza": "baja",
-   "nota": "Web oficial dice que la inversión 'debe consultarse directamente con el PAD'. Una búsqueda indexada mostró S/ 65,000 + USD 3,600 de semana internacional, pero la página vigente no lo publica: se deja null."
+   "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g028",
+   "nota": "Web oficial PAD (FAQ, copias Wayback 10-oct-2025, 22-ene-2026 y 09-ago-2026): 'La inversión total es de S/ 65,000 que no incluye los gastos asociados a la semana internacional' (USD 3,600 adicionales); examen de admisión USD 100. Presencial, viernes noche y sábado mañana, 24 meses, inicio 9-oct. La versión vigente de la página (nov-2026) ya no muestra el monto ('debe consultarse con el PAD')."
   },
   {
    "id": 29,
@@ -824,13 +908,16 @@
    "monto_cuota": null,
    "incluye_viaje_internacional": null,
    "costo_viaje_adicional_usd": null,
-   "acreditaciones": "AMBA; SUNEDU licenciada (UDEP)",
+   "acreditaciones": "SUNEDU licenciada (UDEP); PAD acreditada AMBA pero este programa no figura en su lista AMBA",
    "ranking": null,
    "anio_precio": null,
    "fuente_url": "https://pad.edu/maestria/mba-a-distancia",
    "fecha_consulta": "2026-11-25",
    "confianza": "baja",
-   "nota": "Web oficial: precio 'debe consultarse directamente con la institución'. Martes/jueves noche y sábado mañana; inicio 3 de mayo."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g029",
+   "nota": "Web oficial (nov-2026): precio 'debe consultarse directamente con la institución'. No hay copias Wayback de esta página ni brochure con precio. Martes/jueves noche y sábado mañana; 24 meses; inicio 3 de mayo. Incluye opción de viaje a Lisboa ('solo gastos académicos')."
   },
   {
    "id": 30,
@@ -858,7 +945,10 @@
    "fuente_url": "https://www.utp.edu.pe/web/sites/default/files/2026-08/TARIFARIO-EPG-2026_04.08.2026.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Tarifario EPG 2026 (04-ago-2026): S/ 28,900 total; S/ 1,156 mensuales financiado en 25 cuotas. El tarifario no indica duración."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g030",
+   "nota": "Tarifario EPG 2026 (04-ago-2026): S/ 28,900 total; S/ 1,156 mensuales financiado en 25 cuotas. El tarifario no indica duración. Duración en meses no publicada; malla curricular oficial 2026 (portal de transparencia UTP): 4 ciclos, 29 cursos, 48 créditos (https://www.utp.edu.pe/sites/default/files/Transparencia/Curriculas-posgrado-2026/P43%20-%20Maestri%CC%81a%20en%20Administracio%CC%81n%20de%20Empresas%20-%20Presencial.pdf)."
   },
   {
    "id": 31,
@@ -886,7 +976,10 @@
    "fuente_url": "https://www.utp.edu.pe/web/sites/default/files/2026-08/TARIFARIO-EPG-2026_04.08.2026.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Tarifario EPG 2026: S/ 19,900; S/ 796 x 25 cuotas."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g031",
+   "nota": "Tarifario EPG 2026: S/ 19,900; S/ 796 x 25 cuotas. Duración en meses no publicada; malla curricular oficial 2026 (portal de transparencia UTP): 4 ciclos, 29 cursos, 48 créditos (https://www.utp.edu.pe/sites/default/files/Transparencia/Curriculas-posgrado-2026/P43%20-%20Maestri%CC%81a%20en%20Administracio%CC%81n%20de%20Empresas%20-%20Presencial.pdf)."
   },
   {
    "id": 32,
@@ -914,7 +1007,10 @@
    "fuente_url": "https://www.utp.edu.pe/web/sites/default/files/2026-08/TARIFARIO-EPG-2026_04.08.2026.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
-   "nota": "Tarifario EPG 2026: S/ 26,900; S/ 1,076 x 25 cuotas."
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g032",
+   "nota": "Tarifario EPG 2026: S/ 26,900; S/ 1,076 x 25 cuotas. Duración en meses no publicada; malla curricular oficial 2026 (portal de transparencia UTP): 4 ciclos, 29 cursos, 48 créditos (https://www.utp.edu.pe/sites/default/files/Transparencia/Curriculas-posgrado-2026/P43%20-%20Maestri%CC%81a%20en%20Administracio%CC%81n%20de%20Empresas%20-%20Presencial.pdf)."
   },
   {
    "id": 33,
@@ -942,6 +1038,9 @@
    "fuente_url": "https://file.urp.edu.pe/file-urp-20260316-022257-221-49169b85891165d1.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g033",
    "nota": "Brochure oficial 2026-I: armada S/ 1,100 (5 por semestre); S/ 5,980 por semestre; 'todo el programa S/ 23,380' (incluye matrículas, cuota de inscripción S/ 150 y constancia de ingreso). 4 semestres."
   },
   {
@@ -970,6 +1069,9 @@
    "fuente_url": "https://posgrado.uwiener.edu.pe/wp-content/uploads/2024/04/Brochure-MBA-5.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g034",
    "nota": "Brochure oficial (campaña admisión 2026): inversión regular S/ 20,500 = admisión S/ 300 + 3 matrículas S/ 300 + 16 cuotas S/ 1,206 (o 20 cuotas S/ 965). Descuentos: campaña 15% (S/ 17,605), convenio 20% (S/ 16,640), egresado 30% (S/ 14,710). 16 meses, sábados."
   },
   {
@@ -998,6 +1100,9 @@
    "fuente_url": "https://posgrado.cayetano.edu.pe/wp-content/uploads/sites/13/2026/04/MBA_INNOVACION-EDUCATIVA.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": false,
+   "incluye_derecho_grado": false,
+   "grupo_precio": "g035",
    "nota": "Brochure oficial 2026: admisión S/ 600 + 4 matrículas S/ 600 + costo programa S/ 38,000 = valor total S/ 41,000; financiamiento 26 cuotas de S/ 1,462. No incluye grado. MBA de nicho (gestión educativa), no MBA generalista."
   },
   {
@@ -1026,6 +1131,9 @@
    "fuente_url": "https://web.archive.org/web/20251002234254/https://posgrado.uni.edu.pe/media/attachments/2025/01/15/brochure-mba-2025-10_compressed.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": false,
+   "incluye_derecho_grado": false,
+   "grupo_precio": "g036",
    "nota": "Brochure oficial UNI 2025 (copia Wayback 2-oct-2025; el original da 404): 'COSTO TOTAL S/ 17,500' = postulación S/ 300 + 4 matrículas x S/ 300 + 16 pensiones x S/ 1,000. Derecho de grado aparte S/ 4,375 (TUPA 2025). Página vigente posgrado.uni.edu.pe/programas/mba/ (Admisión 2027-I) no publica precio."
   },
   {
@@ -1054,6 +1162,9 @@
    "fuente_url": "https://posgrado.unac.edu.pe/maestrias/facultades/brochure_fca-1.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": false,
+   "grupo_precio": "g037",
    "nota": "Brochure oficial 2025: inscripción S/ 200 + 3 semestres x (matrícula S/ 100 + '4 pensiones por ciclo: s/ 500.00'). Total = 200 + 3x(100+4x500) = S/ 6,500 leyendo S/ 500 por pensión; si fueran S/ 500 por ciclo el total sería ~S/ 2,000 (texto ambiguo, por eso confianza media). Grado y tesis aparte."
   },
   {
@@ -1082,6 +1193,9 @@
    "fuente_url": "https://www.lamolina.edu.pe/Postgrado/cienciambientales/web/I_CICLO/4.%20GUIA_MATRICULA_2026-I.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": false,
+   "grupo_precio": "g038",
    "nota": "Guía de matrícula oficial 2026-I: S/ 350 por crédito (nacionales) + matrícula S/ 147.90 por semestre. Total calculado = 48 créditos (plan de estudios RC 2020-0270) x 350 + 4 x 147.90 = S/ 17,391.60, sin derecho de admisión, autoseguro (S/ 35/sem) ni grado. Tarifa oficial, total es cálculo propio."
   },
   {
@@ -1110,6 +1224,9 @@
    "fuente_url": "https://posgrado.unsa.edu.pe/escuela/maestria-en-ciencias-administracion-mba-con-mencion-en-gerencia-empresarial/",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "UNSA-maestria-administracion-8200",
    "nota": "Web oficial: costo de enseñanza S/ 7,200 por programa + inscripción S/ 300 + matrícula anual S/ 350 x 2 = S/ 8,200. Presencial/a distancia sáb-dom. Otras menciones MBA de la UNSA tienen igual tarifa de enseñanza (no verificadas una a una)."
   },
   {
@@ -1138,6 +1255,9 @@
    "fuente_url": "https://posgrado.unsa.edu.pe/escuela/direccion-y-gestion-empresarial/",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "UNSA-maestria-administracion-8200",
    "nota": "Web oficial: costo de enseñanza S/ 7,200 por programa + inscripción S/ 300 + matrícula anual S/ 350 x 2 = S/ 8,200. Presencial/a distancia sáb-dom. Otras menciones MBA de la UNSA tienen igual tarifa de enseñanza (no verificadas una a una)."
   },
   {
@@ -1166,6 +1286,9 @@
    "fuente_url": "http://postgrado.unsaac.edu.pe/inversion.php",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g041",
    "nota": "Web oficial: inversión total S/ 7,400 = 2 matrículas x S/ 400 + 12 pensiones x S/ 550; inscripción al examen S/ 313 no incluida (S/ 7,713 con ella). Duración 12 meses inferida de 2 semestres."
   },
   {
@@ -1194,6 +1317,9 @@
    "fuente_url": "https://www.untels.edu.pe/FTP/2026.03.20.0020_CARPETA%20DE%20ADMI%20MBA%20LECTURA.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g042",
    "nota": "Carpeta de admisión oficial 2026-I: carpeta S/ 100 + inscripción S/ 500 + constancia S/ 100 + 3 semestres x (matrícula S/ 650 + 4 pensiones x S/ 650) = S/ 10,450. Comunidad UNTELS: S/ 8,200. 70% virtual."
   },
   {
@@ -1222,6 +1348,9 @@
    "fuente_url": "https://www.americatv.com.pe/noticias/util-e-interesante/san-marcos-como-inscribirse-maestria-y-cuanto-cuesta-n514526",
    "fecha_consulta": "2026-11-25",
    "confianza": "baja",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g043",
    "nota": "Sin precio oficial por programa (web posgradoadministracion.unmsm.edu.pe carga datos por JavaScript). Prensa (América TV) estima S/ 15,000–20,000 total para maestrías UNMSM y admisión S/ 450 (S/ 350 egresados). No se registra total por ser estimación genérica."
   },
   {
@@ -1250,6 +1379,9 @@
    "fuente_url": "https://tramitesperu.com/universidades/unfv/posgrado/",
    "fecha_consulta": "2026-11-25",
    "confianza": "baja",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g044",
    "nota": "Fuente de terceros: inscripción S/ 500, matrícula S/ 557.70 por ciclo, pensión S/ 500 (semipresencial) / S/ 600 (presencial). No indica nº de pensiones ni duración: total no calculado."
   },
   {
@@ -1278,6 +1410,9 @@
    "fuente_url": "https://web.archive.org/web/20250815092903id_/https://usil.edu.pe/sites/default/files/2025-04/tarifario-posgrado-2025.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g045",
    "nota": "Tarifario oficial 'Tarifas de Posgrado 2025-1' (copia Wayback; usil.edu.pe bloquea con Cloudflare y el PDF original da 404). Pensiones 20 x S/ 2,195 = S/ 43,900 + postulación S/ 250 + 5 matrículas x S/ 350 = S/ 45,900. En 2024 las pensiones sumaban S/ 39,900 (+10%). Socio del doble grado no verificado. No hay tarifario 2026 accesible."
   },
   {
@@ -1306,6 +1441,9 @@
    "fuente_url": "https://web.archive.org/web/20250815092903id_/https://usil.edu.pe/sites/default/files/2025-04/tarifario-posgrado-2025.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g046",
    "nota": "Tarifario oficial 2025-1 (Wayback): pensiones 20 x S/ 1,735 = S/ 34,700 + postulación S/ 250 + 5 matrículas x S/ 350 = S/ 36,700. En 2024: S/ 31,500 en pensiones."
   },
   {
@@ -1334,6 +1472,9 @@
    "fuente_url": "https://postgrado.upc.edu.pe/landings/maestrias/mba/mba-ejecutivo/",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g047",
    "nota": "Web oficial: inversión S/ 68,500, inicio 15-mar-2027. Misión académica obligatoria a Barcelona incluida (sesiones, hospedaje, desayunos, almuerzos, visitas); NO incluye pasajes, cenas, traslados, seguros ni viáticos. Opción de Máster en MBA Internacional (Univ. Politécnica de Cataluña)."
   },
   {
@@ -1362,6 +1503,9 @@
    "fuente_url": "https://postgrado.upc.edu.pe/landings/maestrias/mba/e-mba-a-distancia/",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g048",
    "nota": "Web oficial: inversión S/ 45,900, inicio 18-mar-2027; clases síncronas quincenales."
   },
   {
@@ -1390,6 +1534,9 @@
    "fuente_url": "https://postgrado.upc.edu.pe/landings/maestrias/mba/e-mba-regiones/",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g049",
    "nota": "Web oficial: inversión S/ 39,375, inicio 20-mar-2027, clases síncronas sábados."
   },
   {
@@ -1418,6 +1565,9 @@
    "fuente_url": "https://postgrado.upc.edu.pe/landings/mba-para-master/",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": false,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g050",
    "nota": "Web oficial: S/ 41,895 lista (S/ 33,516 con 20% para egresados UPC). Programa de nicho: requiere maestría previa."
   },
   {
@@ -1446,6 +1596,9 @@
    "fuente_url": "https://posgrado.cayetano.edu.pe/wp-content/uploads/sites/13/2026/04/MBA_EN-SALUD.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": false,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g051",
    "nota": "Brochure oficial 2026: admisión S/ 600 + 4 matrículas x S/ 600 + programa S/ 60,000 = S/ 63,000 (26 cuotas de S/ 2,308). Pasantía en París incluye parte académica; no pasajes, alojamiento ni viáticos. MBA sectorial."
   },
   {
@@ -1474,6 +1627,9 @@
    "fuente_url": "https://posgrado.cayetano.edu.pe/wp-content/uploads/sites/13/2026/04/BR_MBA-INNOVACION-AMBIENTAL.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": false,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g052",
    "nota": "Brochure oficial 2026: 600 + 4 x 600 + 45,500 = S/ 48,500 (26 x S/ 1,750). MBA sectorial."
   },
   {
@@ -1485,10 +1641,10 @@
    "modalidad": "part-time",
    "sede": "Lima",
    "duracion_meses": 20,
-   "moneda": null,
-   "costo_total_soles": null,
+   "moneda": "PEN",
+   "costo_total_soles": 58900,
    "costo_total_usd": null,
-   "costo_total_soles_equiv": null,
+   "costo_total_soles_equiv": 58900,
    "costo_inscripcion": 350,
    "costo_inscripcion_usd": null,
    "costo_matricula": null,
@@ -1498,11 +1654,14 @@
    "costo_viaje_adicional_usd": null,
    "acreditaciones": "SUNEDU licenciada",
    "ranking": null,
-   "anio_precio": "2026",
-   "fuente_url": "https://www.ulima.edu.pe/sites/default/files/2026-08/2026-brochure_mba_1.pdf",
+   "anio_precio": "2022-1",
+   "fuente_url": "https://web.archive.org/web/20220211190939id_/https://www.ulima.edu.pe/sites/default/files/brochure_mba_ulima_v.2021.12.20.pdf",
    "fecha_consulta": "2026-11-25",
-   "confianza": "baja",
-   "nota": "PRECIO NO PUBLICADO en brochures 2025-2026 (ni texto ni imagen); solo inscripción S/ 350 y 'financiamiento sin intereses'. Semana internacional en IQS–Ramon Llull: el costo cubre solo derechos académicos del viaje. Brochure 2023 indicaba S/ 58,900 (URL ya no responde)."
+   "confianza": "media",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g053",
+   "nota": "Último precio oficial publicado: brochure MBA Ulima v.2021-12-20 (copia Wayback), 'Inversión: S/ 58.900', inicio 17-may-2022, 20 meses (descuentos: 30% egresados Ulima; 20%/15% matrícula anticipada). Precio de 2022 → confianza media; el vigente probablemente es mayor. Los brochures 2023-2026 (texto e imágenes revisados) ya no publican el monto, solo inscripción S/ 350. Educaedu (ficha sin fecha) lista S/ 50,900 (educaedu.com.pe/maestria-en-administracion-de-negocios-maestria-27370.html), no usado por ser de terceros y sin fecha. Semana internacional en IQS–Ramon Llull: el costo cubre solo derechos académicos del viaje."
   },
   {
    "id": 54,
@@ -1530,6 +1689,9 @@
    "fuente_url": "https://posgrado.ucontinental.edu.pe/programas/mba-maestria-en-administracion-de-negocios/",
    "fecha_consulta": "2026-11-25",
    "confianza": "baja",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g054",
    "nota": "PRECIO NO PUBLICADO (web, API WordPress ni prensa). 768 horas académicas, 100% virtual, convocatoria 2026."
   },
   {
@@ -1558,6 +1720,9 @@
    "fuente_url": "https://madne.cientifica.edu.pe/",
    "fecha_consulta": "2026-11-25",
    "confianza": "baja",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g055",
    "nota": "PRECIO NO PUBLICADO (landing y brochure 2024). Pasantía con Universitat Carlemany (Andorra), sin indicar si está incluida."
   },
   {
@@ -1586,6 +1751,9 @@
    "fuente_url": null,
    "fecha_consulta": "2026-11-25",
    "confianza": "baja",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g056",
    "nota": "SIN DATO: usmp.edu.pe responde 403 (Cloudflare) y administracion.usmp.edu.pe 500; no hay URL verificable. Existen también IMBA y Maestría en Negocios Internacionales."
   },
   {
@@ -1614,6 +1782,9 @@
    "fuente_url": "https://www.ucv.edu.pe/uploads/files/Transparencia/pensiones/RGG_N_213-2025_PENSIONES_2026-II_POSGRADO_A_DISTANCIA_20260603124342.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": false,
+   "grupo_precio": "g057",
    "nota": "RGG N.° 213-2026/UCV (17-mar-2026), ingresantes 2026-II, MBA = 'Maestría Tipo A': inscripción S/ 100 + 2 matrículas x S/ 250 + 12 cuotas x S/ 350 = S/ 4,800. Estudiantes del extranjero: cuota S/ 800 (total S/ 10,200). Brochure: 2 ciclos, 48 créditos. En 2022 (RGG 226-2022) costaba S/ 7,900 (18 cuotas x S/ 400)."
   },
   {
@@ -1642,6 +1813,9 @@
    "fuente_url": "https://www.ucv.edu.pe/uploads/files/Transparencia/pensiones/RGG_N_211-2026_PENSIONES_INGRESANTES_2026-II_POSGRADO_SEMIPRESENCIAL_20260603124342.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": false,
+   "grupo_precio": "g058",
    "nota": "RGG N.° 211-2026/UCV, Anexo 01, Maestría Tipo A: 100 + 2 x 200 + 12 x 800 (Categoría A) = S/ 10,100; Categoría B (cuota S/ 600) = S/ 7,700. La tabla presencial 2026-II (RGG 210-2026) no incluye el MBA."
   },
   {
@@ -1670,6 +1844,9 @@
    "fuente_url": "https://posgrado.upao.edu.pe/maestria-en-administracion-con-mencion-en-finanzas",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": false,
+   "incluye_derecho_grado": false,
+   "grupo_precio": "UPAO-maestria-administracion-10850",
    "nota": "Web oficial (admisión mar-abr 2025): inscripción S/ 350 + 3 matrículas x S/ 500 + 15 cuotas (5 x 3 ciclos) x S/ 600 = S/ 10,850. Aparte: carpeta de tesis S/ 2,700, diploma S/ 100. No se denomina MBA (equivalente)."
   },
   {
@@ -1698,6 +1875,9 @@
    "fuente_url": "https://posgrado.upao.edu.pe/maestria-en-administracion-con-mencion-en-recursos-humanos",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": false,
+   "incluye_derecho_grado": false,
+   "grupo_precio": "UPAO-maestria-administracion-10850",
    "nota": "Misma estructura de pagos que la mención Finanzas: S/ 10,850. No se denomina MBA."
   },
   {
@@ -1726,6 +1906,9 @@
    "fuente_url": "https://www.uandina.edu.pe/posgrado/programas/maestrias/maestria-en-administracion-de-negocios",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g061",
    "nota": "Web oficial: 4 ciclos (16 meses), matrícula S/ 710 y mensualidad S/ 710 (confirmado por tarifario 2026, Res. 710-CU-2025-UAC). Total calculado suponiendo 16 mensualidades y 4 matrículas: 335 + 4 x 710 + 16 x 710 = S/ 14,535 (tarifas oficiales; nº de pagos inferido → confianza media)."
   },
   {
@@ -1754,6 +1937,9 @@
    "fuente_url": "https://www.uandina.edu.pe/posgrado/programas/maestrias/maestria-en-administracion-de-negocios",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g062",
    "nota": "Web oficial a distancia: S/ 568 (incluye 20% descuento). Total calculado 335 + 4 x 568 + 16 x 568 = S/ 11,695 (supuesto de 16 mensualidades)."
   },
   {
@@ -1782,6 +1968,9 @@
    "fuente_url": "https://web.archive.org/web/20260204133237/https://postgrado.ucsm.edu.pe/wp-content/uploads/2025/06/Brochure-MAD-Adm-de-Negocios.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g063",
    "nota": "Brochure oficial UCSM 2025 vía Wayback (postgrado.ucsm.edu.pe responde 403): 3 semestres x (matrícula S/ 740 + 4 tasas S/ 740) = S/ 11,100, sin inscripción."
   },
   {
@@ -1810,6 +1999,9 @@
    "fuente_url": "https://www.caa.org.pe/concurso-de-admision-ucsm/",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g064",
    "nota": "Fuente de terceros (Colegio de Abogados de Arequipa, ene-2021), tarifa genérica de maestrías presenciales: 3 x (950 + 4 x 950) = S/ 14,250 (+ postulación S/ 350). Semipresencial: S/ 11,250. Desactualizado. URL devuelve 406 a curl sin User-Agent de navegador."
   },
   {
@@ -1838,6 +2030,9 @@
    "fuente_url": "https://web.archive.org/web/20250116031150/https://www.autonoma.pe/maestria/maestria-en-administracion-de-empresas/",
    "fecha_consulta": "2026-11-25",
    "confianza": "media",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g065",
    "nota": "Snapshot Wayback ene-2025 de la web oficial: 50 + 3 x 350 + 18 x 850 = S/ 16,400 (regular); promocional 18 x S/ 640 = S/ 12,620. La web actual ya no publica precios ('S/ 0 inscripción y matrícula')."
   },
   {
@@ -1866,6 +2061,9 @@
    "fuente_url": "https://posgrado.uwiener.edu.pe/wp-content/uploads/2025/04/dscto-Brochure-MBA-SALUD.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "alta",
+   "es_mba_generalista": false,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g066",
    "nota": "Brochure oficial: misma estructura que el MBA a distancia (S/ 20,500 regular; campaña S/ 17,605; convenio S/ 16,640; egresado S/ 14,710). Certificaciones ASU. MBA sectorial (salud)."
   },
   {
@@ -1894,6 +2092,9 @@
    "fuente_url": "https://web.archive.org/web/20240430083239/https://www.uss.edu.pe/uss/TransparenciaDoc/RegEstudiantes/cobranzas.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "baja",
+   "es_mba_generalista": false,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g067",
    "nota": "Reglamento de Cobranza 2023 (Wayback), Maestrías Grupo II: 100 + 2 x 350 + 12 x 600 = S/ 8,000 suponiendo 2 ciclos (S/ 11,950 con 3). El MBA actual 100% virtual (posgradouss.edu.pe) no publica precio."
   },
   {
@@ -1922,6 +2123,9 @@
    "fuente_url": "https://uigv.edu.pe/wp-content/uploads/2026/07/Tarifas-pensiones-2026.pdf",
    "fecha_consulta": "2026-11-25",
    "confianza": "baja",
+   "es_mba_generalista": null,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g068",
    "nota": "Tarifa oficial 2026 posgrado presencial: matrícula S/ 200 + 4 pensiones por ciclo de S/ 950 / 825 / 700 según nivel (S/ 3,000–4,000 por ciclo). Nº de ciclos del programa no confirmado: total no calculado (2 ciclos ≈ S/ 6,000–8,000; 3 ciclos ≈ S/ 9,000–12,000)."
   },
   {
@@ -1950,6 +2154,9 @@
    "fuente_url": null,
    "fecha_consulta": "2026-11-25",
    "confianza": "baja",
+   "es_mba_generalista": true,
+   "incluye_derecho_grado": null,
+   "grupo_precio": "g069",
    "nota": "SIN PRECIO: UPN no publica tarifas de posgrado (brochures y portal de transparencia solo mencionan 3, 6 o 12 cuotas sin intereses). MBA Executive Leaders 18 meses a distancia; MBA virtual autónomo 12 meses."
   }
  ]

@@ -21,7 +21,7 @@
       "muestra": "residentes habituales, ocupados (ocu500==1), 25-64 años, ingreso laboral > 0",
       "ingreso_mensual": "(i524a1+d529t+i530a+d536+i538a1+d540t+i541a+d543+d544t)/12; todas las ocupaciones, monetario + especie, soles corrientes del año de la encuesta (imputados y deflactados dentro del año con IPC departamental). No comparable en niveles entre años sin ajustar por inflación.",
       "ingreso_hora": "ingreso mensual / ((i513t+i518)*52/12)",
-      "mincer_A": "ly ~ posgrado + edad + edad2 + mujer + lima + urbano ; WLS con fac500a, errores HC1; prima = exp(b)-1",
+      "mincer_A": "ly ~ posgrado + edad + edad2 + mujer + lima + urbano ; WLS con fac500a, errores agrupados por conglomerado; prima = exp(b)-1",
       "mincer_B": "ly ~ posgrado + edad + edad2 + mujer + lima + urbano + publico + dependiente + C(dpto) ; idem",
       "lima": "dominio == 8 (Lima Metropolitana + Callao)",
       "urbano": "estrato 1-5",
@@ -45,6 +45,7 @@
       "estrato",
       "dominio",
       "ocu500",
+      "conglome",
       "p204",
       "p205",
       "p206",
@@ -97,10 +98,10 @@
         },
         "mincer_mensual_A": {
           "b": 0.4846,
-          "se": 0.035,
+          "se": 0.0352,
           "prima_pct": 62.3,
           "ic95_pct": [
-            51.6,
+            51.5,
             73.9
           ],
           "p_valor": 0.0,
@@ -109,11 +110,11 @@
         },
         "mincer_mensual_B": {
           "b": 0.4256,
-          "se": 0.0336,
+          "se": 0.0345,
           "prima_pct": 53.0,
           "ic95_pct": [
-            43.3,
-            63.5
+            43.0,
+            63.7
           ],
           "p_valor": 0.0,
           "n": 5681,
@@ -121,11 +122,11 @@
         },
         "mincer_hora_A": {
           "b": 0.47,
-          "se": 0.0341,
+          "se": 0.0345,
           "prima_pct": 60.0,
           "ic95_pct": [
-            49.7,
-            71.0
+            49.5,
+            71.2
           ],
           "p_valor": 0.0,
           "n": 5449,
@@ -133,7 +134,7 @@
         },
         "mincer_mensual_A_solo_monetario_ppal": {
           "b": 0.4872,
-          "se": 0.0346,
+          "se": 0.0345,
           "prima_pct": 62.8,
           "ic95_pct": [
             52.1,
@@ -200,11 +201,11 @@
         },
         "mincer_mensual_A": {
           "b": 0.4593,
-          "se": 0.0423,
+          "se": 0.044,
           "prima_pct": 58.3,
           "ic95_pct": [
-            45.7,
-            72.0
+            45.2,
+            72.5
           ],
           "p_valor": 0.0,
           "n": 5401,
@@ -212,11 +213,11 @@
         },
         "mincer_mensual_B": {
           "b": 0.3546,
-          "se": 0.0387,
+          "se": 0.0402,
           "prima_pct": 42.6,
           "ic95_pct": [
-            32.1,
-            53.8
+            31.8,
+            54.2
           ],
           "p_valor": 0.0,
           "n": 5401,
@@ -224,11 +225,11 @@
         },
         "mincer_hora_A": {
           "b": 0.495,
-          "se": 0.0392,
+          "se": 0.0391,
           "prima_pct": 64.1,
           "ic95_pct": [
             51.9,
-            77.2
+            77.1
           ],
           "p_valor": 0.0,
           "n": 5201,
@@ -236,11 +237,11 @@
         },
         "mincer_mensual_A_solo_monetario_ppal": {
           "b": 0.434,
-          "se": 0.0429,
+          "se": 0.044,
           "prima_pct": 54.3,
           "ic95_pct": [
-            41.9,
-            67.9
+            41.6,
+            68.2
           ],
           "p_valor": 0.0,
           "n": 5398,
@@ -303,11 +304,11 @@
         },
         "mincer_mensual_A": {
           "b": 0.4143,
-          "se": 0.0418,
+          "se": 0.0424,
           "prima_pct": 51.3,
           "ic95_pct": [
-            39.4,
-            64.2
+            39.3,
+            64.4
           ],
           "p_valor": 0.0,
           "n": 5447,
@@ -315,11 +316,11 @@
         },
         "mincer_mensual_B": {
           "b": 0.328,
-          "se": 0.0398,
+          "se": 0.0403,
           "prima_pct": 38.8,
           "ic95_pct": [
-            28.4,
-            50.1
+            28.3,
+            50.2
           ],
           "p_valor": 0.0,
           "n": 5447,
@@ -327,10 +328,10 @@
         },
         "mincer_hora_A": {
           "b": 0.4218,
-          "se": 0.0433,
+          "se": 0.0434,
           "prima_pct": 52.5,
           "ic95_pct": [
-            40.1,
+            40.0,
             66.0
           ],
           "p_valor": 0.0,
@@ -339,11 +340,11 @@
         },
         "mincer_mensual_A_solo_monetario_ppal": {
           "b": 0.3722,
-          "se": 0.0441,
+          "se": 0.0449,
           "prima_pct": 45.1,
           "ic95_pct": [
-            33.1,
-            58.2
+            32.9,
+            58.4
           ],
           "p_valor": 0.0,
           "n": 5445,
@@ -406,11 +407,11 @@
         },
         "mincer_mensual_A": {
           "b": 0.473,
-          "se": 0.0359,
+          "se": 0.0362,
           "prima_pct": 60.5,
           "ic95_pct": [
-            49.6,
-            72.2
+            49.5,
+            72.3
           ],
           "p_valor": 0.0,
           "n": 5628,
@@ -418,11 +419,11 @@
         },
         "mincer_mensual_B": {
           "b": 0.3905,
-          "se": 0.0346,
+          "se": 0.0343,
           "prima_pct": 47.8,
           "ic95_pct": [
-            38.1,
-            58.1
+            38.2,
+            58.0
           ],
           "p_valor": 0.0,
           "n": 5628,
@@ -442,11 +443,11 @@
         },
         "mincer_mensual_A_solo_monetario_ppal": {
           "b": 0.4868,
-          "se": 0.0343,
+          "se": 0.0337,
           "prima_pct": 62.7,
           "ic95_pct": [
-            52.1,
-            74.0
+            52.3,
+            73.8
           ],
           "p_valor": 0.0,
           "n": 5627,
@@ -513,11 +514,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4744,
-              "se": 0.0471,
+              "se": 0.0466,
               "prima_pct": 60.7,
               "ic95_pct": [
-                46.5,
-                76.3
+                46.7,
+                76.1
               ],
               "p_valor": 0.0,
               "n": 2918,
@@ -550,11 +551,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4925,
-              "se": 0.052,
+              "se": 0.0489,
               "prima_pct": 63.6,
               "ic95_pct": [
-                47.8,
-                81.2
+                48.7,
+                80.1
               ],
               "p_valor": 0.0,
               "n": 2763,
@@ -589,11 +590,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.5434,
-              "se": 0.0652,
+              "se": 0.0648,
               "prima_pct": 72.2,
               "ic95_pct": [
-                51.5,
-                95.7
+                51.6,
+                95.5
               ],
               "p_valor": 0.0,
               "n": 1242,
@@ -626,11 +627,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4336,
-              "se": 0.033,
+              "se": 0.0347,
               "prima_pct": 54.3,
               "ic95_pct": [
-                44.6,
-                64.6
+                44.1,
+                65.1
               ],
               "p_valor": 0.0,
               "n": 4439,
@@ -665,11 +666,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.2686,
-              "se": 0.032,
+              "se": 0.0325,
               "prima_pct": 30.8,
               "ic95_pct": [
-                22.9,
-                39.3
+                22.8,
+                39.4
               ],
               "p_valor": 0.0,
               "n": 2486,
@@ -702,11 +703,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.5694,
-              "se": 0.0617,
+              "se": 0.0613,
               "prima_pct": 76.7,
               "ic95_pct": [
-                56.6,
-                99.5
+                56.7,
+                99.3
               ],
               "p_valor": 0.0,
               "n": 3195,
@@ -741,11 +742,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.544,
-              "se": 0.0601,
+              "se": 0.0591,
               "prima_pct": 72.3,
               "ic95_pct": [
-                53.1,
-                93.8
+                53.4,
+                93.4
               ],
               "p_valor": 0.0,
               "n": 1819,
@@ -778,11 +779,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4664,
-              "se": 0.0647,
+              "se": 0.0657,
               "prima_pct": 59.4,
               "ic95_pct": [
-                40.4,
-                81.0
+                40.2,
+                81.4
               ],
               "p_valor": 0.0,
               "n": 1453,
@@ -815,11 +816,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4637,
-              "se": 0.054,
+              "se": 0.0545,
               "prima_pct": 59.0,
               "ic95_pct": [
-                43.0,
-                76.7
+                42.9,
+                76.9
               ],
               "p_valor": 0.0,
               "n": 2409,
@@ -856,11 +857,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4541,
-              "se": 0.0526,
+              "se": 0.0506,
               "prima_pct": 57.5,
               "ic95_pct": [
-                42.1,
-                74.6
+                42.6,
+                73.9
               ],
               "p_valor": 0.0,
               "n": 2708,
@@ -893,11 +894,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4716,
-              "se": 0.0689,
+              "se": 0.0729,
               "prima_pct": 60.3,
               "ic95_pct": [
-                40.0,
-                83.4
+                38.9,
+                84.9
               ],
               "p_valor": 0.0,
               "n": 2693,
@@ -932,11 +933,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.5317,
-              "se": 0.0816,
+              "se": 0.0825,
               "prima_pct": 70.2,
               "ic95_pct": [
-                45.0,
-                99.7
+                44.8,
+                100.1
               ],
               "p_valor": 0.0,
               "n": 1084,
@@ -969,11 +970,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4107,
-              "se": 0.0441,
+              "se": 0.0477,
               "prima_pct": 50.8,
               "ic95_pct": [
-                38.3,
-                64.4
+                37.3,
+                65.6
               ],
               "p_valor": 0.0,
               "n": 4317,
@@ -1008,11 +1009,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.2868,
-              "se": 0.0337,
+              "se": 0.0333,
               "prima_pct": 33.2,
               "ic95_pct": [
-                24.7,
-                42.3
+                24.8,
+                42.2
               ],
               "p_valor": 0.0,
               "n": 2266,
@@ -1045,11 +1046,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4201,
-              "se": 0.0784,
+              "se": 0.0828,
               "prima_pct": 52.2,
               "ic95_pct": [
-                30.5,
-                77.5
+                29.4,
+                79.0
               ],
               "p_valor": 0.0,
               "n": 3135,
@@ -1084,11 +1085,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.3854,
-              "se": 0.091,
+              "se": 0.0946,
               "prima_pct": 47.0,
               "ic95_pct": [
-                23.0,
-                75.7
+                22.1,
+                77.0
               ],
               "p_valor": 0.0,
               "n": 1817,
@@ -1121,11 +1122,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4185,
-              "se": 0.078,
+              "se": 0.0813,
               "prima_pct": 52.0,
               "ic95_pct": [
-                30.4,
-                77.1
+                29.6,
+                78.2
               ],
               "p_valor": 0.0,
               "n": 1537,
@@ -1158,11 +1159,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.515,
-              "se": 0.0573,
+              "se": 0.058,
               "prima_pct": 67.4,
               "ic95_pct": [
-                49.6,
-                87.3
+                49.4,
+                87.5
               ],
               "p_valor": 0.0,
               "n": 2047,
@@ -1199,11 +1200,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.3994,
-              "se": 0.0604,
+              "se": 0.0599,
               "prima_pct": 49.1,
               "ic95_pct": [
-                32.4,
-                67.8
+                32.6,
+                67.7
               ],
               "p_valor": 0.0,
               "n": 2713,
@@ -1236,11 +1237,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4304,
-              "se": 0.0579,
+              "se": 0.0587,
               "prima_pct": 53.8,
               "ic95_pct": [
-                37.3,
-                72.3
+                37.1,
+                72.5
               ],
               "p_valor": 0.0,
               "n": 2734,
@@ -1275,11 +1276,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4042,
-              "se": 0.079,
+              "se": 0.0804,
               "prima_pct": 49.8,
               "ic95_pct": [
-                28.3,
-                74.9
+                28.0,
+                75.4
               ],
               "p_valor": 0.0,
               "n": 1173,
@@ -1312,11 +1313,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.417,
-              "se": 0.0435,
+              "se": 0.0444,
               "prima_pct": 51.7,
               "ic95_pct": [
-                39.4,
-                65.2
+                39.1,
+                65.5
               ],
               "p_valor": 0.0,
               "n": 4274,
@@ -1351,11 +1352,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.2487,
-              "se": 0.0334,
+              "se": 0.0347,
               "prima_pct": 28.2,
               "ic95_pct": [
-                20.1,
-                36.9
+                19.8,
+                37.3
               ],
               "p_valor": 0.0,
               "n": 2178,
@@ -1388,11 +1389,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.3962,
-              "se": 0.0772,
+              "se": 0.0787,
               "prima_pct": 48.6,
               "ic95_pct": [
-                27.7,
-                72.9
+                27.4,
+                73.4
               ],
               "p_valor": 0.0,
               "n": 3269,
@@ -1427,11 +1428,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4295,
-              "se": 0.0706,
+              "se": 0.0717,
               "prima_pct": 53.6,
               "ic95_pct": [
-                33.8,
-                76.4
+                33.5,
+                76.8
               ],
               "p_valor": 0.0,
               "n": 1860,
@@ -1464,11 +1465,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.2754,
-              "se": 0.0912,
+              "se": 0.0909,
               "prima_pct": 31.7,
               "ic95_pct": [
                 10.2,
-                57.5
+                57.4
               ],
               "p_valor": 0.0025,
               "n": 1513,
@@ -1501,11 +1502,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.483,
-              "se": 0.0575,
+              "se": 0.0571,
               "prima_pct": 62.1,
               "ic95_pct": [
-                44.8,
-                81.4
+                44.9,
+                81.3
               ],
               "p_valor": 0.0,
               "n": 2074,
@@ -1542,11 +1543,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4739,
-              "se": 0.0528,
+              "se": 0.0522,
               "prima_pct": 60.6,
               "ic95_pct": [
-                44.8,
-                78.1
+                45.0,
+                77.9
               ],
               "p_valor": 0.0,
               "n": 2766,
@@ -1579,7 +1580,7 @@
             },
             "mincer_mensual_A": {
               "b": 0.4709,
-              "se": 0.0479,
+              "se": 0.048,
               "prima_pct": 60.1,
               "ic95_pct": [
                 45.8,
@@ -1618,11 +1619,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.5954,
-              "se": 0.0649,
+              "se": 0.0685,
               "prima_pct": 81.4,
               "ic95_pct": [
-                59.7,
-                106.0
+                58.6,
+                107.4
               ],
               "p_valor": 0.0,
               "n": 1239,
@@ -1655,11 +1656,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.3942,
-              "se": 0.0407,
+              "se": 0.0386,
               "prima_pct": 48.3,
               "ic95_pct": [
-                37.0,
-                60.6
+                37.5,
+                60.0
               ],
               "p_valor": 0.0,
               "n": 4389,
@@ -1694,11 +1695,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.247,
-              "se": 0.0328,
+              "se": 0.0319,
               "prima_pct": 28.0,
               "ic95_pct": [
-                20.0,
-                36.5
+                20.2,
+                36.3
               ],
               "p_valor": 0.0,
               "n": 2231,
@@ -1731,11 +1732,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.5508,
-              "se": 0.0672,
+              "se": 0.0697,
               "prima_pct": 73.5,
               "ic95_pct": [
-                52.1,
-                97.9
+                51.3,
+                98.9
               ],
               "p_valor": 0.0,
               "n": 3397,
@@ -1770,11 +1771,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.443,
-              "se": 0.0817,
+              "se": 0.0771,
               "prima_pct": 55.7,
               "ic95_pct": [
-                32.7,
-                82.8
+                33.9,
+                81.2
               ],
               "p_valor": 0.0,
               "n": 1948,
@@ -1807,11 +1808,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.4553,
-              "se": 0.0677,
+              "se": 0.0702,
               "prima_pct": 57.7,
               "ic95_pct": [
-                38.1,
-                80.1
+                37.4,
+                80.9
               ],
               "p_valor": 0.0,
               "n": 1564,
@@ -1844,11 +1845,11 @@
             },
             "mincer_mensual_A": {
               "b": 0.5063,
-              "se": 0.0478,
+              "se": 0.0481,
               "prima_pct": 65.9,
               "ic95_pct": [
-                51.1,
-                82.2
+                51.0,
+                82.3
               ],
               "p_valor": 0.0,
               "n": 2116,

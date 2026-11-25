@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>MBA Radar — og</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Atkinson+Hyperlegible:wght@400;700&display=block" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+    color: #fff;
+    background:
+      radial-gradient(ellipse 620px 460px at 92% 8%, rgba(216,50,77,.55), rgba(216,50,77,0) 70%),
+      radial-gradient(ellipse 500px 360px at 0% 100%, rgba(216,50,77,.22), rgba(216,50,77,0) 70%),
+      linear-gradient(135deg, #1c1a17 0%, #22130f 45%, #2a0d14 100%);
+    position: relative;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 40px 40px;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 60%);
+  }
+  .wrap { position: absolute; inset: 0; padding: 52px 64px 44px; display: flex; flex-direction: column; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .logo {
+    width: 46px; height: 46px; border-radius: 11px; background: #b3122e;
+    display: grid; place-items: center;
+    font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 30px; color: #fff;
+    box-shadow: 0 0 0 2px rgba(255,255,255,.12), 0 6px 24px rgba(216,50,77,.5);
+  }
+  .brand-name { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 26px; letter-spacing: .5px; }
+  .brand-name span { color: #ff6b7f; }
+  .tag {
+    margin-left: auto; font-size: 18px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    color: #ffcc4d; border: 2px solid rgba(255,204,77,.5); padding: 6px 14px; border-radius: 999px;
+  }
+  h1 {
+    margin-top: 40px;
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 72px; line-height: 1.04; letter-spacing: -1.5px;
+    max-width: 1100px;
+  }
+  h1 .y { color: #ffcc4d; white-space: nowrap; }
+  h1 .q { color: #ff6b7f; }
+  .stats { margin-top: auto; display: grid; grid-template-columns: 1fr 1.35fr 1fr; gap: 18px; }
+  .stat {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 16px; padding: 18px 22px 18px;
+  }
+  .num { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 58px; line-height: 1; letter-spacing: -1px; }
+  .num.y { color: #ffcc4d; }
+  .num.r { color: #ff6b7f; }
+  .lbl { margin-top: 8px; font-size: 21px; line-height: 1.2; color: #f1e6e8; font-weight: 700; }
+  .lbl small { font-weight: 400; color: #c9b8bb; font-size: 17px; }
+  .foot { margin-top: 22px; display: flex; align-items: center; justify-content: space-between; }
+  .url { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 26px; color: #fff; }
+  .url::before { content: '→ '; color: #ff6b7f; }
+  .src { font-size: 17px; color: #bfaeb1; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">M</div>
+      <div class="brand-name">MBA <span>RADAR</span></div>
+      <div class="tag">¿Vale la pena un MBA en el Perú?</div>
+    </div>
+    <h1>Tu MBA puede costar <span class="y">S/ 157 mil.</span><br><span class="q">¿Lo vas a recuperar?</span></h1>
+    <div class="stats">
+      <div class="stat">
+        <div class="num y">×33</div>
+        <div class="lbl">entre el MBA más caro y el más barato</div>
+      </div>
+      <div class="stat">
+        <div class="num r">1 de cada 5</div>
+        <div class="lbl">posgraduados gana menos que un universitario típico <small>(INEI)</small></div>
+      </div>
+      <div class="stat">
+        <div class="num y">58</div>
+        <div class="lbl">programas de MBA comparados</div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="url">unimauro.github.io/mba-radar</div>
+      <div class="src">Precios de las escuelas · INEI · SUNEDU · fuentes verificables</div>
+    </div>
+  </div>
+</body>
+</html>

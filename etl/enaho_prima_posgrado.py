@@ -41,7 +41,7 @@ Definiciones clave
   (ocu500==1), 25-64 años, p301a en {10, 11}, ingreso > 0. Factor: fac500a.
 * Lima Metropolitana = dominio 8 (incluye Callao); urbano = estrato 1-5;
   público = p510 en {1,2,3}; dependiente = p507 en {3,4,6}.
-* Mincer (WLS con fac500a, errores robustos HC1):
+* Mincer (WLS con fac500a, errores agrupados por conglomerado (UPM)):
     A: log(y) ~ posgrado + edad + edad² + mujer + lima + urbano
     B: A + público + dependiente + efectos fijos de departamento (ubigeo[:2])
   prima = exp(b_posgrado) - 1.
@@ -49,6 +49,7 @@ Definiciones clave
 import argparse
 import glob
 import json
+import re
 import os
 import subprocess
 import zipfile
@@ -63,7 +64,7 @@ URL = "https://proyectos.inei.gob.pe/iinei/srienaho/descarga/STATA/{c}-Modulo05.
 
 INC_COLS = ["i524a1", "d529t", "i530a", "d536", "i538a1", "d540t", "i541a", "d543", "d544t"]
 COLS = ["p301a", "p208a", "p207", "p507", "p510", "p505r4", "i513t", "i518", "fac500a",
-        "ubigeo", "estrato", "dominio", "ocu500", "p204", "p205", "p206"] + INC_COLS
+        "ubigeo", "estrato", "dominio", "ocu500", "conglome", "p204", "p205", "p206"] + INC_COLS
 
 
 # ------------------------------------------------------------------ descarga
@@ -109,7 +110,7 @@ def r(v, d=1):
 def preparar(path, anio):
     df, _ = pyreadstat.read_dta(path, usecols=COLS)
     for c in COLS:
-        if c != "ubigeo":
+        if c not in ("ubigeo", "conglome"):
             df[c] = pd.to_numeric(df[c], errors="coerce").astype(float)
     df = df[((df.p204 == 1) & (df.p205 == 2)) | ((df.p204 == 2) & (df.p206 == 1))]
     df = df[(df.ocu500 == 1) & df.p208a.between(25, 64) & df.p301a.isin([10, 11])].copy()
@@ -137,10 +138,13 @@ def preparar(path, anio):
 
 
 def mincer(d, formula):
-    d = d.dropna(subset=[formula.split("~")[0].strip()])
+    usadas = [c for c in re.findall(r"[A-Za-z_][A-Za-z0-9_]*", formula) if c in d.columns]
+    d = d.dropna(subset=usadas + ["conglome"])
     if d.posgrado.sum() < 30 or (1 - d.posgrado).sum() < 30:
         return None
-    m = smf.wls(formula, data=d, weights=d.fac500a).fit(cov_type="HC1")
+    # Errores agrupados por conglomerado (UPM): respetan el diseño muestral de la ENAHO
+    grupos = pd.factorize(d.conglome.astype(str) + "_" + d.ubigeo.astype(str))[0]
+    m = smf.wls(formula, data=d, weights=d.fac500a).fit(cov_type="cluster", cov_kwds={"groups": grupos})
     b, se = m.params["posgrado"], m.bse["posgrado"]
     return {"b": r(b, 4), "se": r(se, 4), "prima_pct": r((np.exp(b) - 1) * 100),
             "ic95_pct": [r((np.exp(b - 1.96 * se) - 1) * 100), r((np.exp(b + 1.96 * se) - 1) * 100)],
@@ -243,7 +247,7 @@ def main():
                                "monetario + especie, soles corrientes del año de la encuesta (imputados y deflactados "
                                "dentro del año con IPC departamental). No comparable en niveles entre años sin ajustar por inflación.",
             "ingreso_hora": "ingreso mensual / ((i513t+i518)*52/12)",
-            "mincer_A": FA + " ; WLS con fac500a, errores HC1; prima = exp(b)-1",
+            "mincer_A": FA + " ; WLS con fac500a, errores agrupados por conglomerado; prima = exp(b)-1",
             "mincer_B": FB + " ; idem",
             "lima": "dominio == 8 (Lima Metropolitana + Callao)",
             "urbano": "estrato 1-5",

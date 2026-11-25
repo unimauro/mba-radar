@@ -39,8 +39,8 @@
    {
     "id": "calidad",
     "titulo": "El retorno depende de la calidad del programa",
-    "texto": "Altonji y Zhu (2021): retorno MBA 0,156 log (efectos fijos); subir 10 puestos en U.S. News añade 0,021; el retorno promedio de los programas NO rankeados es NEGATIVO.",
-    "cifra": "< 0 en no rankeados",
+    "texto": "Según el resumen de Hartley (2026) sobre Altonji y Zhu (datos administrativos de Texas): retorno MBA 0,156 log con efectos fijos; subir 10 puestos en U.S. News añade 0,021; el retorno promedio de los programas no rankeados sería negativo. El paper original (NBER WP 33530, 2025) destaca que el retorno es mayor en programas mejor rankeados y menor para estudiantes part-time — la modalidad de casi todos los MBA peruanos.",
+    "cifra": "Menor en part-time",
     "seccion": "1.1.1"
    },
    {
@@ -278,7 +278,8 @@
     "ols": 0.235,
     "efectos_fijos": 0.156,
     "por_10_puestos_ranking": 0.021,
-    "no_rankeados": "negativo"
+    "no_rankeados": "negativo",
+    "nota": "Cifras citadas por Hartley (2026); versión pública: Altonji y Zhu, NBER WP 33530 (2025)."
    },
    "titulos_mba_eeuu_ipeds": {
     "2002": 81000,

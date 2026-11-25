@@ -1,12 +1,13 @@
 import json, csv, sys
 sys.path.insert(0, '.')
-import base_records, public_records, privA_records, privB_records
+import base_records, public_records, privA_records, privB_records, fill_records
 TC = 3.479
 recs = [r for r in base_records.R if r['siglas'] != 'UCV'] + public_records.R + privA_records.R + privB_records.R
+recs = fill_records.apply(recs)
 FIELDS = ["id","universidad","siglas","tipo_gestion","programa","modalidad","sede","duracion_meses","moneda",
           "costo_total_soles","costo_total_usd","costo_total_soles_equiv","costo_inscripcion","costo_inscripcion_usd","costo_matricula",
           "n_cuotas","monto_cuota","incluye_viaje_internacional","costo_viaje_adicional_usd","acreditaciones","ranking",
-          "anio_precio","fuente_url","fecha_consulta","confianza","nota"]
+          "anio_precio","fuente_url","fecha_consulta","confianza","es_mba_generalista","incluye_derecho_grado","grupo_precio","nota"]
 out = []
 for i, r in enumerate(recs, 1):
     d = {f: r.get(f) for f in FIELDS}
@@ -14,6 +15,7 @@ for i, r in enumerate(recs, 1):
     assert not extra, extra
     d['id'] = i
     d['fecha_consulta'] = '2026-11-25'
+    if d['grupo_precio'] is None: d['grupo_precio'] = f"g{i:03d}"
     if d['costo_total_soles'] is not None: d['costo_total_soles_equiv'] = d['costo_total_soles']; d['moneda'] = d['moneda'] or 'PEN'
     elif d['costo_total_usd'] is not None: d['costo_total_soles_equiv'] = round(d['costo_total_usd'] * TC)
     if d['costo_total_soles'] is None and d['costo_total_usd'] is None: d['moneda'] = None
