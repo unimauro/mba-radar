@@ -17,6 +17,16 @@ Inicio: 25-nov-2026. Referencia base: Hartley (2026) *The Rise and Fall of the M
 - [ ] og.png para compartir.
 - [ ] Siguientes países (misma estructura data/paises/<code>.json): Chile, Colombia, México, Argentina, España.
 
+## SIGUIENTE (pedido 25-nov, no iniciado)
+- [ ] Vistas con router por hash (#/inicio #/precios #/calculadora #/retorno #/mundo #/fuentes): renderAll() una vez, luego mostrar/ocultar + resizeCharts(); reemplazar goToSection() en js/navigation.js.
+- [ ] Escala más compacta (tipografías, hero, espaciados).
+- [ ] Más gráficos: meses de sueldo por MBA, precio vs duración (dispersión), costo por mes, prima ENAHO 2019-24, distribución p25/mediana/p75, caída postulaciones 2026, matrícula HBS, CEOs F100, ratio MBA/bachiller, interés IA.
+- [ ] Efectos: count-up, barras que crecen, transiciones (respetar prefers-reduced-motion).
+- [ ] Plin (mismo número que Yape) + botones compartir (WhatsApp/LinkedIn/X/Facebook/copiar).
+- [ ] Chat IA: gateway ai.tunky.net YA dado de alta (proyecto mba-radar, token en deploy/gateway-alta.sh); falta widget flotante inline que mande DATOS del tablero en el user message.
+- [ ] Bug: vista móvil de #tb-costos (reglas nth-child no cuentan la columna Sede).
+- [ ] Regenerar assets/og.png (dice 58 programas → 69 con precio / 60 únicos; ×10 pasó a ×8).
+
 ## Ranking (pedido 25-nov) — PRIORIDAD
 - [ ] Vista `#/ranking`: ranking propio de programas MBA en Perú «valor por sol», transparente y reproducible.
 - [ ] Indicadores por programa: costo total y por mes, aumento mínimo para recuperar (break-even), acreditaciones (AACSB/AMBA/EQUIS por programa), posiciones en rankings externos (QS Global MBA, FT Executive Education, AméricaEconomía), datos de empleabilidad/salario post-MBA cuando existan, duración, modalidad, confianza del dato.
