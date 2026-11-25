@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "Sin dependencias: marca js/ como módulos ES para node --test. Atajos equivalentes al Makefile.",
+  "scripts": {
+    "build": "python3 etl/build.py",
+    "test": "node --test tests/",
+    "links": "python3 etl/check_links.py",
+    "serve": "python3 -m http.server 8791"
+  }
+}

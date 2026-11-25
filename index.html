@@ -16,7 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://unimauro.github.io/mba-radar/">
 <meta property="og:title" content="¿Vale la pena un MBA? Costos y retorno en el Perú">
-<meta property="og:description" content="Precios de 58 programas MBA, calculadora de retorno y evidencia local e internacional. Antes de pagar, haz tus números.">
+<meta property="og:description" content="Precios de 60 programas MBA, calculadora de retorno y evidencia local e internacional. Antes de pagar, haz tus números.">
 <meta property="og:image" content="https://unimauro.github.io/mba-radar/assets/og.png">
 <meta property="og:locale" content="es_PE">
 <meta name="twitter:card" content="summary_large_image">
@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="charts.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
-<script src="app.js" defer></script>
+<script type="module" src="js/main.js"></script>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPWDMFC5" height="0" width="0" style="display:none;visibility:hidden" title="GTM"></iframe></noscript>
@@ -237,52 +237,5 @@
     </div>
   </div>
 </footer>
-<div id="tip" class="tip" hidden></div>
-
-<script>
-/* UI de la página: sección activa en la barra y copiar número de Yape. (#calc-dock lo maneja app.js) */
-(function () {
-  var nav = document.getElementById('secnav');
-  var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
-  var top = document.getElementById('top');
-  function setH() { document.documentElement.style.setProperty('--header-h', top.offsetHeight + 'px'); }
-  setH(); window.addEventListener('resize', setH);
-
-  /* Indicadores de "hay más" a los lados de la barra */
-  var strip = nav.querySelector('.secnav-in');
-  function edges() {
-    nav.classList.toggle('more-l', strip.scrollLeft > 4);
-    nav.classList.toggle('more-r', strip.scrollLeft + strip.clientWidth < strip.scrollWidth - 4);
-  }
-  strip.addEventListener('scroll', edges, {passive: true}); window.addEventListener('resize', edges); edges();
-
-  /* Sección activa: la última sección cuyo inicio ya pasó bajo la barra */
-  var secs = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
-  var active = -1, ticking = false;
-  function spy() {
-    ticking = false;
-    var line = top.offsetHeight + window.innerHeight * 0.3, idx = -1;
-    for (var i = 0; i < secs.length; i++) if (secs[i] && secs[i].getBoundingClientRect().top <= line) idx = i;
-    if (idx === active) return;
-    active = idx;
-    links.forEach(function (a, i) {
-      if (i === idx) { a.setAttribute('aria-current', 'true'); strip.scrollLeft = a.offsetLeft - strip.offsetLeft - (strip.clientWidth - a.offsetWidth) / 2; }
-      else a.removeAttribute('aria-current');
-    });
-    edges();
-  }
-  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(spy); } }, {passive: true});
-  window.addEventListener('load', spy); spy();
-
-  /* Copiar número de Yape */
-  var cp = document.getElementById('yape-copy'), ok = document.getElementById('yape-ok');
-  cp.addEventListener('click', function () {
-    var n = cp.getAttribute('data-num');
-    function done() { cp.textContent = 'Copiado'; cp.classList.add('ok'); ok.textContent = 'Número copiado: ' + n; setTimeout(function () { cp.textContent = 'Copiar número'; cp.classList.remove('ok'); ok.textContent = ''; }, 2200); }
-    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(n).then(done, function () { ok.textContent = 'Copia manualmente: ' + n; });
-    else ok.textContent = 'Copia manualmente: ' + n;
-  });
-})();
-</script>
 </body>
 </html>

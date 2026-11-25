@@ -17,6 +17,14 @@ Inicio: 25-nov-2026. Referencia base: Hartley (2026) *The Rise and Fall of the M
 - [ ] og.png para compartir.
 - [ ] Siguientes países (misma estructura data/paises/<code>.json): Chile, Colombia, México, Argentina, España.
 
+## Ranking (pedido 25-nov) — PRIORIDAD
+- [ ] Vista `#/ranking`: ranking propio de programas MBA en Perú «valor por sol», transparente y reproducible.
+- [ ] Indicadores por programa: costo total y por mes, aumento mínimo para recuperar (break-even), acreditaciones (AACSB/AMBA/EQUIS por programa), posiciones en rankings externos (QS Global MBA, FT Executive Education, AméricaEconomía), datos de empleabilidad/salario post-MBA cuando existan, duración, modalidad, confianza del dato.
+- [ ] Tabla de rankings externos por escuela y año (AE 2020-2024, QS 2025-2026, FT EE 2023-2026) con fuentes; buscar AE 2025 y QS payback (captura manual, QS bloquea bots).
+- [ ] Metodología pública del índice (pesos editables por el usuario con sliders: precio / acreditación / rankings / retorno), sensibilidad y advertencias (no es un ranking de calidad académica).
+- [ ] Deduplicar por grupo_precio; excluir no generalistas o marcarlos; aviso cuando falten datos.
+- [ ] Auditoría adversarial del ranking antes de publicar (sesgos, datos autorreportados).
+
 ## Decisiones
 - Un JSON por país (`data/paises/<code>.json`) + `data/global.json` (evidencia mundial) → replicable país por país.
 - Segmentos: escuela con acreditación internacional (AACSB/AMBA/EQUIS) / universidad privada / universidad pública.
