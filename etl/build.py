@@ -120,6 +120,17 @@ def build_enaho():
     return resumen, panel, alertas, A['prima_pct']
 
 
+def sueldos_ref():
+    r = load('retornos/enaho_prima.json')['resultados']
+    u = r['por_anio']['2024']['descriptivo']['universitaria_completa']
+    l = r['cortes']['2024']['region']['lima_metropolitana']['descriptivo']['universitaria_completa']
+    return [
+        {'etiqueta': 'Universitario típico (Perú)', 'mensual': u['mediana_mes']},
+        {'etiqueta': 'Universitario típico (Lima)', 'mensual': l['mediana_mes']},
+        {'etiqueta': 'Universitario del 25 % mejor pagado (Lima)', 'mensual': l['p75_mes']},
+    ]
+
+
 def build_escuelas():
     s = load('retornos/salarios_escuelas.json')
     out = []
@@ -173,6 +184,7 @@ def build_pe():
         'salarios_escuelas': esc,
         'oferta': build_oferta(),
         'estudios': estudios, 'alertas': alertas,
+        'sueldos_ref': sueldos_ref(),
         'presets_prima': [
             {'etiqueta': 'Programa no rankeado', 'valor': 0, 'fuente': 'Altonji y Zhu (2021): retorno promedio negativo en programas no rankeados de EE.UU.'},
             {'etiqueta': 'Causal EE.UU.', 'valor': 17, 'fuente': 'Altonji y Zhu (2021): 0,156 log con efectos fijos = +17 %'},

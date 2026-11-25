@@ -12,7 +12,7 @@ const SEG_ORDER = Object.keys(SEG_COLOR);
 const SIGNO_TXT = {positivo: 'Retorno positivo', negativo: 'Retorno negativo / riesgo', mixto: 'Mixto', neutral: 'Contexto'};
 
 let P = null, G = null, SIM = '';           // país, global, símbolo moneda
-const state = {modalidad: 'todas', q: '', pick: null};
+const state = {modalidad: 'todas', q: '', pick: null, base: 2};
 const charts = {};
 let REFS = [];                              // referencias numeradas [{key,txt,url}]
 
@@ -43,7 +43,7 @@ async function loadPais(code) {
   document.querySelectorAll('#paises button').forEach(b => b.setAttribute('aria-pressed', b.dataset.c === code));
   $('hero-eyebrow').textContent = `${P.pais.nombre} · datos a ${P.pais.fecha_texto || P.pais.fecha}`;
   state.modalidad = 'todas'; state.q = ''; $('q').value = '';
-  renderKPIs(); renderFiltros(); renderCostos(); renderSegmentos(); setupCalc();
+  renderKPIs(); renderFiltros(); renderCostos(); renderSegmentos(); renderBE(); setupCalc();
   renderRetorno(); renderRiesgos(); renderMundo(); renderFuentes();
 }
 
@@ -74,7 +74,7 @@ function renderKPIs() {
   const k = [
     {b: money(min?.costo_soles), s: `el MBA más barato encontrado`, m: `${min?.siglas || min?.universidad} · ${min?.programa}`},
     {b: money(max?.costo_soles), s: `el más caro`, m: `${max?.siglas || max?.universidad} · ${max?.programa}`},
-    {b: `×${nf1.format(max.costo_soles / min.costo_soles)}`, s: 'diferencia entre el más caro y el más barato', m: `${cc.length} programas con precio de ${P.programas.length} relevados`},
+    {b: `×${nf0.format(max.costo_soles / min.costo_soles)}`, s: 'diferencia entre el más caro y el más barato', m: `${cc.length} programas con precio de ${P.programas.length} relevados`},
     e ? {b: `${e.prima_pct >= 0 ? '+' : ''}${nf0.format(e.prima_pct)} %`, s: e.etiqueta, m: e.detalle} : {b: '—', s: 'prima salarial del posgrado', m: 'pendiente'}
   ];
   $('kpis').innerHTML = k.map(x => `<div class="kpi"><b>${esc(x.b)}</b><span>${esc(x.s)}</span><small>${esc(x.m)}</small></div>`).join('');
@@ -84,8 +84,8 @@ function renderKPIs() {
 function renderFiltros() {
   const mods = ['todas', ...new Set(P.programas.map(p => p.modalidad_grupo).filter(Boolean))];
   $('f-modalidad').innerHTML = mods.map(m => `<button data-m="${esc(m)}" aria-pressed="${m === state.modalidad}">${esc(m === 'todas' ? 'Todas las modalidades' : m)}</button>`).join('');
-  $('f-modalidad').onclick = e => { const b = e.target.closest('button'); if (!b) return; state.modalidad = b.dataset.m; renderFiltros(); renderCostos(); };
-  combo($('q'), $('q-list'), () => P.programas.map(p => ({label: `${p.siglas || p.universidad} — ${p.programa}`, sub: `${p.universidad} · ${money(p.costo_soles)}`, val: p})), it => { state.q = (it.val.siglas || it.val.universidad); $('q').value = state.q; renderCostos(); }, txt => { state.q = txt; renderCostos(); });
+  $('f-modalidad').onclick = e => { const b = e.target.closest('button'); if (!b) return; state.modalidad = b.dataset.m; renderFiltros(); renderCostos(); renderBE(); };
+  combo($('q'), $('q-list'), () => P.programas.map(p => ({label: `${p.siglas || p.universidad} — ${p.programa}`, sub: `${p.universidad} · ${money(p.costo_soles)}`, val: p})), it => { state.q = (it.val.siglas || it.val.universidad); $('q').value = state.q; renderCostos(); renderBE(); }, txt => { state.q = txt; renderCostos(); renderBE(); });
   $('leg-costos').innerHTML = SEG_ORDER.map(s => `<span><i style="background:${SEG_COLOR[s]}"></i>${esc(s)}</span>`).join('');
 }
 function filtrados() {
@@ -125,6 +125,40 @@ function renderSegmentos() {
     const med = v.length % 2 ? v[(v.length - 1) / 2] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2;
     return `<div class="card" style="border-top:4px solid ${SEG_COLOR[s]}"><h3>${esc(s)}</h3><b class="big">${money(med)}</b><span class="note">mediana · ${v.length} programas · rango ${money(v[0])} – ${money(v[v.length - 1])}</span></div>`;
   }).join('');
+}
+
+/* ---------- Break-even por programa ---------- */
+const BE_TIERS = [
+  {max: 17, color: '#1f7a55', txt: 'Hasta 17 %: alcanzable según la evidencia causal'},
+  {max: 61, color: '#f2a600', txt: '17–61 %: solo si te va mejor que el promedio de los posgraduados'},
+  {max: Infinity, color: '#dc3c3d', txt: 'Más de 61 %: supera incluso la prima bruta del posgrado'},
+];
+function renderBE() {
+  const refs = P.sueldos_ref || [];
+  if (!refs.length || !conCosto().length) { $('be').hidden = true; return; }
+  $('be').hidden = false;
+  $('be-base').innerHTML = refs.map((r, i) => `<button data-i="${i}" aria-pressed="${i === state.base}">${esc(r.etiqueta)}: ${money(r.mensual)}/mes</button>`).join('');
+  $('be-base').onclick = e => { const b = e.target.closest('button'); if (b) { state.base = +b.dataset.i; renderBE(); } };
+  BE_TIERS[1].txt = BE_TIERS[1].txt.replace('promediode', 'promedio de');
+  $('be-leg').innerHTML = BE_TIERS.map(t => `<span><i style="background:${t.color}"></i>${esc(t.txt)}</span>`).join('');
+  const M = refs[state.base].mensual, S = M * 12 / 14;   // ENAHO = ingreso anual/12 → equivalente a 14 sueldos
+  const rows = filtrados().filter(p => p.costo_soles > 0).map(p => {
+    const D = Math.max(1, Math.round(p.duracion_meses || 18));
+    const r = simular({C: p.costo_soles, D, S, ft: p.modalidad_grupo === 'Full-time', p: 0, H: 10, r: 0.08});
+    return {p, v: r.pEq * 100};
+  }).sort((a, b) => b.v - a.v);
+  $('box-be').style.height = Math.max(160, rows.length * 24 + 50) + 'px';
+  charts.be?.destroy();
+  if (window.Chart) charts.be = new Chart($('ch-be'), {
+    type: 'bar',
+    data: {labels: rows.map(x => `${x.p.siglas || x.p.universidad} · ${x.p.programa_corto || x.p.programa}`), datasets: [{data: rows.map(x => Math.min(x.v, 400)), backgroundColor: rows.map(x => BE_TIERS.find(t => x.v <= t.max).color), borderRadius: 4, barThickness: 14}]},
+    options: {indexAxis: 'y', responsive: true, maintainAspectRatio: false, animation: false,
+      plugins: {legend: {display: false}, tooltip: {callbacks: {title: it => rows[it[0].dataIndex].p.universidad, label: it => { const x = rows[it.dataIndex]; return [`Aumento necesario: +${nf0.format(x.v)} %`, `≈ ${money(M * x.v / 100)} más al mes, durante 10 años`, `Costo ${money(x.p.costo_soles)} · ${x.p.modalidad_grupo}`]; }}}},
+      scales: {x: {ticks: {callback: v => '+' + v + ' %'}, grid: {color: '#eee9e1'}}, y: {grid: {display: false}, ticks: {autoSkip: false, font: {size: 11}, callback(v) { const l = this.getLabelForValue(v); return l.length > 42 ? l.slice(0, 41) + '…' : l; }}}},
+      onClick: (e, els) => { if (els[0]) { pickPrograma(rows[els[0].index].p); $('c-sueldo').value = Math.round(S); calc(); document.getElementById('calculadora').scrollIntoView(); } }}
+  });
+  const n = t => rows.filter(x => x.v > t).length;
+  $('be-nota').innerHTML = `Con un sueldo de partida de ${money(M)} al mes, <b>${n(61)} de ${rows.length}</b> programas exigen un aumento mayor que la prima bruta promedio del posgrado (+61 %), y <b>${n(17)}</b> exigen más que el +17 % que la mejor evidencia causal atribuye al MBA. Sueldos de referencia: ENAHO 2024, universitarios completos de 25-64 años. Barras cortadas en +400 %. Toca una barra para llevarla a la calculadora.`;
 }
 
 /* ---------- Combobox (sin <select> nativo) ---------- */
