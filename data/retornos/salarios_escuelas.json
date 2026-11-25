@@ -1,0 +1,753 @@
+{
+  "nota_metodologica": "Las cifras de rankings provienen de encuestas a exalumnos (autoselección, sesgo de supervivencia, sin grupo de control). Miden variación bruta pre/post (incluye crecimiento normal de carrera ~3-5 años), no el efecto causal del MBA. Las de escuelas/prensa son autodeclaradas.",
+  "escuelas_peruanas": [
+    {
+      "escuela": "Universidad del Pacífico (Pacífico Business School)",
+      "anio_ranking": 2024,
+      "fuente": "AméricaEconomía Ranking MBA 2024",
+      "url": "https://negocios.udd.cl/files/2024/09/america-economia-ranking-mba-latino-2024_compressed.pdf",
+      "ingreso_mensual_post_usd": 4278,
+      "variacion_pre_post_pct": 44,
+      "oferta_empleo_3m_pct": 63,
+      "indice_satisfaccion": 70.3,
+      "rk_general": 5,
+      "rk_ingreso": 18,
+      "verificado_url": true
+    },
+    {
+      "escuela": "Universidad San Ignacio de Loyola (USIL)",
+      "anio_ranking": 2024,
+      "fuente": "AméricaEconomía Ranking MBA 2024",
+      "url": "https://negocios.udd.cl/files/2024/09/america-economia-ranking-mba-latino-2024_compressed.pdf",
+      "ingreso_mensual_post_usd": 2624,
+      "variacion_pre_post_pct": 44,
+      "oferta_empleo_3m_pct": 49,
+      "indice_satisfaccion": 62.4,
+      "rk_general": 35,
+      "rk_ingreso": 31,
+      "verificado_url": true
+    },
+    {
+      "escuela": "Pacífico Business School - Universidad del Pacífico",
+      "anio_ranking": 2023,
+      "fuente": "AméricaEconomía Ranking MBA 2023",
+      "url": "https://negocios.udd.cl/files/2023/09/resultados-2023-6to-lugar-ae-rk-mba-23.pdf",
+      "ingreso_mensual_post_usd": 3780,
+      "variacion_pre_post_pct": 38,
+      "oferta_empleo_3m_pct": 57,
+      "indice_satisfaccion": 94.3,
+      "rk_general": 8,
+      "rk_ingreso": 21,
+      "verificado_url": true
+    },
+    {
+      "escuela": "Universidad San Ignacio de Loyola (USIL)",
+      "anio_ranking": 2023,
+      "fuente": "AméricaEconomía Ranking MBA 2023",
+      "url": "https://negocios.udd.cl/files/2023/09/resultados-2023-6to-lugar-ae-rk-mba-23.pdf",
+      "ingreso_mensual_post_usd": 3180,
+      "variacion_pre_post_pct": 28,
+      "oferta_empleo_3m_pct": 38,
+      "indice_satisfaccion": 82.7,
+      "rk_general": 36,
+      "rk_ingreso": 27,
+      "verificado_url": true
+    },
+    {
+      "escuela": "ESAN Graduate School of Business",
+      "anio_ranking": 2020,
+      "fuente": "AméricaEconomía Ranking MBA 2020 (subrankings)",
+      "url": "https://www.espol.edu.ec/sites/default/files/espol/RK%20MBA%20AMLAT%20AE475.pdf",
+      "ingreso_mensual_post_usd_ppa": 7425,
+      "variacion_pre_post_pct": 51,
+      "payback_meses": 38,
+      "oferta_empleo_egreso_pct": 41,
+      "movilidad_positiva_pct": 71,
+      "rk_general": 5,
+      "verificado_url": true
+    },
+    {
+      "escuela": "Pacífico Business School",
+      "anio_ranking": 2020,
+      "fuente": "AméricaEconomía Ranking MBA 2020 (subrankings)",
+      "url": "https://www.espol.edu.ec/sites/default/files/espol/RK%20MBA%20AMLAT%20AE475.pdf",
+      "ingreso_mensual_post_usd_ppa": 6174,
+      "variacion_pre_post_pct": 36,
+      "payback_meses": 36,
+      "oferta_empleo_egreso_pct": 40,
+      "movilidad_positiva_pct": 80,
+      "rk_general": 10,
+      "verificado_url": true
+    },
+    {
+      "escuela": "CENTRUM PUCP",
+      "anio": 2022,
+      "fuente": "Gestión, 'Beneficios de un MBA' (PDF reproducido por PBS)",
+      "url": "https://pbs.edu.pe/SiteAssets/Lists/UP_Noticias/NewForm/Beneficios%20de%20un%20MBA%20-%20Gesti%C3%B3n.pdf",
+      "variacion_pre_post_pct": 37,
+      "tipo_cifra": "autodeclarada por la escuela, sin metodología",
+      "verificado_url": true
+    },
+    {
+      "escuela": "ESAN",
+      "anio": 2025,
+      "fuente": "QS Global MBA Rankings 2025 (nota de ESAN)",
+      "url": "https://esan.edu.pe/conexion-esan/esan-lidera-el-prestigioso-qs-global-mba-rankings-2025-y-es-la-mejor-escuela-de-negocios-del-peru",
+      "dato": "2° en LatAm en dimensión ROI; 1° Perú, 7° LatAm general",
+      "verificado_url": true
+    },
+    {
+      "escuela": "ESAN",
+      "anio": 2020,
+      "fuente": "QS Global MBA 2020 (nota de ESAN, 03-jun-2020)",
+      "url": "https://www.esan.edu.pe/conexion-esan/esan-nuevamente-top-5-ae-en-latinoamerica-y-numero-1-del-peru",
+      "dato": "Puntaje ROI QS 83.9 (prom. regional 44.3, global 50.8)",
+      "verificado_url": true
+    }
+  ],
+  "mba_online_peru": {
+    "fuente": "Hamilton Global Intelligence / Emagister, Ranking FSO 9ª ed.",
+    "anio": 2024,
+    "url": "https://www.corresponsables.com/per/buen-gobierno/hamilton-global-intelligence-el-salario-de-los-titulados-con-un-mba-online-en-peru-crece-de-media-un-30/",
+    "salario_anual_pre_usd": 22930,
+    "salario_anual_post_usd": 29867,
+    "variacion_pct": 30,
+    "verificado_url": true
+  },
+  "headhunters_guias_salariales": [
+    {
+      "fuente": "Adecco Perú, Guía Salarial 2025 (citada por ESAN)",
+      "url": "https://esan.edu.pe/conexion-esan/invertir-en-una-maestria-es-tambien-invertir-en-tu-futuro-salarial",
+      "dato": "posgrados podrían elevar remuneraciones 'hasta en un 53%' (cota superior, no promedio)",
+      "verificado_url": true,
+      "nota": "No se pudo acceder a la guía original de Adecco."
+    }
+  ],
+  "no_encontrado": [
+    "AméricaEconomía 2025 (no localizado en PDF público)",
+    "Datos de ingreso de ESAN, CENTRUM, PAD/UDEP en AE 2023-2024 (no figuran en la tabla de ingreso)",
+    "FT Global MBA: ninguna escuela peruana en la tabla con salario ponderado",
+    "Michael Page, Korn Ferry, PwC, Laborum, Bumeran, Apoyo: no se halló desglose de sueldo de gerentes con vs sin MBA en Perú"
+  ],
+  "comparables_latam": {
+    "AE2024": {
+      "url": "https://negocios.udd.cl/files/2024/09/america-economia-ranking-mba-latino-2024_compressed.pdf",
+      "n_escuelas": 38,
+      "mediana_ingreso_usd": 4160.0,
+      "mediana_variacion_pct": 57.0,
+      "promedio_variacion_pct": 67.2,
+      "tabla": [
+        {
+          "rk": 1,
+          "escuela": "EAESP - Fundación Getulio Vargas",
+          "pais": "BR",
+          "ingreso_usd": 8568,
+          "var_pct": 97,
+          "oferta_3m_pct": 60
+        },
+        {
+          "rk": 2,
+          "escuela": "Universidad de San Andrés",
+          "pais": "AR",
+          "ingreso_usd": 7212,
+          "var_pct": 169,
+          "oferta_3m_pct": 72
+        },
+        {
+          "rk": 3,
+          "escuela": "Universidad de Chile",
+          "pais": "CH",
+          "ingreso_usd": 7190,
+          "var_pct": 55,
+          "oferta_3m_pct": 39
+        },
+        {
+          "rk": 4,
+          "escuela": "Universidad Técnica Federico Santa María",
+          "pais": "CH",
+          "ingreso_usd": 6505,
+          "var_pct": 40,
+          "oferta_3m_pct": 67
+        },
+        {
+          "rk": 5,
+          "escuela": "Universidad Diego Portales",
+          "pais": "CH",
+          "ingreso_usd": 6365,
+          "var_pct": 42,
+          "oferta_3m_pct": 62
+        },
+        {
+          "rk": 6,
+          "escuela": "ICDA - Escuela de Negocios Universidad Católica de Córdoba",
+          "pais": "AR",
+          "ingreso_usd": 6148,
+          "var_pct": 189,
+          "oferta_3m_pct": 67
+        },
+        {
+          "rk": 7,
+          "escuela": "Universidad de Monterrey",
+          "pais": "MX",
+          "ingreso_usd": 5637,
+          "var_pct": 100,
+          "oferta_3m_pct": 58
+        },
+        {
+          "rk": 8,
+          "escuela": "Aden University Panamá",
+          "pais": "PA",
+          "ingreso_usd": 5577,
+          "var_pct": 32,
+          "oferta_3m_pct": 46
+        },
+        {
+          "rk": 9,
+          "escuela": "Saint Paul Escola de Negócios",
+          "pais": "BR",
+          "ingreso_usd": 5391,
+          "var_pct": 43,
+          "oferta_3m_pct": 59
+        },
+        {
+          "rk": 10,
+          "escuela": "Universidad de Santiago de Chile",
+          "pais": "CH",
+          "ingreso_usd": 5296,
+          "var_pct": 63,
+          "oferta_3m_pct": 50
+        },
+        {
+          "rk": 11,
+          "escuela": "Insper Instituto de Ensino e Pesquisa",
+          "pais": "BR",
+          "ingreso_usd": 5256,
+          "var_pct": 50,
+          "oferta_3m_pct": 100
+        },
+        {
+          "rk": 12,
+          "escuela": "Universidad Del Desarrollo",
+          "pais": "CH",
+          "ingreso_usd": 5031,
+          "var_pct": 72,
+          "oferta_3m_pct": 50
+        },
+        {
+          "rk": 13,
+          "escuela": "Universidad Externado de Colombia",
+          "pais": "CO",
+          "ingreso_usd": 4978,
+          "var_pct": 82,
+          "oferta_3m_pct": 67
+        },
+        {
+          "rk": 14,
+          "escuela": "Universidad de los Andes",
+          "pais": "CO",
+          "ingreso_usd": 4962,
+          "var_pct": 49,
+          "oferta_3m_pct": 37
+        },
+        {
+          "rk": 15,
+          "escuela": "Universidad del CEMA",
+          "pais": "AR",
+          "ingreso_usd": 4743,
+          "var_pct": 82,
+          "oferta_3m_pct": 65
+        },
+        {
+          "rk": 16,
+          "escuela": "CETYS Universidad",
+          "pais": "MX",
+          "ingreso_usd": 4414,
+          "var_pct": 61,
+          "oferta_3m_pct": 36
+        },
+        {
+          "rk": 17,
+          "escuela": "Universidade Federal do Rio de Janeiro - UFRJ",
+          "pais": "BR",
+          "ingreso_usd": 4403,
+          "var_pct": 56,
+          "oferta_3m_pct": 67
+        },
+        {
+          "rk": 18,
+          "escuela": "Universidad del Pacífico",
+          "pais": "PE",
+          "ingreso_usd": 4278,
+          "var_pct": 44,
+          "oferta_3m_pct": 63
+        },
+        {
+          "rk": 19,
+          "escuela": "Universidad de Las Américas de Puebla - UDLAP",
+          "pais": "MX",
+          "ingreso_usd": 4161,
+          "var_pct": 110,
+          "oferta_3m_pct": 42
+        },
+        {
+          "rk": 20,
+          "escuela": "Universidad del Rosario",
+          "pais": "CO",
+          "ingreso_usd": 4159,
+          "var_pct": 39,
+          "oferta_3m_pct": 35
+        },
+        {
+          "rk": 21,
+          "escuela": "Universidad Icesi",
+          "pais": "CO",
+          "ingreso_usd": 3966,
+          "var_pct": 69,
+          "oferta_3m_pct": 32
+        },
+        {
+          "rk": 22,
+          "escuela": "Universidad Alberto Hurtado",
+          "pais": "CH",
+          "ingreso_usd": 3938,
+          "var_pct": 20,
+          "oferta_3m_pct": 38
+        },
+        {
+          "rk": 23,
+          "escuela": "Universidad ORT",
+          "pais": "UR",
+          "ingreso_usd": 3926,
+          "var_pct": 67,
+          "oferta_3m_pct": 38
+        },
+        {
+          "rk": 24,
+          "escuela": "Prime Business School - Universidad Sergio Arboleda",
+          "pais": "CO",
+          "ingreso_usd": 3765,
+          "var_pct": 79,
+          "oferta_3m_pct": 22
+        },
+        {
+          "rk": 25,
+          "escuela": "Universidad EAFIT",
+          "pais": "CO",
+          "ingreso_usd": 3487,
+          "var_pct": 54,
+          "oferta_3m_pct": 32
+        },
+        {
+          "rk": 26,
+          "escuela": "Universidad de Palermo - Facultad de Negocios",
+          "pais": "AR",
+          "ingreso_usd": 3473,
+          "var_pct": 118,
+          "oferta_3m_pct": 60
+        },
+        {
+          "rk": 27,
+          "escuela": "Universidad Andrés Bello",
+          "pais": "CH",
+          "ingreso_usd": 3147,
+          "var_pct": 17,
+          "oferta_3m_pct": 18
+        },
+        {
+          "rk": 28,
+          "escuela": "Universidad de Guadalajara",
+          "pais": "MX",
+          "ingreso_usd": 3092,
+          "var_pct": 96,
+          "oferta_3m_pct": 20
+        },
+        {
+          "rk": 29,
+          "escuela": "ESPOL - ESPAE Graduate School of Management",
+          "pais": "EC",
+          "ingreso_usd": 2995,
+          "var_pct": 70,
+          "oferta_3m_pct": 37
+        },
+        {
+          "rk": 30,
+          "escuela": "Universidad Católica Santiago de Guayaquil",
+          "pais": "EC",
+          "ingreso_usd": 2779,
+          "var_pct": 42,
+          "oferta_3m_pct": 33
+        },
+        {
+          "rk": 31,
+          "escuela": "San Ignacio de Loyola",
+          "pais": "PE",
+          "ingreso_usd": 2624,
+          "var_pct": 44,
+          "oferta_3m_pct": 49
+        },
+        {
+          "rk": 32,
+          "escuela": "ISEADE - Instituto Superior de Economía y Administración de Empresas",
+          "pais": "SS",
+          "ingreso_usd": 2597,
+          "var_pct": 48,
+          "oferta_3m_pct": 48
+        },
+        {
+          "rk": 33,
+          "escuela": "Ana G. Méndez - Gurabo",
+          "pais": "PR",
+          "ingreso_usd": 2573,
+          "var_pct": 49,
+          "oferta_3m_pct": 42
+        },
+        {
+          "rk": 34,
+          "escuela": "Universidad de Talca",
+          "pais": "CH",
+          "ingreso_usd": 2527,
+          "var_pct": 24,
+          "oferta_3m_pct": 60
+        },
+        {
+          "rk": 35,
+          "escuela": "Universidad Nacional de Rafaella",
+          "pais": "AR",
+          "ingreso_usd": 2458,
+          "var_pct": 116,
+          "oferta_3m_pct": 50
+        },
+        {
+          "rk": 36,
+          "escuela": "Universidad Americana",
+          "pais": "PA",
+          "ingreso_usd": 2395,
+          "var_pct": 60,
+          "oferta_3m_pct": 47
+        },
+        {
+          "rk": 37,
+          "escuela": "UAGRM Business School",
+          "pais": "BO",
+          "ingreso_usd": 1379,
+          "var_pct": 58,
+          "oferta_3m_pct": 48
+        },
+        {
+          "rk": 38,
+          "escuela": "Universidad Privada Boliviana - UPB",
+          "pais": "BO",
+          "ingreso_usd": 1139,
+          "var_pct": 46,
+          "oferta_3m_pct": 35
+        }
+      ]
+    },
+    "AE2023": {
+      "url": "https://negocios.udd.cl/files/2023/09/resultados-2023-6to-lugar-ae-rk-mba-23.pdf",
+      "n_escuelas": 37,
+      "mediana_ingreso_usd": 3796,
+      "mediana_variacion_pct": 57,
+      "promedio_variacion_pct": 61.7,
+      "tabla": [
+        {
+          "rk": 1,
+          "escuela": "EAESP - Fundación Getulio Vargas",
+          "pais": "BR",
+          "ingreso_usd": 10650,
+          "var_pct": 57,
+          "oferta_3m_pct": 43
+        },
+        {
+          "rk": 2,
+          "escuela": "Universidad del CEMA",
+          "pais": "AR",
+          "ingreso_usd": 7331,
+          "var_pct": 152,
+          "oferta_3m_pct": 45
+        },
+        {
+          "rk": 3,
+          "escuela": "Universidad Torcuato Di Tella",
+          "pais": "AR",
+          "ingreso_usd": 6776,
+          "var_pct": 134,
+          "oferta_3m_pct": 55
+        },
+        {
+          "rk": 4,
+          "escuela": "Saint Paul Escola de Negócios",
+          "pais": "BR",
+          "ingreso_usd": 6661,
+          "var_pct": 53,
+          "oferta_3m_pct": 75
+        },
+        {
+          "rk": 5,
+          "escuela": "Universidad de Chile",
+          "pais": "CH",
+          "ingreso_usd": 5962,
+          "var_pct": 51,
+          "oferta_3m_pct": 36
+        },
+        {
+          "rk": 6,
+          "escuela": "Universidad ORT",
+          "pais": "UR",
+          "ingreso_usd": 5845,
+          "var_pct": 85,
+          "oferta_3m_pct": 31
+        },
+        {
+          "rk": 7,
+          "escuela": "Universidad de San Andrés",
+          "pais": "AR",
+          "ingreso_usd": 5788,
+          "var_pct": 136,
+          "oferta_3m_pct": 61
+        },
+        {
+          "rk": 8,
+          "escuela": "Universidad Técnica Federico Santa María",
+          "pais": "CH",
+          "ingreso_usd": 5698,
+          "var_pct": 63,
+          "oferta_3m_pct": 38
+        },
+        {
+          "rk": 9,
+          "escuela": "Insper Instituto de Ensino e Pesquisa",
+          "pais": "BR",
+          "ingreso_usd": 5587,
+          "var_pct": 48,
+          "oferta_3m_pct": 56
+        },
+        {
+          "rk": 10,
+          "escuela": "Universidad de los Andes Colombia",
+          "pais": "CO",
+          "ingreso_usd": 5404,
+          "var_pct": 98,
+          "oferta_3m_pct": 54
+        },
+        {
+          "rk": 11,
+          "escuela": "Universidad del Desarrollo",
+          "pais": "CH",
+          "ingreso_usd": 5322,
+          "var_pct": 34,
+          "oferta_3m_pct": 43
+        },
+        {
+          "rk": 12,
+          "escuela": "Universidad Ana G. Méndez - Gurabo",
+          "pais": "PR",
+          "ingreso_usd": 4462,
+          "var_pct": 65,
+          "oferta_3m_pct": 63
+        },
+        {
+          "rk": 13,
+          "escuela": "Universidad Nacional Andrés Bello",
+          "pais": "CH",
+          "ingreso_usd": 4408,
+          "var_pct": 44,
+          "oferta_3m_pct": 16
+        },
+        {
+          "rk": 14,
+          "escuela": "Universidad de Talca",
+          "pais": "CH",
+          "ingreso_usd": 4404,
+          "var_pct": 48,
+          "oferta_3m_pct": 0
+        },
+        {
+          "rk": 15,
+          "escuela": "Universidad Alberto Hurtado",
+          "pais": "CH",
+          "ingreso_usd": 4182,
+          "var_pct": 48,
+          "oferta_3m_pct": 67
+        },
+        {
+          "rk": 16,
+          "escuela": "CETYS Graduate School of Business",
+          "pais": "MX",
+          "ingreso_usd": 4164,
+          "var_pct": 66,
+          "oferta_3m_pct": 41
+        },
+        {
+          "rk": 17,
+          "escuela": "Universidad Diego Portales",
+          "pais": "CH",
+          "ingreso_usd": 4026,
+          "var_pct": 31,
+          "oferta_3m_pct": 30
+        },
+        {
+          "rk": 18,
+          "escuela": "ESPAE Graduate School of Management",
+          "pais": "EC",
+          "ingreso_usd": 3846,
+          "var_pct": 81,
+          "oferta_3m_pct": 53
+        },
+        {
+          "rk": 19,
+          "escuela": "Universidad de Santiago de Chile",
+          "pais": "CH",
+          "ingreso_usd": 3796,
+          "var_pct": 33,
+          "oferta_3m_pct": 47
+        },
+        {
+          "rk": 20,
+          "escuela": "ICDA Business School - Universidad Católica de Córdoba",
+          "pais": "AR",
+          "ingreso_usd": 3793,
+          "var_pct": 85,
+          "oferta_3m_pct": 40
+        },
+        {
+          "rk": 21,
+          "escuela": "Pacífico Business School - Universidad del Pacífico",
+          "pais": "PE",
+          "ingreso_usd": 3780,
+          "var_pct": 38,
+          "oferta_3m_pct": 57
+        },
+        {
+          "rk": 22,
+          "escuela": "Universidad EAFIT",
+          "pais": "CO",
+          "ingreso_usd": 3485,
+          "var_pct": 59,
+          "oferta_3m_pct": 46
+        },
+        {
+          "rk": 23,
+          "escuela": "Universidad de las Américas Puebla",
+          "pais": "MX",
+          "ingreso_usd": 3473,
+          "var_pct": 79,
+          "oferta_3m_pct": 28
+        },
+        {
+          "rk": 24,
+          "escuela": "Universidad de Monterrey",
+          "pais": "MX",
+          "ingreso_usd": 3402,
+          "var_pct": 66,
+          "oferta_3m_pct": 33
+        },
+        {
+          "rk": 25,
+          "escuela": "Universidad del Rosario",
+          "pais": "CO",
+          "ingreso_usd": 3289,
+          "var_pct": 39,
+          "oferta_3m_pct": 44
+        },
+        {
+          "rk": 26,
+          "escuela": "Universidad ICESI",
+          "pais": "CO",
+          "ingreso_usd": 3285,
+          "var_pct": 76,
+          "oferta_3m_pct": 36
+        },
+        {
+          "rk": 27,
+          "escuela": "Universidad San Ignacio de Loyola",
+          "pais": "PE",
+          "ingreso_usd": 3180,
+          "var_pct": 28,
+          "oferta_3m_pct": 38
+        },
+        {
+          "rk": 28,
+          "escuela": "Graduate School of Business - Universidad de Palermo",
+          "pais": "AR",
+          "ingreso_usd": 3136,
+          "var_pct": 63,
+          "oferta_3m_pct": 57
+        },
+        {
+          "rk": 29,
+          "escuela": "Universidad Nacional del Litoral",
+          "pais": "AR",
+          "ingreso_usd": 2992,
+          "var_pct": 27,
+          "oferta_3m_pct": 14
+        },
+        {
+          "rk": 30,
+          "escuela": "COPPEAD - Universidade Federal de Río de Janeiro",
+          "pais": "BR",
+          "ingreso_usd": 2857,
+          "var_pct": 35,
+          "oferta_3m_pct": 97
+        },
+        {
+          "rk": 31,
+          "escuela": "Universidad Externado de Colombia",
+          "pais": "CO",
+          "ingreso_usd": 2666,
+          "var_pct": 64,
+          "oferta_3m_pct": 46
+        },
+        {
+          "rk": 32,
+          "escuela": "Universidad de Guadalajara",
+          "pais": "MX",
+          "ingreso_usd": 2655,
+          "var_pct": 80,
+          "oferta_3m_pct": 46
+        },
+        {
+          "rk": 33,
+          "escuela": "Universidad Católica Santiago de Guayaquil",
+          "pais": "EC",
+          "ingreso_usd": 2363,
+          "var_pct": 83,
+          "oferta_3m_pct": 46
+        },
+        {
+          "rk": 34,
+          "escuela": "Prime Business School - Universidad Sergio Arboleda",
+          "pais": "CO",
+          "ingreso_usd": 2303,
+          "var_pct": 28,
+          "oferta_3m_pct": 43
+        },
+        {
+          "rk": 35,
+          "escuela": "Universidad Americana",
+          "pais": "PA",
+          "ingreso_usd": 1993,
+          "var_pct": 34,
+          "oferta_3m_pct": 17
+        },
+        {
+          "rk": 36,
+          "escuela": "UAGRM Business School - Universidad Autónoma Gabriel René Moreno",
+          "pais": "BO",
+          "ingreso_usd": 1598,
+          "var_pct": 28,
+          "oferta_3m_pct": 75
+        },
+        {
+          "rk": 37,
+          "escuela": "Olave School of Business - Universidad Privada Boliviana",
+          "pais": "BO",
+          "ingreso_usd": 1466,
+          "var_pct": 45,
+          "oferta_3m_pct": 30
+        }
+      ]
+    },
+    "definiciones_AE": "Ingreso: promedio mensual US$ de exalumnos al 3er año desde el egreso. Variación: entre el año previo al ingreso al MBA y el 3er año desde el egreso. Oferta: % que recibe oferta adecuada a 3 meses del egreso."
+  }
+}

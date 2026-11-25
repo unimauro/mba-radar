@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "referencia": "Hartley, Jonathan S. (2026). The Rise and Fall of the M.B.A.? SSRN Working Paper 7742198, noviembre 2026.",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7742198",
+    "autor_afiliacion": "University of Texas at Austin; Hoover Institution, Stanford",
+    "ambito": "Estados Unidos (más de 100 programas full-time, 2001-2026)",
+    "nota": "Cifras transcritas del texto del paper (secciones 1, 3, 6 y nota 5). Donde el paper da rangos se guarda el rango."
+  },
+  "hallazgos": [
+    {"id": "demanda", "titulo": "La demanda tocó techo", "texto": "Cada ciclo de demanda del MBA full-time tuvo un pico más bajo que el anterior. Los exámenes GMAT cayeron dos tercios desde el pico de 2012 (solo parte se explica por el GRE).", "cifra": "−67 %", "seccion": "3.1"},
+    {"id": "colocacion", "titulo": "La colocación se deterioró sin recesión", "texto": "Egresados de 25-27 programas líderes sin oferta aceptada a 3 meses: 5 % (clase 2022) → 17 % (clase 2024). Harvard y MIT Sloan 23 %, Stanford 20 %.", "cifra": "5 % → 17 %", "seccion": "3.2"},
+    {"id": "salario", "titulo": "La prima de entrada se comprimió", "texto": "La razón salario inicial MBA / bachelor que planean pagar los empleadores de EE.UU. cayó de 2,09 (2019) a 1,67 (2025). El salario base real mediano de 81 programas rankeados bajó de ~US$130 mil (clase 2023) a ~US$117 mil (clase 2025).", "cifra": "2,09 → 1,67", "seccion": "3.3"},
+    {"id": "carrera", "titulo": "Pero la prima de carrera se mantiene", "texto": "En la National Survey of College Graduates (1993-2023) la prima del MBA sobre el bachiller es estable en 35-42 % (37 % en 2023; 45 % entre graduados recientes). La de másteres especializados cayó de 45-48 % a 30 %. Son correlaciones, no efectos causales.", "cifra": "+37 %", "seccion": "3.3"},
+    {"id": "calidad", "titulo": "El retorno depende de la calidad del programa", "texto": "Altonji y Zhu (2021): retorno MBA 0,156 log (efectos fijos); subir 10 puestos en U.S. News añade 0,021; el retorno promedio de los programas NO rankeados es NEGATIVO.", "cifra": "< 0 en no rankeados", "seccion": "1.1.1"},
+    {"id": "ceo", "titulo": "En la cúpula, meseta", "texto": "MBA entre CEOs del Fortune 100: 15 % (1980) → 53 % (2026), pero entre CEOs de todas las empresas listadas de EE.UU. está plano en 37-38 % desde 2012, y cae en cohortes jóvenes de directivos.", "cifra": "37-38 %", "seccion": "3.4"},
+    {"id": "costo", "titulo": "El costo sube", "texto": "Matrícula anual de Harvard Business School: US$30.050 (2000) → US$78.700 (2025-26). Con salario real plano y mayor costo de oportunidad, el retorno privado del MBA full-time marginal probablemente cayó.", "cifra": "×2,6", "seccion": "nota 5"},
+    {"id": "elasticidad", "titulo": "Los postulantes miran la empleabilidad", "texto": "Una caída de 1 % en la tasa de colocación reduce las postulaciones dos años después en ~0,6 %. El MBA full-time es en buena parte un canal de reclutamiento: vale lo que los empleadores decidan usarlo.", "cifra": "0,6", "seccion": "5.3"}
+  ],
+  "series": {
+    "gmat_examenes": {
+      "titulo": "Exámenes GMAT rendidos en el mundo (año de prueba a junio)",
+      "unidad": "exámenes",
+      "puntos": [[1999, 185000, "aprox."], [2002, 240000, "aprox."], [2005, 200503], [2012, 286529], [2014, 243529], [2024, 115286], [2025, 93196]]
+    },
+    "sin_oferta_3m": {
+      "titulo": "% de egresados que buscan empleo sin oferta aceptada a 3 meses — promedio 27 programas líderes de EE.UU.",
+      "unidad": "%",
+      "puntos": [[1998, 3.5, "rango 3-4"], [2002, 19], [2004, 13], [2005, 10], [2006, 8], [2007, 4.5], [2008, 5.1], [2009, 20, "estimado"], [2019, 8, "rango 7-9 pre-pandemia"], [2020, 12], [2021, 5.5, "rango 5-6"], [2022, 5], [2023, 10], [2024, 17]]
+    },
+    "ratio_mba_bachelor": {
+      "titulo": "Razón salario inicial planeado MBA / bachelor (GMAC Corporate Recruiters Survey)",
+      "unidad": "veces",
+      "puntos": [[2019, 2.09], [2025, 1.67], [2026, 1.67]]
+    },
+    "salario_real_rankeados": {
+      "titulo": "Salario base real mediano, 81 programas rankeados (US$ de 2025)",
+      "unidad": "USD",
+      "puntos": [[2023, 130000], [2025, 117000]]
+    },
+    "ceo_mba_fortune100": {
+      "titulo": "% de CEOs del Fortune 100 con MBA",
+      "unidad": "%",
+      "puntos": [[1980, 15], [2016, 33], [2026, 53]]
+    },
+    "hbs_matricula": {
+      "titulo": "Matrícula anual Harvard Business School (US$ nominales)",
+      "unidad": "USD",
+      "puntos": [[2000, 30050], [2018, 73440], [2022, 73440], [2025, 78700]]
+    },
+    "postulaciones_fall2026": {
+      "titulo": "Variación de postulaciones, clase que ingresa en otoño 2026",
+      "unidad": "%",
+      "puntos": [["Stanford", -19], ["MIT Sloan", -25], ["Wharton", -10], ["Programas full-time 2 años (mundo, GMAC)", -13], ["Posgrados de negocios en EE.UU. (GMAC)", -25]]
+    }
+  },
+  "otros": {
+    "programas_cerrados_desde_2012": 16,
+    "lanzamientos_desde_2012": 2,
+    "share_internacionales_top27": {"2012": 24, "2024": 35},
+    "altonji_zhu_2021": {"ols": 0.235, "efectos_fijos": 0.156, "por_10_puestos_ranking": 0.021, "no_rankeados": "negativo"},
+    "titulos_mba_eeuu_ipeds": {"2002": 81000, "2012": 129000, "2017": 118000, "2023": 136000, "2024": 128000}
+  }
+}

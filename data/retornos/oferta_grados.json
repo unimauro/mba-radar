@@ -1,0 +1,613 @@
+{
+  "fuente": "SUNEDU - Programas Académicos (Plataforma Nacional de Datos Abiertos)",
+  "url_dataset": "https://www.datosabiertos.gob.pe/dataset/sunedu-programas-acad%C3%A9micos",
+  "url_csv": "https://www.datosabiertos.gob.pe/sites/default/files/Programas%20de%20Universidades_9.csv",
+  "fecha_corte_datos": "2024-08-28",
+  "fecha_modificacion_portal": "2026-11-17",
+  "nota": "Cuenta PROGRAMAS de maestría autorizados/reconocidos en universidades con licencia (denominación única por universidad, deduplicando filiales/locales). NO son grados otorgados: el Registro Nacional de Grados y Títulos (RNGT) de SUNEDU no se publica como dataset abierto con conteos por universidad.",
+  "verificado_url": true,
+  "totales": {
+    "filas_dataset": 8065,
+    "programas_maestria_unicos": 1803,
+    "universidades_con_maestria": 70,
+    "programas_maestria_publicas": 923,
+    "programas_maestria_privadas": 880,
+    "programas_maestria_campo_administracion_y_comercio": 298,
+    "programas_tipo_mba_o_administracion_general": 64,
+    "universidades_con_programa_tipo_mba": 34,
+    "programas_maestria_gestion_publica": 42,
+    "programas_maestria_educacion_docencia": 230
+  },
+  "maestrias_por_campo_top10": [
+    {
+      "campo": "NINGUNO",
+      "programas": 358
+    },
+    {
+      "campo": "ADMINISTRACIÓN Y COMERCIO",
+      "programas": 298
+    },
+    {
+      "campo": "CIENCIAS SOCIALES Y DEL COMPORTAMIENTO",
+      "programas": 142
+    },
+    {
+      "campo": "DERECHO",
+      "programas": 129
+    },
+    {
+      "campo": "SALUD",
+      "programas": 114
+    },
+    {
+      "campo": "OTROS PROGRAMAS EN EDUCACIÓN",
+      "programas": 108
+    },
+    {
+      "campo": "SERVICIOS DE HIGIENE Y SALUD OCUPACIONAL",
+      "programas": 83
+    },
+    {
+      "campo": "MEDIO AMBIENTE",
+      "programas": 71
+    },
+    {
+      "campo": "ARQUITECTURA Y CONSTRUCCIÓN",
+      "programas": 63
+    },
+    {
+      "campo": "INFORMÁTICA",
+      "programas": 60
+    }
+  ],
+  "top20_universidades_por_programas_maestria": [
+    {
+      "universidad": "PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ",
+      "gestion": "PRIVADO",
+      "programas_maestria": 151
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 90
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE TRUJILLO",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 86
+    },
+    {
+      "universidad": "UNIVERSIDAD DE SAN MARTÍN DE PORRES",
+      "gestion": "PRIVADO",
+      "programas_maestria": 76
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA CAYETANO HEREDIA",
+      "gestion": "PRIVADO",
+      "programas_maestria": 75
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 75
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DEL ALTIPLANO",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 67
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE PIURA",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 56
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL FEDERICO VILLARREAL",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 55
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DEL CENTRO DEL PERÚ",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 48
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE INGENIERÍA",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 46
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE LA AMAZONÍA PERUANA",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 46
+    },
+    {
+      "universidad": "UNIVERSIDAD CATÓLICA DE SANTA MARÍA",
+      "gestion": "PRIVADO",
+      "programas_maestria": 44
+    },
+    {
+      "universidad": "UNIVERSIDAD CIENTÍFICA DEL SUR S.A.C.",
+      "gestion": "PRIVADO",
+      "programas_maestria": 43
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS S.A.C.",
+      "gestion": "PRIVADO",
+      "programas_maestria": 42
+    },
+    {
+      "universidad": "UNIVERSIDAD DE PIURA",
+      "gestion": "PRIVADO",
+      "programas_maestria": 42
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN ANTONIO ABAD DEL CUSCO",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 37
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL JOSÉ FAUSTINO SÁNCHEZ CARRIÓN",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 33
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DEL CALLAO",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 33
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL AGRARIA LA MOLINA",
+      "gestion": "PÚBLICO",
+      "programas_maestria": 28
+    }
+  ],
+  "top15_universidades_maestrias_administracion_y_comercio": [
+    {
+      "universidad": "UNIVERSIDAD DE SAN MARTÍN DE PORRES",
+      "programas": 20
+    },
+    {
+      "universidad": "PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ",
+      "programas": 18
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL FEDERICO VILLARREAL",
+      "programas": 16
+    },
+    {
+      "universidad": "UNIVERSIDAD DEL PACÍFICO",
+      "programas": 15
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS S.A.C.",
+      "programas": 13
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA",
+      "programas": 13
+    },
+    {
+      "universidad": "UNIVERSIDAD ESAN",
+      "programas": 12
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL JOSÉ FAUSTINO SÁNCHEZ CARRIÓN",
+      "programas": 11
+    },
+    {
+      "universidad": "UNIVERSIDAD PRIVADA DEL NORTE S.A.C.",
+      "programas": 10
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS",
+      "programas": 9
+    },
+    {
+      "universidad": "UNIVERSIDAD SAN IGNACIO DE LOYOLA S.R.L.",
+      "programas": 9
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DEL CALLAO",
+      "programas": 9
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DEL ALTIPLANO",
+      "programas": 9
+    },
+    {
+      "universidad": "UNIVERSIDAD DE PIURA",
+      "programas": 8
+    },
+    {
+      "universidad": "UNIVERSIDAD CATÓLICA DE SANTA MARÍA",
+      "programas": 8
+    }
+  ],
+  "programas_tipo_mba": [
+    {
+      "universidad": "PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ",
+      "programa": "ADMINISTRACIÓN DE NEGOCIOS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ",
+      "programa": "ADMINISTRACIÓN DE NEGOCIOS GLOBALES",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ",
+      "programa": "ADMINISTRACIÓN DE NEGOCIOS GLOBALES DE ENERGÍA Y MINERÍA",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ",
+      "programa": "GESTIÓN Y DIRECCIÓN DE EMPRESAS CONSTRUCTORAS E INMOBILIARIAS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD ANDINA DEL CUSCO",
+      "programa": "ADMINISTRACIÓN DE NEGOCIOS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD AUTÓNOMA DEL PERÚ S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE EMPRESAS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD CATÓLICA DE SANTA MARÍA",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD CATÓLICA DE TRUJILLO BENEDICTO XVI",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS (MBA)",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD CATÓLICA SANTO TORIBIO DE MOGROVEJO",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN Y DIRECCIÓN DE EMPRESAS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD CATÓLICA SEDES SAPIENTIAE",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS Y FINANZAS INTERNACIONALES-MBA INTERNACIONAL",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD CIENTÍFICA DEL SUR S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS-MBA",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD CONTINENTAL S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD CÉSAR VALLEJO S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS-MBA",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD CÉSAR VALLEJO S.A.C.",
+      "programa": "MAESTRÍA EN INGENIERÍA CIVIL CON MENCIÓN EN DIRECCIÓN DE EMPRESAS DE LA CONSTRUCCIÓN",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DE INGENIERÍA Y TECNOLOGÍA",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE EMPRESAS Y TECNOLOGÍA",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DE PIURA",
+      "programa": "MAESTRÍA EN DIRECCIÓN DE EMPRESAS MBA",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DE PIURA",
+      "programa": "MAESTRÍA EN DIRECCIÓN DE EMPRESAS MBA SEMIPRESENCIAL",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DE PIURA",
+      "programa": "MAESTRÍA EN DIRECCIÓN DE EMPRESAS PARA EJECUTIVOS - PIURA",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DE PIURA",
+      "programa": "MAESTRÍA EN DIRECCIÓN DE EMPRESAS PARA EJECUTIVOS MENSUAL",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DE PIURA",
+      "programa": "MAESTRÍA SENIOR EXECUTIVE MBA (SEMBA)",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DE PIURA",
+      "programa": "MÁSTER EN DIRECCIÓN DE EMPRESAS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DE SAN MARTÍN DE PORRES",
+      "programa": "ADMINISTRACIÓN DE NEGOCIOS (MBA)",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DE SAN MARTÍN DE PORRES",
+      "programa": "DIRECCIÓN Y ADMINISTRACIÓN DE EMPRESAS (MBA) (VIRTUAL: SEMIPRESENCIAL)",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DEL PACÍFICO",
+      "programa": "CORPORATE MASTER OF BUSINESS ADMINISTRATION (CMBA)",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DEL PACÍFICO",
+      "programa": "EXECUTIVE MASTER OF BUSINESS ADMINISTRATION",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DEL PACÍFICO",
+      "programa": "GLOBAL EXECUTIVE MASTER OF BUSINESS ADMINISTRATION",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DEL PACÍFICO",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD DEL PACÍFICO",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN EXECUTIVE MBA",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD ESAN",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD LA SALLE",
+      "programa": "MBA CON MENCIÓN EN NEGOCIOS INTERNACIONALES",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL AGRARIA LA MOLINA",
+      "programa": "ADMINISTRACIÓN",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE EDUCACIÓN ENRIQUE GUZMÁN Y VALLE",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE LA AMAZONÍA PERUANA",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA",
+      "programa": "MAESTRÍA EN CIENCIAS: ADMINISTRACIÓN (MBA), CON MENCIÓN EN DIRECCIÓN Y GESTIÓN EMPRESARIAL",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA",
+      "programa": "MAESTRÍA EN CIENCIAS: ADMINISTRACIÓN (MBA), CON MENCIÓN EN GERENCIA DE MARKETING Y VENTAS",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA",
+      "programa": "MAESTRÍA EN CIENCIAS: ADMINISTRACIÓN (MBA), CON MENCIÓN EN GERENCIA DE PROYECTOS DE INVERSIÓN",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA",
+      "programa": "MAESTRÍA EN CIENCIAS: ADMINISTRACIÓN (MBA), CON MENCIÓN EN GERENCIA DE RECURSOS HUMANOS",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA",
+      "programa": "MAESTRÍA EN CIENCIAS: ADMINISTRACIÓN (MBA), CON MENCIÓN EN GERENCIA EMPRESARIAL",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA",
+      "programa": "MAESTRÍA EN CIENCIAS: ADMINISTRACIÓN (MBA), CON MENCIÓN EN GERENCIA FINANCIERA Y DE RIESGOS",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA",
+      "programa": "MAESTRÍA EN CIENCIAS: CONTABLES Y FINANCIERAS CON MENCIÓN EN FINANZAS Y ADMINISTRACIÓN DE NEGOCIOS",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL DE SAN ANTONIO ABAD DEL CUSCO",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL FEDERICO VILLARREAL",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL JOSÉ FAUSTINO SÁNCHEZ CARRIÓN",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS",
+      "programa": "ADMINISTRACIÓN",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS",
+      "programa": "DIRECCIÓN DE EMPRESAS INDUSTRIALES Y DE SERVICIOS",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD NACIONAL SANTIAGO ANTÚNEZ DE MAYOLO",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN CON MENCIÓN EN ADMINISTRACIÓN DE NEGOCIOS, MBA",
+      "gestion": "PÚBLICO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA CAYETANO HEREDIA",
+      "programa": "MBA EN GESTIÓN DE SALUD",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA CAYETANO HEREDIA",
+      "programa": "PROGRAMA MBA EN GESTIÓN INTEGRAL DEL AGUA",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE EMPRESAS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE EMPRESAS DE SALUD",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE EMPRESAS DIRECTIVO",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE EMPRESAS EJECUTIVO",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE EMPRESAS INTERNACIONAL",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA UNIÓN",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS CON MENCIÓN EN ADMINISTRACIÓN DE RECURSOS HUMANOS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PERUANA UNIÓN",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS CON MENCIÓN EN FINANZAS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PRIVADA ANTENOR ORREGO",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PRIVADA DE TACNA",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN Y DIRECCIÓN DE EMPRESAS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PRIVADA DEL NORTE S.A.C.",
+      "programa": "MAESTRÍA EJECUTIVA EN ADMINISTRACIÓN DE EMPRESAS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PRIVADA DEL NORTE S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE EMPRESAS, MODALIDAD INTERNACIONAL",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD PRIVADA DEL NORTE S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE EMPRESAS, MODALIDAD INTERNACIONAL GLOBAL EXECUTIVE MBA",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD RICARDO PALMA",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD SAN IGNACIO DE LOYOLA S.R.L.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS Y EMPRENDIMIENTO",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD SAN IGNACIO DE LOYOLA S.R.L.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS-EXECUTIVE MBA",
+      "gestion": "PRIVADO"
+    },
+    {
+      "universidad": "UNIVERSIDAD TECNOLÓGICA DEL PERÚ S.A.C.",
+      "programa": "MAESTRÍA EN ADMINISTRACIÓN DE EMPRESAS",
+      "gestion": "PRIVADO"
+    }
+  ],
+  "ucv_programas_maestria": {
+    "n": 26,
+    "programas": [
+      "MAESTRÍA EN ADMINISTRACIÓN DE LA EDUCACIÓN",
+      "MAESTRÍA EN ADMINISTRACIÓN DE NEGOCIOS-MBA",
+      "MAESTRÍA EN AGROEXPORTACIÓN",
+      "MAESTRÍA EN ARQUITECTURA",
+      "MAESTRÍA EN CIENCIA POLÍTICA",
+      "MAESTRÍA EN DERECHO CORPORATIVO",
+      "MAESTRÍA EN DERECHO PENAL Y PROCESAL PENAL",
+      "MAESTRÍA EN DIDÁCTICA EN IDIOMAS EXTRANJEROS",
+      "MAESTRÍA EN DOCENCIA UNIVERSITARIA",
+      "MAESTRÍA EN EDUCACIÓN",
+      "MAESTRÍA EN EDUCACIÓN INFANTIL Y NEUROEDUCACIÓN",
+      "MAESTRÍA EN ESTRATEGIA Y COMUNICACIÓN POLÍTICA",
+      "MAESTRÍA EN FINANZAS",
+      "MAESTRÍA EN GERENCIA DE OPERACIONES Y LOGÍSTICA",
+      "MAESTRÍA EN GESTIÓN DE LOS SERVICIOS DE LA SALUD",
+      "MAESTRÍA EN GESTIÓN DEL TALENTO HUMANO",
+      "MAESTRÍA EN GESTIÓN PÚBLICA",
+      "MAESTRÍA EN INGENIERÍA CIVIL CON MENCIÓN EN DIRECCIÓN DE EMPRESAS DE LA CONSTRUCCIÓN",
+      "MAESTRÍA EN INGENIERÍA DE SISTEMAS CON MENCIÓN EN TECNOLOGÍAS DE LA INFORMACIÓN",
+      "MAESTRÍA EN INTERVENCIÓN PSICOLÓGICA",
+      "MAESTRÍA EN MEDICINA CON MENCIÓN EN CIENCIAS CLÍNICAS",
+      "MAESTRÍA EN MEDICIÓN, EVALUACIÓN Y ACREDITACIÓN DE LA CALIDAD EDUCATIVA",
+      "MAESTRÍA EN OBSTETRICIA",
+      "MAESTRÍA EN PROBLEMAS DE APRENDIZAJE",
+      "MAESTRÍA EN PSICOLOGÍA EDUCATIVA",
+      "MAESTRÍA EN RELACIONES PÚBLICAS E IMAGEN CORPORATIVA"
+    ]
+  },
+  "contexto_adicional": [
+    {
+      "dato": "Programas desistidos para licenciarse: 3,243, de los cuales 27.1% maestrías, 10.8% segunda especialidad, 3.7% doctorado",
+      "fuente": "SUNEDU III Informe Bienal (2021) y Gestión (15-may-2022)",
+      "url": "https://gestion.pe/peru/titulos-bamba-hay-herramientas-para-combatir-el-mercantilismo-en-las-universidades-noticia/",
+      "verificado_url": true
+    },
+    {
+      "dato": "UCV desistió de 39 programas: 9 pregrado, 21 maestrías, 2 doctorados, 7 segundas especialidades (118 -> 79 programas)",
+      "fuente": "Gestión 2022",
+      "url": "https://gestion.pe/peru/titulos-bamba-hay-herramientas-para-combatir-el-mercantilismo-en-las-universidades-noticia/",
+      "verificado_url": true
+    },
+    {
+      "dato": "1,991 programas de maestría, 384 doctorado, 1,778 segunda especialidad (todas las universidades y escuelas de posgrado, SUNEDU 2021); 94,095 estudiantes de maestría y 10,157 de doctorado; 131,900 en posgrado en 2018 y 95,400 en 2020",
+      "fuente": "Comisión Europea, Infocard Perú posgrado 2023 (cita SUNEDU)",
+      "url": "https://webgate.acceptance.ec.europa.eu/portal9/en/country-assets/pe_postgraduate_es.pdf",
+      "verificado_url": true
+    },
+    {
+      "dato": "Maestrías >70% de la matrícula de posgrado; demanda de maestrías 2022-2024: -31.7% públicas, -0.3% privadas; Gestión Pública = 13.3% (>19,900 estudiantes)",
+      "fuente": "Gestión 25-mar-2026 (CAPPES con datos SUNEDU)",
+      "url": "https://gestion.pe/peru/los-posgrados-mas-demandados-en-peru-crece-preferencia-por-una-segunda-especialidad-noticia/",
+      "verificado_url": true
+    },
+    {
+      "dato": "Registros en el RNGT (todos los grados y títulos): 103.3 mil (2015) -> 352.1 mil (2019) -> <200 mil (2020)",
+      "fuente": "SUNEDU III Informe Bienal",
+      "url": "https://cdn.www.gob.pe/uploads/document/file/3018068/III%20Informe%20Bienal.pdf?v=1649883911",
+      "verificado_url": true
+    }
+  ],
+  "no_encontrado": "Número de GRADOS de maestro otorgados/registrados por universidad (RNGT). No hay dataset abierto de SUNEDU con ese conteo; requeriría solicitud de acceso a la información pública (Ley 27806) a SUNEDU o scraping del buscador de grados (no recomendado). No se halló nota de prensa verificable con ranking de 'universidades que más grados de maestría otorgan'."
+}

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Vale la pena un MBA? · Costos y retorno en el Perú</title>
+<meta name="description" content="Cuánto cuesta un MBA en el Perú —de las universidades masivas a las escuelas de negocios más caras— y qué dice la evidencia sobre su retorno. Datos abiertos y fuentes verificables.">
+<meta property="og:title" content="¿Vale la pena un MBA? Costos y retorno en el Perú">
+<meta property="og:description" content="Precios de programas MBA, calculadora de retorno y evidencia local e internacional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#">MBA<span>·</span>Radar</a>
+    <nav class="paises" id="paises" aria-label="País"></nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero-x">
+    <div class="wrap">
+      <p class="eyebrow" id="hero-eyebrow">Perú · noviembre 2026</p>
+      <h1>Tu MBA puede costar <em id="hero-max">lo que un auto</em>.<br>¿Lo vas a recuperar?</h1>
+      <p class="lead">Miles de peruanos se endeudan cada año por un MBA. Reunimos los precios reales, los microdatos del INEI y la investigación más reciente para responder lo que nadie te dice en la charla informativa: <strong>para muchos, ese dinero no regresa.</strong></p>
+      <div class="shock" id="shock"></div>
+      <div class="cta"><a class="btn" href="#calculadora">Calcula si te conviene →</a><a class="btn ghost" href="#costos">Ver precios por universidad</a></div>
+    </div>
+  </section>
+  <section class="wrap"><div class="kpis" id="kpis"></div></section>
+
+  <nav class="secnav wrap" aria-label="Secciones">
+    <a href="#costos">Costos</a><a href="#calculadora">Calculadora</a><a href="#retorno">Retorno</a><a href="#riesgos">¿Impacto negativo?</a><a href="#mundo">Contexto mundial</a><a href="#fuentes">Fuentes</a>
+  </nav>
+
+  <section id="costos" class="wrap block">
+    <h2>1. Cuánto cuesta</h2>
+    <p class="sub" id="costos-sub">Costo total publicado de cada programa (soles). Cada barra es un programa; el color indica el tipo de institución.</p>
+    <div class="filters">
+      <div class="chips" id="f-modalidad" role="group" aria-label="Modalidad"></div>
+      <div class="combo" id="buscador">
+        <input type="search" id="q" placeholder="Buscar universidad o programa…" autocomplete="off" aria-label="Buscar programa">
+        <ul class="combo-list" id="q-list" role="listbox" hidden></ul>
+      </div>
+    </div>
+    <div class="legend" id="leg-costos"></div>
+    <div class="chart-box tall" id="box-costos"><canvas id="ch-costos" role="img" aria-label="Costo total de programas MBA"></canvas></div>
+    <p class="note" id="costos-nota"></p>
+    <details class="tabla"><summary>Ver tabla completa con fuentes</summary><div class="scroll"><table id="tb-costos"></table></div></details>
+    <div class="cards3" id="segmentos"></div>
+  </section>
+
+  <section id="calculadora" class="wrap block">
+    <h2>2. Calculadora de retorno</h2>
+    <p class="sub">Simula tu caso. Los valores por defecto salen de la evidencia de las secciones 3 y 4; cámbialos con tus números.</p>
+    <div class="calc">
+      <form class="calc-in" id="calc" onsubmit="return false">
+        <label>Programa
+          <div class="combo"><input type="search" id="c-prog" autocomplete="off" placeholder="Elige un programa…"><ul class="combo-list" id="c-prog-list" role="listbox" hidden></ul></div>
+        </label>
+        <label>Costo total (S/)<input type="number" id="c-costo" min="0" step="500"></label>
+        <label>Duración (meses)<input type="number" id="c-dur" min="6" max="36" step="1"></label>
+        <label>Tu sueldo bruto mensual hoy (S/)<input type="number" id="c-sueldo" min="0" step="100" value="6000"></label>
+        <fieldset><legend>¿Dejas de trabajar mientras estudias?</legend>
+          <label class="radio"><input type="radio" name="c-ft" value="0" checked> No (part-time / ejecutivo)</label>
+          <label class="radio"><input type="radio" name="c-ft" value="1"> Sí (full-time)</label>
+        </fieldset>
+        <label>Aumento salarial atribuible al MBA (%)<input type="range" id="c-prima" min="0" max="80" step="1" value="17"><output id="o-prima">17 %</output></label>
+        <label>Años de horizonte<input type="range" id="c-hor" min="3" max="25" step="1" value="10"><output id="o-hor">10 años</output></label>
+        <label>Tasa de descuento anual (%)<input type="range" id="c-tasa" min="0" max="20" step="0.5" value="8"><output id="o-tasa">8 %</output></label>
+        <div class="presets" id="presets"></div>
+      </form>
+      <div class="calc-out">
+        <div class="res" id="c-res"></div>
+        <div class="chart-box"><canvas id="ch-calc" role="img" aria-label="Flujo acumulado descontado del MBA"></canvas></div>
+        <p class="note">Supuestos: sueldos ×14 al año (gratificaciones de julio y diciembre), el costo se paga en partes iguales durante el programa, el aumento empieza al terminar y se mantiene constante en términos reales. No incluye impuestos, préstamos ni ascensos que habrías tenido igual sin el MBA — por eso la «prima atribuible» debe ser menor que la diferencia bruta de sueldos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="retorno" class="wrap block">
+    <h2>3. ¿Hay retorno? La evidencia local</h2>
+    <p class="sub" id="retorno-sub"></p>
+    <div class="grid2">
+      <div class="panel" id="p-enaho"></div>
+      <div class="panel" id="p-escuelas"></div>
+    </div>
+    <div class="studies" id="estudios-local"></div>
+  </section>
+
+  <section id="riesgos" class="wrap block">
+    <h2>4. ¿O ya estamos en terreno negativo?</h2>
+    <p class="sub">Las señales de que, para una parte de quienes lo cursan, el MBA no paga lo que cuesta.</p>
+    <div class="grid2">
+      <div class="panel" id="p-oferta"></div>
+      <div class="panel" id="p-negativos"></div>
+    </div>
+  </section>
+
+  <section id="mundo" class="wrap block">
+    <h2>5. Contexto mundial: ¿el auge y caída del MBA?</h2>
+    <p class="sub">Hartley (2026) reconstruye 25 años de datos de más de 100 programas de EE.UU. Sus ocho hallazgos y otras fuentes recientes.</p>
+    <div class="hallazgos" id="hallazgos"></div>
+    <div class="grid2">
+      <div class="panel"><h3>Exámenes GMAT rendidos</h3><div class="chart-box"><canvas id="ch-gmat" role="img" aria-label="Exámenes GMAT por año"></canvas></div><p class="note">Fuente: GMAC vía Hartley (2026), fig. 1. Parte de la caída reciente es sustitución por el GRE.</p></div>
+      <div class="panel"><h3>Egresados sin oferta a 3 meses (%)</h3><div class="chart-box"><canvas id="ch-oferta" role="img" aria-label="Porcentaje sin oferta a tres meses"></canvas></div><p class="note">Promedio de 27 programas líderes de EE.UU. Hartley (2026), fig. 7.</p></div>
+      <div class="panel"><h3>Salario inicial que ofrecen los empleadores de EE.UU. (US$/año)</h3><div class="chart-box"><canvas id="ch-gmac" role="img" aria-label="Salario inicial MBA frente a bachiller"></canvas></div><p class="note" id="gmac-nota"></p></div>
+      <div class="panel" id="p-ft"></div>
+    </div>
+    <div class="studies" id="estudios-mundo"></div>
+  </section>
+
+  <section id="fuentes" class="wrap block">
+    <h2>Fuentes y metodología</h2>
+    <div class="metodo" id="metodo"></div>
+    <ol class="refs" id="refs"></ol>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>Datos abiertos: <a href="data/" rel="noopener">/data</a> · Proyecto de <a href="https://github.com/unimauro" target="_blank" rel="noopener">Carlos Cárdenas</a>. Los precios cambian cada ciclo: verifica siempre con la universidad antes de decidir.</p>
+</footer>
+<div id="tip" class="tip" hidden></div>
+</body>
+</html>

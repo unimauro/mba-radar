@@ -1,0 +1,1540 @@
+{
+ "hartley": {
+  "meta": {
+   "referencia": "Hartley, Jonathan S. (2026). The Rise and Fall of the M.B.A.? SSRN Working Paper 7742198, noviembre 2026.",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7742198",
+   "autor_afiliacion": "University of Texas at Austin; Hoover Institution, Stanford",
+   "ambito": "Estados Unidos (más de 100 programas full-time, 2001-2026)",
+   "nota": "Cifras transcritas del texto del paper (secciones 1, 3, 6 y nota 5). Donde el paper da rangos se guarda el rango."
+  },
+  "hallazgos": [
+   {
+    "id": "demanda",
+    "titulo": "La demanda tocó techo",
+    "texto": "Cada ciclo de demanda del MBA full-time tuvo un pico más bajo que el anterior. Los exámenes GMAT cayeron dos tercios desde el pico de 2012 (solo parte se explica por el GRE).",
+    "cifra": "−67 %",
+    "seccion": "3.1"
+   },
+   {
+    "id": "colocacion",
+    "titulo": "La colocación se deterioró sin recesión",
+    "texto": "Egresados de 25-27 programas líderes sin oferta aceptada a 3 meses: 5 % (clase 2022) → 17 % (clase 2024). Harvard y MIT Sloan 23 %, Stanford 20 %.",
+    "cifra": "5 % → 17 %",
+    "seccion": "3.2"
+   },
+   {
+    "id": "salario",
+    "titulo": "La prima de entrada se comprimió",
+    "texto": "La razón salario inicial MBA / bachelor que planean pagar los empleadores de EE.UU. cayó de 2,09 (2019) a 1,67 (2025). El salario base real mediano de 81 programas rankeados bajó de ~US$130 mil (clase 2023) a ~US$117 mil (clase 2025).",
+    "cifra": "2,09 → 1,67",
+    "seccion": "3.3"
+   },
+   {
+    "id": "carrera",
+    "titulo": "Pero la prima de carrera se mantiene",
+    "texto": "En la National Survey of College Graduates (1993-2023) la prima del MBA sobre el bachiller es estable en 35-42 % (37 % en 2023; 45 % entre graduados recientes). La de másteres especializados cayó de 45-48 % a 30 %. Son correlaciones, no efectos causales.",
+    "cifra": "+37 %",
+    "seccion": "3.3"
+   },
+   {
+    "id": "calidad",
+    "titulo": "El retorno depende de la calidad del programa",
+    "texto": "Altonji y Zhu (2021): retorno MBA 0,156 log (efectos fijos); subir 10 puestos en U.S. News añade 0,021; el retorno promedio de los programas NO rankeados es NEGATIVO.",
+    "cifra": "< 0 en no rankeados",
+    "seccion": "1.1.1"
+   },
+   {
+    "id": "ceo",
+    "titulo": "En la cúpula, meseta",
+    "texto": "MBA entre CEOs del Fortune 100: 15 % (1980) → 53 % (2026), pero entre CEOs de todas las empresas listadas de EE.UU. está plano en 37-38 % desde 2012, y cae en cohortes jóvenes de directivos.",
+    "cifra": "37-38 %",
+    "seccion": "3.4"
+   },
+   {
+    "id": "costo",
+    "titulo": "El costo sube",
+    "texto": "Matrícula anual de Harvard Business School: US$30.050 (2000) → US$78.700 (2025-26). Con salario real plano y mayor costo de oportunidad, el retorno privado del MBA full-time marginal probablemente cayó.",
+    "cifra": "×2,6",
+    "seccion": "nota 5"
+   },
+   {
+    "id": "elasticidad",
+    "titulo": "Los postulantes miran la empleabilidad",
+    "texto": "Una caída de 1 % en la tasa de colocación reduce las postulaciones dos años después en ~0,6 %. El MBA full-time es en buena parte un canal de reclutamiento: vale lo que los empleadores decidan usarlo.",
+    "cifra": "0,6",
+    "seccion": "5.3"
+   }
+  ],
+  "series": {
+   "gmat_examenes": {
+    "titulo": "Exámenes GMAT rendidos en el mundo (año de prueba a junio)",
+    "unidad": "exámenes",
+    "puntos": [
+     [
+      1999,
+      185000,
+      "aprox."
+     ],
+     [
+      2002,
+      240000,
+      "aprox."
+     ],
+     [
+      2005,
+      200503
+     ],
+     [
+      2012,
+      286529
+     ],
+     [
+      2014,
+      243529
+     ],
+     [
+      2024,
+      115286
+     ],
+     [
+      2025,
+      93196
+     ]
+    ]
+   },
+   "sin_oferta_3m": {
+    "titulo": "% de egresados que buscan empleo sin oferta aceptada a 3 meses — promedio 27 programas líderes de EE.UU.",
+    "unidad": "%",
+    "puntos": [
+     [
+      1998,
+      3.5,
+      "rango 3-4"
+     ],
+     [
+      2002,
+      19
+     ],
+     [
+      2004,
+      13
+     ],
+     [
+      2005,
+      10
+     ],
+     [
+      2006,
+      8
+     ],
+     [
+      2007,
+      4.5
+     ],
+     [
+      2008,
+      5.1
+     ],
+     [
+      2009,
+      20,
+      "estimado"
+     ],
+     [
+      2019,
+      8,
+      "rango 7-9 pre-pandemia"
+     ],
+     [
+      2020,
+      12
+     ],
+     [
+      2021,
+      5.5,
+      "rango 5-6"
+     ],
+     [
+      2022,
+      5
+     ],
+     [
+      2023,
+      10
+     ],
+     [
+      2024,
+      17
+     ]
+    ]
+   },
+   "ratio_mba_bachelor": {
+    "titulo": "Razón salario inicial planeado MBA / bachelor (GMAC Corporate Recruiters Survey)",
+    "unidad": "veces",
+    "puntos": [
+     [
+      2019,
+      2.09
+     ],
+     [
+      2025,
+      1.67
+     ],
+     [
+      2026,
+      1.67
+     ]
+    ]
+   },
+   "salario_real_rankeados": {
+    "titulo": "Salario base real mediano, 81 programas rankeados (US$ de 2025)",
+    "unidad": "USD",
+    "puntos": [
+     [
+      2023,
+      130000
+     ],
+     [
+      2025,
+      117000
+     ]
+    ]
+   },
+   "ceo_mba_fortune100": {
+    "titulo": "% de CEOs del Fortune 100 con MBA",
+    "unidad": "%",
+    "puntos": [
+     [
+      1980,
+      15
+     ],
+     [
+      2016,
+      33
+     ],
+     [
+      2026,
+      53
+     ]
+    ]
+   },
+   "hbs_matricula": {
+    "titulo": "Matrícula anual Harvard Business School (US$ nominales)",
+    "unidad": "USD",
+    "puntos": [
+     [
+      2000,
+      30050
+     ],
+     [
+      2018,
+      73440
+     ],
+     [
+      2022,
+      73440
+     ],
+     [
+      2025,
+      78700
+     ]
+    ]
+   },
+   "postulaciones_fall2026": {
+    "titulo": "Variación de postulaciones, clase que ingresa en otoño 2026",
+    "unidad": "%",
+    "puntos": [
+     [
+      "Stanford",
+      -19
+     ],
+     [
+      "MIT Sloan",
+      -25
+     ],
+     [
+      "Wharton",
+      -10
+     ],
+     [
+      "Programas full-time 2 años (mundo, GMAC)",
+      -13
+     ],
+     [
+      "Posgrados de negocios en EE.UU. (GMAC)",
+      -25
+     ]
+    ]
+   }
+  },
+  "otros": {
+   "programas_cerrados_desde_2012": 16,
+   "lanzamientos_desde_2012": 2,
+   "share_internacionales_top27": {
+    "2012": 24,
+    "2024": 35
+   },
+   "altonji_zhu_2021": {
+    "ols": 0.235,
+    "efectos_fijos": 0.156,
+    "por_10_puestos_ranking": 0.021,
+    "no_rankeados": "negativo"
+   },
+   "titulos_mba_eeuu_ipeds": {
+    "2002": 81000,
+    "2012": 129000,
+    "2017": 118000,
+    "2023": 136000,
+    "2024": 128000
+   }
+  }
+ },
+ "internacional": {
+  "fuentes": [
+   {
+    "id": "gmac_crs_2026",
+    "autores": "GMAC (con EFMD y CSEA)",
+    "anio": 2026,
+    "titulo": "Corporate Recruiters Survey 2026 Report",
+    "editor_revista": "Graduate Management Admission Council",
+    "tipo": "encuesta_empleadores",
+    "url": "https://www.gmac.com/-/media/files/gmac/research/employment-outlook/2026-corporate-recruiters-survey/report.pdf",
+    "hallazgo_clave": "Salario inicial mediano proyectado en EE.UU. baja en todos los grados (cambios no significativos). MBA sigue por encima de contratados con experiencia directa de industria; 1/3 de empleadores ya reemplazó algunos puestos de entrada con IA; 61% valora igual online y presencial (55% hace dos años).",
+    "cifra_clave": "Mediana salario inicial MBA EE.UU. 2026: USD 120,000 (2025 recalculado: 125,000) vs bachelor USD 72,000 (2025: 75,000)",
+    "valor": 120000,
+    "unidad": "USD/año",
+    "signo": "mixto",
+    "verificado_url": true,
+    "nota": "n=621 reclutadores, 39 países, encuesta ene-may 2026. Cifras 2025 recalculadas con la metodología 2026.",
+    "http_status": 200
+   },
+   {
+    "id": "gmac_crs_2025",
+    "autores": "GMAC (con EFMD y CSEA)",
+    "anio": 2025,
+    "titulo": "Corporate Recruiters Survey 2025 Report (summary report)",
+    "editor_revista": "Graduate Management Admission Council",
+    "tipo": "encuesta_empleadores",
+    "url": "https://www.gmac.com/-/media/files/gmac/Research/employment-outlook/2025-corporate-recruiters-survey/summary-report",
+    "hallazgo_clave": "Empleadores proyectaban alza nominal de salarios iniciales 2024→2025; MBA en EE.UU. con USD 25,000 más que un candidato con experiencia directa de industria; cambios interanuales no significativos.",
+    "cifra_clave": "MBA EE.UU. 2024 proyectado USD 120,000; prima MBA vs experienced hire +USD 25,000",
+    "valor": 25000,
+    "unidad": "USD/año",
+    "signo": "positivo",
+    "verificado_url": true,
+    "nota": "n=1,108 respondentes, 46 países. Valores 2025 por grado tomados de BestColleges (ver bestcolleges_crs_2025) porque las cifras del gráfico no son texto extraíble.",
+    "http_status": 200
+   },
+   {
+    "id": "bestcolleges_crs_2025",
+    "autores": "BestColleges (cobertura de GMAC CRS 2025)",
+    "anio": 2025,
+    "titulo": "Graduates With These Business Degrees Are Projected to Land Jobs in 2025",
+    "editor_revista": "BestColleges",
+    "tipo": "prensa_especializada",
+    "url": "https://www.bestcolleges.com/news/mba-hiring-2025-gmac-corporate-recruiters-survey/",
+    "hallazgo_clave": "Mediana proyectada MBA sube de USD 120,000 (2024) a 125,000 (2025); bachelor de 70,000 a 75,000; experienced hires de 95,000 a 100,000; MiM de 80,000 a 90,000.",
+    "cifra_clave": "MBA 2025 USD 125,000 vs bachelor USD 75,000",
+    "valor": 125000,
+    "unidad": "USD/año",
+    "signo": "positivo",
+    "verificado_url": true,
+    "nota": "Fuente secundaria; cifras originales en GMAC CRS 2025 (gráfico).",
+    "http_status": 200
+   },
+   {
+    "id": "gmac_crs_2023_us",
+    "autores": "GMAC",
+    "anio": 2023,
+    "titulo": "Corporate Recruiters Survey 2023 – Regional report United States",
+    "editor_revista": "Graduate Management Admission Council",
+    "tipo": "encuesta_empleadores",
+    "url": "https://www.GMAC.com/-/media/files/gmac/research/employment-outlook/2023-crs-regional-reports/2023_gmac_corporaterecruiters_report_unitedstates.pdf",
+    "hallazgo_clave": "Mediana estimada de salario inicial en EE.UU. 2023: MBA USD 125k, experienced from industry 105k, MiM/MSBA/MSDA/MFin 85k, bachelor 75k.",
+    "cifra_clave": "MBA USD 125k vs bachelor USD 75k (2023)",
+    "valor": 125000,
+    "unidad": "USD/año",
+    "signo": "positivo",
+    "verificado_url": true,
+    "nota": "En 2023 se preguntó en tramos de USD 10,000: no estrictamente comparable con 2025-2026.",
+    "http_status": 200
+   },
+   {
+    "id": "gmac_ats_2026",
+    "autores": "GMAC",
+    "anio": 2026,
+    "titulo": "Application Trends Survey 2026 Report",
+    "editor_revista": "Graduate Management Admission Council",
+    "tipo": "encuesta_escuelas",
+    "url": "https://www.gmac.com/-/media/files/gmac/research/admissions-and-application-trends/2026-application-trends-survey/2026-ats-report.pdf/",
+    "hallazgo_clave": "Tras dos años de crecimiento, las postulaciones a programas GME caen 10% (MBA -13%); casi dos tercios de los programas MBA reportan caídas (la mayor proporción en al menos 10 años). EE.UU. -25%; crecen Europa (sin UK) y Asia Oriental/Sudeste. Becas por mérito suben de 37% a 44% de los matriculados.",
+    "cifra_clave": "Postulaciones MBA globales 2026: -13%; 63% de programas MBA con caída",
+    "valor": -13,
+    "unidad": "% interanual",
+    "signo": "negativo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "gmac_ats_2025_press",
+    "autores": "GMAC",
+    "anio": 2025,
+    "titulo": "Global Demand for Business Education Grows Amid Economic and Geopolitical Uncertainty (Application Trends Survey 2025)",
+    "editor_revista": "Graduate Management Admission Council",
+    "tipo": "nota_prensa_encuesta",
+    "url": "https://www.gmac.com/why-gmac/gmac-news/gmac-press-releases/global-demand-for-business-education",
+    "hallazgo_clave": "Postulaciones GME +7% en 2025; crece el MBA full-time presencial, caen online/part-time/EMBA; 49% de programas con crecimiento (56% en 2024).",
+    "cifra_clave": "Postulaciones GME 2025: +7%",
+    "valor": 7,
+    "unidad": "% interanual",
+    "signo": "mixto",
+    "verificado_url": true,
+    "nota": "1,172 programas, 326 escuelas, 41 países.",
+    "http_status": 200
+   },
+   {
+    "id": "gmac_pss_2025",
+    "autores": "GMAC",
+    "anio": 2025,
+    "titulo": "GMAC Prospective Students Survey 2025 Report",
+    "editor_revista": "Graduate Management Admission Council",
+    "tipo": "encuesta_postulantes",
+    "url": "https://www.gmac.com/-/media/files/gmac/research/prospective-student-data/2025/2025_pss_final.pdf",
+    "hallazgo_clave": "El MBA sigue siendo el grado preferido (52% global) y se mantiene fuerte en India, Canadá y América Latina, pero cae en EE.UU. (50%→35% prefieren MBA full-time/profesional); sube preferencia por másteres especializados y vuelve la preferencia por lo presencial; el ROI pesa más y los rankings menos.",
+    "cifra_clave": "52% de candidatos globales prefieren el MBA (datos 2024)",
+    "valor": 52,
+    "unidad": "% de candidatos",
+    "signo": "mixto",
+    "verificado_url": true,
+    "nota": "Interés en IA como parte del currículo ideal: 29% (2022), 40% (2023), 46% (2024).",
+    "http_status": 200
+   },
+   {
+    "id": "gmac_pss_2026_pq",
+    "autores": "Poets&Quants (cobertura de GMAC Prospective Students Survey 2026)",
+    "anio": 2026,
+    "titulo": "GMAC's Bluntest Survey Yet: U.S. Losing Global Talent, Candidates Want Proof Not Promises",
+    "editor_revista": "Poets&Quants",
+    "tipo": "prensa_especializada",
+    "url": "https://poetsandquants.com/2026/03/24/gmacs-bluntest-survey-yet-u-s-losing-global-talent-candidates-want-proof-not-promises/",
+    "hallazgo_clave": "69% de candidatos de 22 años o menos prefieren másteres especializados; preferencia MBA en 23-24 años cae de 41% a 33%; intención de postular a EE.UU. cae de 63% a 53% durante 2025; 50% quiere IA en su currículo ideal; disposición a pagar mediana MBA full-time USD 64,200.",
+    "cifra_clave": "Intención de postular a EE.UU.: 63% (T1-2025) → 53% (T4-2025)",
+    "valor": 53,
+    "unidad": "% de candidatos",
+    "signo": "negativo",
+    "verificado_url": true,
+    "nota": "Para 2022 P&Q reporta 17% de interés en IA; el informe PSS 2025 de GMAC reporta 29%. Se usa la cifra primaria de GMAC en series.json.",
+    "http_status": 200
+   },
+   {
+    "id": "ft_global_mba_2026",
+    "autores": "Financial Times",
+    "anio": 2026,
+    "titulo": "FT Global MBA Ranking 2026 (tabla completa, copia en IIM Ahmedabad)",
+    "editor_revista": "Financial Times",
+    "tipo": "ranking",
+    "url": "https://iima.ac.in/sites/default/files/2026-02/FT%20Global%20MBA%20Ranking%202026.pdf",
+    "hallazgo_clave": "Ninguna escuela latinoamericana en el top 100 global MBA 2026 (39 EE.UU., 13 UK, 9 India...). Mediana del 'salary percentage increase' a 3 años: 116% (cálculo propio sobre 97 filas parseadas); MIT Sloan salario hoy USD 244,613.",
+    "cifra_clave": "Mediana incremento salarial post-MBA top 100: 116%",
+    "valor": 116,
+    "unidad": "% incremento salarial",
+    "signo": "positivo",
+    "verificado_url": true,
+    "nota": "La copia de la tabla es del sitio de IIMA (la web del FT tiene muro de pago). Mediana calculada por nosotros.",
+    "http_status": 200
+   },
+   {
+    "id": "ft_global_mba_2025",
+    "autores": "Financial Times",
+    "anio": 2025,
+    "titulo": "FT Global MBA Ranking 2025 (tabla completa, copia en IIM Ahmedabad)",
+    "editor_revista": "Financial Times",
+    "tipo": "ranking",
+    "url": "https://iima.ac.in/sites/default/files/2025-02/FT%20Global%20MBA%20Ranking%202025.pdf",
+    "hallazgo_clave": "Tampoco hay escuelas latinoamericanas en el top 100 de 2025. Mediana del incremento salarial a 3 años: 120% (cálculo propio, 97 filas); Wharton n.º 1 con salario hoy USD 245,197.",
+    "cifra_clave": "Mediana incremento salarial post-MBA top 100: 120%",
+    "valor": 120,
+    "unidad": "% incremento salarial",
+    "signo": "positivo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "ft_execed_open_2026",
+    "autores": "Financial Times",
+    "anio": 2026,
+    "titulo": "FT Executive Education Open Rankings 2026",
+    "editor_revista": "Financial Times",
+    "tipo": "ranking",
+    "url": "https://iima.ac.in/sites/default/files/2026-05/Financial%20Times%20Executive%20Education%20%28Open%29%20Rankings%202026.pdf",
+    "hallazgo_clave": "Tres escuelas peruanas en el ranking de educación ejecutiva abierta: Centrum PUCP 20.º (29.º en 2025), Pacífico Business School 45.º (32.º), ESAN 74.º (75.º). Líder latinoamericana: Fundação Dom Cabral 4.º.",
+    "cifra_clave": "Centrum PUCP n.º 20 mundial (primera peruana)",
+    "valor": 20,
+    "unidad": "puesto",
+    "signo": "positivo",
+    "verificado_url": true,
+    "nota": "No es un ranking de MBA: mide programas de educación ejecutiva no conducentes a grado.",
+    "http_status": 200
+   },
+   {
+    "id": "ft_execed_open_2025",
+    "autores": "Financial Times",
+    "anio": 2025,
+    "titulo": "FT Executive Education Open Rankings 2025",
+    "editor_revista": "Financial Times",
+    "tipo": "ranking",
+    "url": "https://iima.ac.in/sites/default/files/2025-06/Financial%20Times%20Executive%20Education%20%28Open%29%20Rankings%202025.pdf",
+    "hallazgo_clave": "Centrum PUCP 29.º, Pacífico 32.º, ESAN 75.º.",
+    "cifra_clave": "Centrum PUCP n.º 29",
+    "valor": 29,
+    "unidad": "puesto",
+    "signo": "positivo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "ft_execed_custom_2026",
+    "autores": "Financial Times",
+    "anio": 2026,
+    "titulo": "FT Executive Education Custom Rankings 2026",
+    "editor_revista": "Financial Times",
+    "tipo": "ranking",
+    "url": "https://iima.ac.in/sites/default/files/2026-05/Financial%20Times%20Executive%20Education%20%28Custom%29%20Rankings%202026.pdf",
+    "hallazgo_clave": "ESAN 84.º (86.º en 2025) y Pacífico Business School 95.º (ingreso) en programas a medida para empresas.",
+    "cifra_clave": "ESAN n.º 84",
+    "valor": 84,
+    "unidad": "puesto",
+    "signo": "positivo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "ft_execed_custom_2025",
+    "autores": "Financial Times",
+    "anio": 2025,
+    "titulo": "FT Executive Education Custom Rankings 2025",
+    "editor_revista": "Financial Times",
+    "tipo": "ranking",
+    "url": "https://iima.ac.in/sites/default/files/2025-06/Financial%20Times%20Executive%20Education%20%28Custom%29%20Rankings%202025.pdf",
+    "hallazgo_clave": "ESAN 86.º (90.º en 2024), única peruana.",
+    "cifra_clave": "ESAN n.º 86",
+    "valor": 86,
+    "unidad": "puesto",
+    "signo": "positivo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "egade_ft_online_2026",
+    "autores": "Tecnológico de Monterrey (Conecta)",
+    "anio": 2026,
+    "titulo": "EGADE Online MBA ranked 16th in the world by the Financial Times",
+    "editor_revista": "Conecta Tec",
+    "tipo": "nota_prensa_escuela",
+    "url": "https://conecta.tec.mx/en/news/national/education/egade-online-mba-ranked-16th-world-financial-times",
+    "hallazgo_clave": "EGADE es la única escuela latinoamericana en el FT Online MBA ranking 2026, en el puesto 16.",
+    "cifra_clave": "EGADE Online MBA n.º 16 (FT 2026)",
+    "valor": 16,
+    "unidad": "puesto",
+    "signo": "positivo",
+    "verificado_url": true,
+    "nota": "Fuente de la propia escuela.",
+    "http_status": 200
+   },
+   {
+    "id": "egade_qs_2026",
+    "autores": "EGADE Business School",
+    "anio": 2025,
+    "titulo": "EGADE Business School reaffirms its leadership in Mexico and Latin America in the QS Global MBA & Business Master's Rankings 2026",
+    "editor_revista": "EGADE (blog institucional)",
+    "tipo": "nota_prensa_escuela",
+    "url": "https://egade.tec.mx/en/blog/egade-business-school-reaffirms-its-leadership-mexico-and-latin-america-qs-global-mba-business",
+    "hallazgo_clave": "EGADE Full-Time MBA n.º 56 de ~390 en el QS Global MBA 2026 (igual que 2025), n.º 1 en América Latina; el comunicado no publica el indicador de ROI/payback.",
+    "cifra_clave": "EGADE n.º 56 QS Global MBA 2026",
+    "valor": 56,
+    "unidad": "puesto",
+    "signo": "positivo",
+    "verificado_url": true,
+    "nota": "El sitio QS/TopMBA bloquea consultas automáticas (403); no se pudo verificar payback en meses.",
+    "http_status": 200
+   },
+   {
+    "id": "altonji_zhu",
+    "autores": "Joseph G. Altonji; Zhengren Zhu",
+    "anio": 2025,
+    "titulo": "Returns to Specific Graduate Degrees: Evidence from Texas Administrative Records (NBER WP 33530)",
+    "editor_revista": "NBER Working Paper",
+    "tipo": "paper_academico",
+    "url": "https://www.nber.org/papers/w33530",
+    "hallazgo_clave": "Con datos administrativos de Texas y efectos fijos, el retorno causal de un MBA es 0.156 log-puntos (OLS 0.235: el sesgo de selección es grande); sube ~0.021 por cada 10 puestos en el ranking U.S. News; el promedio de los MBA no rankeados es NEGATIVO; TIR del MBA ≈ 6% asumiendo 2 años a tiempo completo.",
+    "cifra_clave": "Retorno MBA (FE) = 0.156 log-puntos; no rankeados < 0",
+    "valor": 0.156,
+    "unidad": "log-puntos de ingreso",
+    "signo": "mixto",
+    "verificado_url": true,
+    "nota": "Cifras tomadas de la versión revisada 25-abr-2021 (https://conference.nber.org/conf_papers/f150448/f150448.pdf); el WP NBER es de mar-2025 y puede actualizar decimales.",
+    "http_status": 200
+   },
+   {
+    "id": "arcidiacono_2008",
+    "autores": "Peter Arcidiacono; Jane Cooley; Andrew Hussey",
+    "anio": 2008,
+    "titulo": "The Economic Returns to an MBA",
+    "editor_revista": "International Economic Review 49(3):873-899",
+    "tipo": "paper_academico",
+    "url": "https://ideas.repec.org/a/ier/iecrev/v49y2008i3p873-899.html",
+    "hallazgo_clave": "Controlar por efectos fijos individuales (usando salarios previos) reduce el retorno estimado del MBA, sobre todo en programas top; para full-time fuera del top-25 el retorno estimado sube. Quienes rinden el GMAT y no hacen MBA son más fuertes en habilidades no observadas.",
+    "cifra_clave": "Retorno cae al controlar selección, en especial en escuelas top",
+    "valor": null,
+    "unidad": null,
+    "signo": "mixto",
+    "verificado_url": true,
+    "doi": "10.1111/j.1468-2354.2008.00500.x",
+    "http_status": 200
+   },
+   {
+    "id": "acemoglu_he_lemaire",
+    "autores": "Daron Acemoglu; Alex Xi He; Daniel le Maire",
+    "anio": 2022,
+    "titulo": "Eclipse of Rent-Sharing: The Effects of Managers' Business Education on Wages and the Labor Share in the US and Denmark (NBER WP 29874)",
+    "editor_revista": "NBER Working Paper",
+    "tipo": "paper_academico",
+    "url": "https://www.nber.org/papers/w29874",
+    "hallazgo_clave": "A cinco años de nombrar un gerente con formación en negocios, los salarios caen 6% y la participación laboral 5 p.p. en EE.UU. (3% y 3 p.p. en Dinamarca), sin mayor producto, inversión o empleo: los gerentes 'business' dejan de compartir rentas con trabajadores.",
+    "cifra_clave": "Salarios -6% y labor share -5 p.p. (EE.UU.)",
+    "valor": -6,
+    "unidad": "% salario de los trabajadores",
+    "signo": "negativo",
+    "verificado_url": true,
+    "nota": "Versión jun-2025 disponible en economics.mit.edu.",
+    "http_status": 200
+   },
+   {
+    "id": "miller_xu_2019",
+    "autores": "Danny Miller; Xiaowei Xu",
+    "anio": 2019,
+    "titulo": "MBA CEOs, Short-Term Management and Performance",
+    "editor_revista": "Journal of Business Ethics 154(2):285-300",
+    "tipo": "paper_academico",
+    "url": "https://doi.org/10.1007/s10551-017-3450-5",
+    "hallazgo_clave": "En 444 CEOs 'estrella' de EE.UU. (1970-2008), los CEOs con MBA usan más tácticas de corto plazo (gestión de utilidades, recorte de I+D), seguidas de menor valoración de mercado. Correlacional.",
+    "cifra_clave": "444 CEOs estrella; MBA asociado a cortoplacismo",
+    "valor": 444,
+    "unidad": "CEOs",
+    "signo": "negativo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "pfeffer_fong_2002",
+    "autores": "Jeffrey Pfeffer; Christina T. Fong",
+    "anio": 2002,
+    "titulo": "The End of Business Schools? Less Success Than Meets the Eye",
+    "editor_revista": "Academy of Management Learning & Education 1(1)",
+    "tipo": "paper_academico",
+    "url": "https://doi.org/10.5465/amle.2002.7373679",
+    "hallazgo_clave": "Revisión crítica: poca evidencia de que el título MBA o las notas predigan éxito profesional, y escaso impacto de la investigación de las escuelas de negocios en la práctica gerencial.",
+    "cifra_clave": null,
+    "valor": null,
+    "unidad": null,
+    "signo": "negativo",
+    "verificado_url": false,
+    "nota": "doi.org redirige a journals.aom.org, que responde 403 a clientes automáticos; metadatos (título, autores, revista, 2002) verificados vía api.crossref.org.",
+    "http_status": 403
+   },
+   {
+    "id": "mintzberg_2004",
+    "autores": "Henry Mintzberg",
+    "anio": 2004,
+    "titulo": "Managers Not MBAs: A Hard Look at the Soft Practice of Managing and Management Development",
+    "editor_revista": "Berrett-Koehler",
+    "tipo": "libro",
+    "url": "https://mintzberg.org/books/managers-not-mbas",
+    "hallazgo_clave": "Crítica clásica: el MBA forma a personas sin experiencia gerencial en técnicas analíticas y no en la práctica de gestionar; propone formar a gerentes en ejercicio.",
+    "cifra_clave": null,
+    "valor": null,
+    "unidad": null,
+    "signo": "negativo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "freopp_2024_fortune",
+    "autores": "Fortune (cobertura del análisis de FREOPP, Preston Cooper)",
+    "anio": 2024,
+    "titulo": "Half of master's degree and MBA students are worse off...",
+    "editor_revista": "Fortune",
+    "tipo": "prensa_generalista",
+    "url": "https://fortune.com/2024/05/31/half-masters-degree-mba-students-worse-off-one-subject-starting-salary-over-100k-freopp/",
+    "hallazgo_clave": "Según FREOPP, 43% de los programas de maestría en EE.UU. tienen ROI negativo (vs 23% de los bachelor); el ROI mediano del MBA es ≈ USD 101,000, frente a ≈ USD 50,000 para todas las maestrías; el MBA 'frecuentemente' tiene retorno bajo o negativo.",
+    "cifra_clave": "ROI mediano MBA ≈ USD 101,000 (de por vida)",
+    "valor": 101000,
+    "unidad": "USD (valor presente neto de por vida)",
+    "signo": "mixto",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "freopp_gradschool",
+    "autores": "Preston Cooper",
+    "anio": null,
+    "titulo": "Is Grad School Worth It? A Comprehensive Return on Investment Analysis",
+    "editor_revista": "Foundation for Research on Equal Opportunity (FREOPP)",
+    "tipo": "informe_think_tank",
+    "url": "https://freopp.org/whitepapers/is-grad-school-worth-it-a-comprehensive-return-on-investment-analysis/",
+    "hallazgo_clave": "Más de 60% de los MBA y otras maestrías de negocios no muestran retorno positivo; 13 MBA de escuelas de élite (Yale, Wharton, Booth...) superan USD 2 millones de retorno de por vida.",
+    "cifra_clave": ">60% de MBA/maestrías de negocios sin retorno positivo",
+    "valor": 60,
+    "unidad": "% de programas",
+    "signo": "negativo",
+    "verificado_url": true,
+    "nota": "La página no muestra fecha de publicación; no se pudo verificar el año (la cobertura de prensa la sitúa en 2021-2022).",
+    "http_status": 200
+   },
+   {
+    "id": "dipres_chile_2026",
+    "autores": "Pablo Jorquera A. et al. (Dirección de Presupuestos, Chile)",
+    "anio": 2026,
+    "titulo": "Radiografía de la formación de postgrado: análisis de trayectorias laborales de becarios mediante registros administrativos (Estudios de Finanzas Públicas 2026/57)",
+    "editor_revista": "Dipres – Ministerio de Hacienda de Chile",
+    "tipo": "estudio_gubernamental",
+    "url": "https://www.dipres.gob.cl/598/articles-406754_doc_pdf.pdf",
+    "hallazgo_clave": "Estudio de eventos con registros administrativos (becas nacionales ANID): el magíster nacional genera una prima de ~USD 150/mes al 7.º año (TIR 28.1%); en doctorado la prima es >USD 200/mes pero la TIR es 13%. La prima se diluye para egresados de universidades no selectivas.",
+    "cifra_clave": "Prima magíster ≈ USD 150/mes al año 7; TIR 28.1%",
+    "valor": 150,
+    "unidad": "USD/mes",
+    "signo": "mixto",
+    "verificado_url": true,
+    "nota": "Becarios de magíster académico (no MBA), pero es la mejor evidencia causal latinoamericana encontrada.",
+    "http_status": 200
+   },
+   {
+    "id": "df_mba_chile_2026",
+    "autores": "Catalina Vergara (Diario Financiero), con datos de MBA Chile",
+    "anio": 2026,
+    "titulo": "El mercado laboral post MBA en el extranjero: EE.UU. lidera en salarios, pero...",
+    "editor_revista": "Diario Financiero (Chile)",
+    "tipo": "prensa_generalista",
+    "url": "https://www.df.cl/economia-y-politica/laboral-personas/el-mercado-laboral-post-mba-en-el-extranjero-eeuu-lidera-en-salarios-pero",
+    "hallazgo_clave": "Encuesta de Empleabilidad 2025 de MBA Chile (chilenos con MBA en el extranjero): sueldo líquido mensual promedio CLP 7 millones; CLP 9 millones si trabajan en EE.UU., 5 millones en Europa y 5.7 millones al volver a Chile.",
+    "cifra_clave": "Sueldo neto mensual promedio post-MBA (extranjero): CLP 7 millones",
+    "valor": 7000000,
+    "unidad": "CLP/mes",
+    "signo": "positivo",
+    "verificado_url": true,
+    "nota": "Autoselección fuerte (MBA de élite en el extranjero); no compara con contrafactual.",
+    "http_status": 200
+   },
+   {
+    "id": "men_colombia_2016",
+    "autores": "Ministerio de Educación Nacional de Colombia – Observatorio Laboral para la Educación",
+    "anio": 2016,
+    "titulo": "Colombianos recién graduados de posgrado ganan 2,2 veces el salario de los recién titulados de pregrado",
+    "editor_revista": "MinEducación Colombia",
+    "tipo": "dato_oficial",
+    "url": "https://www.mineducacion.gov.co/portal/salaprensa/Noticias/358827:Colombianos-recien-graduados-de-posgrado-ganan-2-2-veces-el-salario-de-los-recien-titulados-de-pregrado",
+    "hallazgo_clave": "Salario de enganche 2015 (cohorte 2014): posgrado COP 3.370.059 vs pregrado COP 1.512.629 (universitario 1.756.853). Diferencia descriptiva, sin controlar selección.",
+    "cifra_clave": "Posgrado = 2,2 x pregrado en salario de enganche",
+    "valor": 2.2,
+    "unidad": "veces",
+    "signo": "positivo",
+    "verificado_url": true,
+    "nota": "Fuera de la ventana 2021-2026; se incluye como único dato oficial regional comparable encontrado.",
+    "http_status": 200
+   },
+   {
+    "id": "bloomberg_2025_unemployed",
+    "autores": "Entrepreneur (cita a Bloomberg, 3-mar-2025)",
+    "anio": 2025,
+    "titulo": "MBA Grads From Top Schools Are Struggling to Find Work",
+    "editor_revista": "Entrepreneur / Bloomberg",
+    "tipo": "prensa_generalista",
+    "url": "https://www.entrepreneur.com/business-news/mba-grads-from-top-schools-struggling-to-find-work-report/487846",
+    "hallazgo_clave": "La proporción de graduados MBA sin oferta de trabajo 3 meses después del egreso se disparó entre 2021 y 2024 en escuelas top: Harvard 4%→15%, MIT Sloan 4.1%→15%, Booth 2.3%→13.2%, Stanford 4%→12%, Wharton 1%→6.9%.",
+    "cifra_clave": "Harvard: 4% (2021) → 15% (2024) sin oferta a 3 meses",
+    "valor": 15,
+    "unidad": "% de graduados",
+    "signo": "negativo",
+    "verificado_url": true,
+    "nota": "Bloomberg original con muro de pago; denominadores pueden diferir de los reportes de empleo de cada escuela.",
+    "http_status": 200
+   },
+   {
+    "id": "pq_csea_2026",
+    "autores": "Marc Ethier (Poets&Quants), datos CSEA",
+    "anio": 2026,
+    "titulo": "MBA Job Market Softens Again As Postings Fall, Consulting & Tech Decline",
+    "editor_revista": "Poets&Quants",
+    "tipo": "prensa_especializada",
+    "url": "https://poetsandquants.com/2026/04/07/mba-job-market-softens-again-as-postings-fall-consulting-tech-decline/",
+    "hallazgo_clave": "Encuesta CSEA (74 escuelas, otoño 2025): 48% de escuelas reporta menos avisos full-time (38% un año antes); 46% menos contratación en consultoría y 38% en tecnología; 74% ve más uso de entrevistas de pre-filtro con IA; 83% menos oportunidades para estudiantes sin permiso de trabajo.",
+    "cifra_clave": "48% de escuelas con menos avisos de empleo full-time",
+    "valor": 48,
+    "unidad": "% de escuelas",
+    "signo": "negativo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "pq_bauer_2025",
+    "autores": "Marc Ethier (Poets&Quants)",
+    "anio": 2025,
+    "titulo": "Exclusive: Houston's Bauer College Is Pausing Its Full-Time MBA Program",
+    "editor_revista": "Poets&Quants",
+    "tipo": "prensa_especializada",
+    "url": "https://poetsandquants.com/2025/04/28/exclusive-houstons-bauer-college-is-pausing-its-full-time-mba-program-a-long-time-dean-explains-why/",
+    "hallazgo_clave": "Univ. of Houston (Bauer) suspende indefinidamente el MBA full-time (cohorte de 19 alumnos) para concentrarse en MBA profesional, online y ejecutivo; lista antecedentes de cierres (Wake Forest 2014, Iowa 2019, Illinois 2019, Purdue 2020...).",
+    "cifra_clave": "Cohorte full-time de 19 alumnos",
+    "valor": 19,
+    "unidad": "alumnos",
+    "signo": "negativo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "pq_notredame_2026",
+    "autores": "Marc Ethier (Poets&Quants)",
+    "anio": 2026,
+    "titulo": "Why Notre Dame Is Shrinking Its MBA And Betting On A More Personal Experience",
+    "editor_revista": "Poets&Quants",
+    "tipo": "prensa_especializada",
+    "url": "https://poetsandquants.com/2026/08/31/why-notre-dame-is-shrinking-its-mba-and-betting-on-a-more-personal-experience/",
+    "hallazgo_clave": "Notre Dame (Mendoza) reduce deliberadamente el tamaño de su MBA full-time; el artículo no da cifras.",
+    "cifra_clave": null,
+    "valor": null,
+    "unidad": null,
+    "signo": "negativo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "pq_hbs_2025",
+    "autores": "Poets&Quants",
+    "anio": 2025,
+    "titulo": "In Its Latest MBA Class Profile, Clues To What It Takes To Get Into Harvard Business School",
+    "editor_revista": "Poets&Quants",
+    "tipo": "prensa_especializada",
+    "url": "https://poetsandquants.com/2025/11/19/in-its-latest-mba-class-profile-clues-to-what-it-takes-to-get-into-harvard-business-school/",
+    "hallazgo_clave": "HBS recibió 9,409 postulaciones para la clase 2027 vs 9,856 para la clase 2026 (-4.5%).",
+    "cifra_clave": "Postulaciones HBS clase 2027: 9,409",
+    "valor": 9409,
+    "unidad": "postulaciones",
+    "signo": "negativo",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "ft_consulting_freeze_2025",
+    "autores": "Stephen Foley; Ellesheva Kissin (Financial Times, republicado por The Irish Times)",
+    "anio": 2025,
+    "titulo": "Top consultancies freeze starting salaries as AI threatens 'pyramid' model",
+    "editor_revista": "Financial Times / The Irish Times",
+    "tipo": "prensa_generalista",
+    "url": "https://www.irishtimes.com/business/2025/12/01/top-consultancies-freeze-starting-salaries-as-ai-threatens-pyramid-model",
+    "hallazgo_clave": "McKinsey, BCG y Bain congelan por tercer año el paquete de entrada: ~USD 270,000-285,000 para MBA vs ~USD 135,000-140,000 para egresados de pregrado; la IA reduce la demanda de analistas generalistas.",
+    "cifra_clave": "Paquete 1.er año MBA en MBB ≈ USD 270-285k (congelado)",
+    "valor": 270000,
+    "unidad": "USD/año (salario+bono)",
+    "signo": "mixto",
+    "verificado_url": true,
+    "http_status": 200
+   },
+   {
+    "id": "bloomberg_consulting_ai_2025",
+    "autores": "Bloomberg",
+    "anio": 2025,
+    "titulo": "MBAs Seeking Jobs in Consulting Must Be AI Proficient",
+    "editor_revista": "Bloomberg",
+    "tipo": "prensa_generalista",
+    "url": "https://www.bloomberg.com/news/articles/2025-11-19/mbas-seeking-jobs-in-consulting-must-be-ai-proficient",
+    "hallazgo_clave": "Las consultoras exigen dominio de IA a los MBA que contratan (titular; texto con muro de pago, no leído).",
+    "cifra_clave": null,
+    "valor": null,
+    "unidad": null,
+    "signo": "mixto",
+    "verificado_url": false,
+    "nota": "bloomberg.com responde 403 a curl (muro de pago/antibots); solo se usa el titular.",
+    "http_status": 403
+   },
+   {
+    "id": "fortune_gmac_ai_2026",
+    "autores": "Preston Fore (Fortune)",
+    "anio": 2026,
+    "titulo": "Gen Z entry-level jobs replaced by AI: new GMAC recruiters survey",
+    "editor_revista": "Fortune",
+    "tipo": "prensa_generalista",
+    "url": "https://fortune.com/2026/06/26/gen-z-entry-level-jobs-replaced-by-ai-new-gmac-recruiters-survey-tech-manufacturing-jobs-most-at-risk/",
+    "hallazgo_clave": "Un tercio de los empleadores ya reemplaza puestos de entrada con IA; 40% en tecnología; solo 13% contrató más MBA en 2025 que en 2024.",
+    "cifra_clave": "40% de empleadores tech reemplazan puestos de entrada con IA",
+    "valor": 40,
+    "unidad": "% de empleadores",
+    "signo": "negativo",
+    "verificado_url": true,
+    "http_status": 200
+   }
+  ],
+  "series": [
+   {
+    "id": "gmac_crs_salario_inicial_eeuu",
+    "titulo": "Salario inicial mediano proyectado en EE.UU. por tipo de grado (GMAC Corporate Recruiters Survey)",
+    "unidad": "USD/año (nominal)",
+    "nota": "Cortes metodológicos: 2023 en tramos de USD 10k; 2025 'publicado' vs 2025 'recalculado' con la metodología 2026. Los cambios 2025→2026 no son estadísticamente significativos según GMAC.",
+    "datos": [
+     {
+      "anio": 2023,
+      "mba": 125000,
+      "bachelor": 75000,
+      "experienced_industria": 105000,
+      "master_no_mba": 85000,
+      "ratio_mba_bachelor": 1.67,
+      "fuente": "gmac_crs_2023_us",
+      "url": "https://www.GMAC.com/-/media/files/gmac/research/employment-outlook/2023-crs-regional-reports/2023_gmac_corporaterecruiters_report_unitedstates.pdf",
+      "nota_master": "MiM/MSBA/MSDA/MFin"
+     },
+     {
+      "anio": 2024,
+      "mba": 120000,
+      "bachelor": 70000,
+      "experienced_industria": 95000,
+      "master_no_mba": 80000,
+      "ratio_mba_bachelor": 1.71,
+      "fuente": "bestcolleges_crs_2025",
+      "url": "https://www.bestcolleges.com/news/mba-hiring-2025-gmac-corporate-recruiters-survey/",
+      "nota_master": "MiM"
+     },
+     {
+      "anio": 2025,
+      "version": "publicado 2025",
+      "mba": 125000,
+      "bachelor": 75000,
+      "experienced_industria": 100000,
+      "master_no_mba": 90000,
+      "ratio_mba_bachelor": 1.67,
+      "fuente": "bestcolleges_crs_2025",
+      "url": "https://www.bestcolleges.com/news/mba-hiring-2025-gmac-corporate-recruiters-survey/",
+      "nota_master": "MiM"
+     },
+     {
+      "anio": 2025,
+      "version": "recalculado en CRS 2026",
+      "mba": 125000,
+      "bachelor": 75000,
+      "experienced_industria": 110000,
+      "master_no_mba": 92500,
+      "ratio_mba_bachelor": 1.67,
+      "fuente": "gmac_crs_2026",
+      "url": "https://www.gmac.com/-/media/files/gmac/research/employment-outlook/2026-corporate-recruiters-survey/report.pdf",
+      "nota_master": "Non-MBA business master's"
+     },
+     {
+      "anio": 2026,
+      "mba": 120000,
+      "bachelor": 72000,
+      "experienced_industria": 107500,
+      "master_no_mba": 82500,
+      "ratio_mba_bachelor": 1.67,
+      "fuente": "gmac_crs_2026",
+      "url": "https://www.gmac.com/-/media/files/gmac/research/employment-outlook/2026-corporate-recruiters-survey/report.pdf",
+      "nota_master": "Non-MBA business master's"
+     }
+    ]
+   },
+   {
+    "id": "gmac_ats_programas_gme_crecimiento",
+    "titulo": "% de programas de posgrado en negocios (GME: MBA + másteres) que reportan crecimiento/estable/caída de postulaciones",
+    "unidad": "% de programas",
+    "fuente": "gmac_ats_2026",
+    "url": "https://www.gmac.com/-/media/files/gmac/research/admissions-and-application-trends/2026-application-trends-survey/2026-ats-report.pdf/",
+    "nota": "Lectura del gráfico Figure 2 del ATS 2026 (texto extraído del PDF); las sumas pueden diferir ±1 por redondeo.",
+    "datos": [
+     {
+      "anio": 2017,
+      "crecimiento": 51,
+      "estable": 9,
+      "caida": 40
+     },
+     {
+      "anio": 2018,
+      "crecimiento": 46,
+      "estable": 9,
+      "caida": 46
+     },
+     {
+      "anio": 2019,
+      "crecimiento": 44,
+      "estable": 7,
+      "caida": 48
+     },
+     {
+      "anio": 2020,
+      "crecimiento": 65,
+      "estable": 6,
+      "caida": 29
+     },
+     {
+      "anio": 2021,
+      "crecimiento": 44,
+      "estable": 6,
+      "caida": 50
+     },
+     {
+      "anio": 2022,
+      "crecimiento": 42,
+      "estable": 4,
+      "caida": 53
+     },
+     {
+      "anio": 2023,
+      "crecimiento": 45,
+      "estable": 5,
+      "caida": 50
+     },
+     {
+      "anio": 2024,
+      "crecimiento": 56,
+      "estable": 5,
+      "caida": 39
+     },
+     {
+      "anio": 2025,
+      "crecimiento": 49,
+      "estable": 6,
+      "caida": 46
+     },
+     {
+      "anio": 2026,
+      "crecimiento": 33,
+      "estable": 5,
+      "caida": 62
+     }
+    ]
+   },
+   {
+    "id": "gmac_ats_programas_mba_crecimiento",
+    "titulo": "% de programas MBA que reportan crecimiento/estable/caída de postulaciones",
+    "unidad": "% de programas",
+    "fuente": "gmac_ats_2026",
+    "url": "https://www.gmac.com/-/media/files/gmac/research/admissions-and-application-trends/2026-application-trends-survey/2026-ats-report.pdf/",
+    "nota": "Lectura del gráfico Figure 13 del ATS 2026; posible error de ±1 en 'estable' por redondeo/lectura.",
+    "datos": [
+     {
+      "anio": 2017,
+      "crecimiento": 56,
+      "estable": 9,
+      "caida": 35
+     },
+     {
+      "anio": 2018,
+      "crecimiento": 39,
+      "estable": 9,
+      "caida": 52
+     },
+     {
+      "anio": 2019,
+      "crecimiento": 45,
+      "estable": 8,
+      "caida": 47
+     },
+     {
+      "anio": 2020,
+      "crecimiento": 63,
+      "estable": 6,
+      "caida": 31
+     },
+     {
+      "anio": 2021,
+      "crecimiento": 43,
+      "estable": 5,
+      "caida": 52
+     },
+     {
+      "anio": 2022,
+      "crecimiento": 37,
+      "estable": 5,
+      "caida": 58
+     },
+     {
+      "anio": 2023,
+      "crecimiento": 47,
+      "estable": 4,
+      "caida": 49
+     },
+     {
+      "anio": 2024,
+      "crecimiento": 62,
+      "estable": 4,
+      "caida": 34
+     },
+     {
+      "anio": 2025,
+      "crecimiento": 45,
+      "estable": 7,
+      "caida": 49
+     },
+     {
+      "anio": 2026,
+      "crecimiento": 30,
+      "estable": 8,
+      "caida": 63
+     }
+    ]
+   },
+   {
+    "id": "gmac_ats_volumen_postulaciones",
+    "titulo": "Variación anual del volumen total de postulaciones (global)",
+    "unidad": "% interanual",
+    "fuente": "gmac_ats_2026",
+    "url": "https://www.gmac.com/-/media/files/gmac/research/admissions-and-application-trends/2026-application-trends-survey/2026-ats-report.pdf/",
+    "datos": [
+     {
+      "anio": 2022,
+      "mba": -7
+     },
+     {
+      "anio": 2023,
+      "mba": -5
+     },
+     {
+      "anio": 2024,
+      "mba": 13,
+      "gme_total": 12
+     },
+     {
+      "anio": 2025,
+      "mba": 2,
+      "gme_total": 7
+     },
+     {
+      "anio": 2026,
+      "mba": -13,
+      "gme_total": -10
+     }
+    ]
+   },
+   {
+    "id": "gmac_ats_2026_mba_por_formato",
+    "titulo": "Postulaciones MBA 2026 por formato: variación de volumen y % de programas con caída",
+    "unidad": "% ",
+    "fuente": "gmac_ats_2026",
+    "url": "https://www.gmac.com/-/media/files/gmac/research/admissions-and-application-trends/2026-application-trends-survey/2026-ats-report.pdf/",
+    "datos": [
+     {
+      "formato": "Todos GME",
+      "variacion_volumen_pct": -10,
+      "pct_programas_con_caida": 62
+     },
+     {
+      "formato": "Todos MBA",
+      "variacion_volumen_pct": -13,
+      "pct_programas_con_caida": 63
+     },
+     {
+      "formato": "Full-time 2 años",
+      "variacion_volumen_pct": -13,
+      "pct_programas_con_caida": 63
+     },
+     {
+      "formato": "Full-time 1 año",
+      "variacion_volumen_pct": -11,
+      "pct_programas_con_caida": 64
+     },
+     {
+      "formato": "Executive MBA",
+      "variacion_volumen_pct": -18,
+      "pct_programas_con_caida": 56
+     },
+     {
+      "formato": "Flex MBA",
+      "variacion_volumen_pct": -23,
+      "pct_programas_con_caida": 57
+     },
+     {
+      "formato": "Online MBA",
+      "variacion_volumen_pct": -9,
+      "pct_programas_con_caida": 49
+     },
+     {
+      "formato": "Part-time MBA",
+      "variacion_volumen_pct": -15,
+      "pct_programas_con_caida": 63
+     }
+    ]
+   },
+   {
+    "id": "gmac_ats_2026_matricula_mediana",
+    "titulo": "Matrícula y cuotas anuales medianas 2026 (USD), por tipo de programa",
+    "unidad": "USD/año",
+    "fuente": "gmac_ats_2026",
+    "url": "https://www.gmac.com/-/media/files/gmac/research/admissions-and-application-trends/2026-application-trends-survey/2026-ats-report.pdf/",
+    "datos": [
+     {
+      "programa": "Todos GME",
+      "residente": 43000,
+      "no_residente": 47000,
+      "internacional": 48000
+     },
+     {
+      "programa": "Todos MBA",
+      "residente": 48000,
+      "no_residente": 50000,
+      "internacional": 51000
+     },
+     {
+      "programa": "MBA full-time 2 años",
+      "residente": 35000,
+      "no_residente": 46000,
+      "internacional": 47000
+     },
+     {
+      "programa": "MBA full-time 1 año",
+      "residente": 55000,
+      "no_residente": 57000,
+      "internacional": 57000
+     },
+     {
+      "programa": "Executive MBA",
+      "residente": 60000,
+      "no_residente": 60000,
+      "internacional": 60000
+     },
+     {
+      "programa": "Flex MBA",
+      "residente": 48000,
+      "no_residente": 49000,
+      "internacional": 50000
+     },
+     {
+      "programa": "Online MBA",
+      "residente": 47000,
+      "no_residente": 48000,
+      "internacional": 49000
+     },
+     {
+      "programa": "Part-time MBA",
+      "residente": 49000,
+      "no_residente": 50000,
+      "internacional": 52000
+     },
+     {
+      "programa": "Todos másteres de negocios",
+      "residente": 38000,
+      "no_residente": 45000,
+      "internacional": 47000
+     }
+    ]
+   },
+   {
+    "id": "gmac_crs_2026_online_igual_presencial",
+    "titulo": "% de empleadores que valoran igual a graduados online y presenciales, 2026, por región",
+    "unidad": "% de empleadores",
+    "fuente": "gmac_crs_2026",
+    "url": "https://www.gmac.com/-/media/files/gmac/research/employment-outlook/2026-corporate-recruiters-survey/report.pdf",
+    "datos": [
+     {
+      "region": "Asia Oriental y Sudeste",
+      "pct": 73
+     },
+     {
+      "region": "América Latina",
+      "pct": 72
+     },
+     {
+      "region": "Europa Occidental",
+      "pct": 68
+     },
+     {
+      "region": "Asia Central y del Sur",
+      "pct": 63
+     },
+     {
+      "region": "Estados Unidos",
+      "pct": 24
+     },
+     {
+      "region": "Global",
+      "pct": 61
+     }
+    ]
+   },
+   {
+    "id": "gmac_crs_2026_contratacion_mba",
+    "titulo": "Contratación de MBA: resultado real 2025 vs proyección 2026 (empleadores globales)",
+    "unidad": "% de empleadores",
+    "fuente": "gmac_crs_2026",
+    "url": "https://www.gmac.com/-/media/files/gmac/research/employment-outlook/2026-corporate-recruiters-survey/report.pdf",
+    "datos": [
+     {
+      "periodo": "real 2025",
+      "mas_de_lo_esperado_o_mas": 13,
+      "igual": 62,
+      "menos": 13,
+      "no_contrato": 12
+     },
+     {
+      "periodo": "proyectado 2026",
+      "mas_de_lo_esperado_o_mas": 36,
+      "igual": 42,
+      "menos": 11,
+      "no_contrato": 11
+     }
+    ],
+    "nota": "GMAC advierte que las proyecciones suelen superar los resultados reales."
+   },
+   {
+    "id": "gmac_pss_interes_ia",
+    "titulo": "% de candidatos que dicen que la IA es parte de su currículo ideal",
+    "unidad": "% de candidatos",
+    "datos": [
+     {
+      "anio": 2022,
+      "pct": 29,
+      "fuente": "gmac_pss_2025",
+      "url": "https://www.gmac.com/-/media/files/gmac/research/prospective-student-data/2025/2025_pss_final.pdf"
+     },
+     {
+      "anio": 2023,
+      "pct": 40,
+      "fuente": "gmac_pss_2025",
+      "url": "https://www.gmac.com/-/media/files/gmac/research/prospective-student-data/2025/2025_pss_final.pdf"
+     },
+     {
+      "anio": 2024,
+      "pct": 46,
+      "fuente": "gmac_pss_2025",
+      "url": "https://www.gmac.com/-/media/files/gmac/research/prospective-student-data/2025/2025_pss_final.pdf"
+     },
+     {
+      "anio": 2025,
+      "pct": 50,
+      "fuente": "gmac_pss_2026_pq",
+      "url": "https://poetsandquants.com/2026/03/24/gmacs-bluntest-survey-yet-u-s-losing-global-talent-candidates-want-proof-not-promises/"
+     }
+    ],
+    "nota": "P&Q cita 17% para 2022; el informe primario de GMAC (PSS 2025) dice 29%."
+   },
+   {
+    "id": "ft_global_mba_mediana_top100",
+    "titulo": "FT Global MBA ranking: medianas del top 100 (cálculo propio)",
+    "unidad": "USD / %",
+    "nota": "Medianas calculadas sobre 97 de 100 filas parseadas del PDF; 'salario hoy' = salario promedio 3 años post-MBA (USD PPA). Ninguna escuela latinoamericana en el top 100 de ambos años.",
+    "datos": [
+     {
+      "anio": 2025,
+      "mediana_salario_hoy_usd": 164271,
+      "mediana_incremento_salarial_pct": 120,
+      "escuelas_latam_top100": 0,
+      "fuente": "ft_global_mba_2025",
+      "url": "https://iima.ac.in/sites/default/files/2025-02/FT%20Global%20MBA%20Ranking%202025.pdf"
+     },
+     {
+      "anio": 2026,
+      "mediana_salario_hoy_usd": 164541,
+      "mediana_incremento_salarial_pct": 116,
+      "escuelas_latam_top100": 0,
+      "fuente": "ft_global_mba_2026",
+      "url": "https://iima.ac.in/sites/default/files/2026-02/FT%20Global%20MBA%20Ranking%202026.pdf"
+     }
+    ]
+   },
+   {
+    "id": "ft_execed_open_peru",
+    "titulo": "Escuelas peruanas en el FT Executive Education Open ranking (puesto mundial)",
+    "unidad": "puesto (menor = mejor)",
+    "fuente": "ft_execed_open_2026 / ft_execed_open_2025",
+    "url": "https://iima.ac.in/sites/default/files/2026-05/Financial%20Times%20Executive%20Education%20%28Open%29%20Rankings%202026.pdf",
+    "url_2025": "https://iima.ac.in/sites/default/files/2025-06/Financial%20Times%20Executive%20Education%20%28Open%29%20Rankings%202025.pdf",
+    "datos": [
+     {
+      "escuela": "Centrum PUCP",
+      "2024": 44,
+      "2025": 29,
+      "2026": 20
+     },
+     {
+      "escuela": "Pacífico Business School",
+      "2023": 45,
+      "2024": 49,
+      "2025": 32,
+      "2026": 45
+     },
+     {
+      "escuela": "ESAN",
+      "2023": 66,
+      "2024": 68,
+      "2025": 75,
+      "2026": 74
+     }
+    ],
+    "nota": "Años previos tomados de las columnas 'rank in' de cada tabla. Es educación ejecutiva abierta, no MBA."
+   },
+   {
+    "id": "ft_execed_custom_peru",
+    "titulo": "Escuelas peruanas en el FT Executive Education Custom ranking",
+    "unidad": "puesto",
+    "fuente": "ft_execed_custom_2026 / ft_execed_custom_2025",
+    "url": "https://iima.ac.in/sites/default/files/2026-05/Financial%20Times%20Executive%20Education%20%28Custom%29%20Rankings%202026.pdf",
+    "datos": [
+     {
+      "escuela": "ESAN",
+      "2024": 90,
+      "2025": 86,
+      "2026": 84
+     },
+     {
+      "escuela": "Pacífico Business School",
+      "2026": 95
+     }
+    ]
+   },
+   {
+    "id": "ft_execed_open_2026_latam",
+    "titulo": "Escuelas latinoamericanas en el FT Executive Education Open 2026",
+    "unidad": "puesto",
+    "fuente": "ft_execed_open_2026",
+    "url": "https://iima.ac.in/sites/default/files/2026-05/Financial%20Times%20Executive%20Education%20%28Open%29%20Rankings%202026.pdf",
+    "datos": [
+     {
+      "escuela": "Fundação Dom Cabral",
+      "pais": "Brasil",
+      "puesto_2026": 4
+     },
+     {
+      "escuela": "FGV EAESP",
+      "pais": "Brasil",
+      "puesto_2026": 12
+     },
+     {
+      "escuela": "Insper",
+      "pais": "Brasil",
+      "puesto_2026": 19
+     },
+     {
+      "escuela": "Centrum PUCP",
+      "pais": "Perú",
+      "puesto_2026": 20
+     },
+     {
+      "escuela": "Universidad de los Andes",
+      "pais": "Colombia",
+      "puesto_2026": 23
+     },
+     {
+      "escuela": "INCAE",
+      "pais": "Costa Rica",
+      "puesto_2026": 33
+     },
+     {
+      "escuela": "EGADE",
+      "pais": "México",
+      "puesto_2026": 44
+     },
+     {
+      "escuela": "Pacífico Business School",
+      "pais": "Perú",
+      "puesto_2026": 45
+     },
+     {
+      "escuela": "IPADE",
+      "pais": "México",
+      "puesto_2026": 47
+     },
+     {
+      "escuela": "ESAN",
+      "pais": "Perú",
+      "puesto_2026": 74
+     },
+     {
+      "escuela": "IAE",
+      "pais": "Argentina",
+      "puesto_2026": 81
+     }
+    ]
+   },
+   {
+    "id": "top_schools_sin_oferta_3m",
+    "titulo": "% de graduados MBA sin oferta laboral 3 meses después del egreso, escuelas top de EE.UU.",
+    "unidad": "% de graduados",
+    "fuente": "bloomberg_2025_unemployed",
+    "url": "https://www.entrepreneur.com/business-news/mba-grads-from-top-schools-struggling-to-find-work-report/487846",
+    "datos": [
+     {
+      "escuela": "Harvard",
+      "2021": 4,
+      "2024": 15
+     },
+     {
+      "escuela": "MIT Sloan",
+      "2021": 4.1,
+      "2024": 15
+     },
+     {
+      "escuela": "Chicago Booth",
+      "2021": 2.3,
+      "2024": 13.2
+     },
+     {
+      "escuela": "Stanford",
+      "2021": 4,
+      "2024": 12
+     },
+     {
+      "escuela": "Columbia",
+      "2021": 6,
+      "2024": 11
+     },
+     {
+      "escuela": "Kellogg",
+      "2021": 2.9,
+      "2024": 10.2
+     },
+     {
+      "escuela": "Wharton",
+      "2021": 1,
+      "2024": 6.9
+     }
+    ]
+   },
+   {
+    "id": "retorno_mba_altonji_zhu",
+    "titulo": "Retorno causal del MBA (Texas): OLS vs efectos fijos",
+    "unidad": "log-puntos de ingreso",
+    "fuente": "altonji_zhu",
+    "url": "https://www.nber.org/papers/w33530",
+    "url_version_cifras": "https://conference.nber.org/conf_papers/f150448/f150448.pdf",
+    "datos": [
+     {
+      "estimador": "OLS",
+      "retorno": 0.235
+     },
+     {
+      "estimador": "Efectos fijos (FEcg)",
+      "retorno": 0.156
+     },
+     {
+      "estimador": "Part-time",
+      "retorno": 0.14
+     },
+     {
+      "estimador": "Full-time",
+      "retorno": 0.184
+     },
+     {
+      "estimador": "+10 puestos en ranking U.S. News",
+      "retorno_adicional": 0.021
+     },
+     {
+      "estimador": "TIR (2 años full-time)",
+      "tir": 0.06
+     }
+    ]
+   },
+   {
+    "id": "ranking_qs_payback_latam",
+    "titulo": "QS Global MBA – payback en meses de escuelas latinoamericanas",
+    "unidad": "meses",
+    "datos": [],
+    "nota": "NO DISPONIBLE: topuniversities.com/topmba.com/qs.com devuelven 403 a clientes automáticos y ninguna nota de prensa de las escuelas publica el indicador. Pendiente de captura manual desde navegador."
+   }
+  ]
+ }
+}

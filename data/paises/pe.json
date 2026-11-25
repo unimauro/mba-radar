@@ -1,0 +1,598 @@
+{
+ "pais": {
+  "code": "pe",
+  "nombre": "Perú",
+  "simbolo": "S/",
+  "fecha": "2026-11-25",
+  "fecha_texto": "noviembre 2026",
+  "tc_usd": 3.75,
+  "tc_fuente": "Tipo de cambio usado para convertir precios en dólares",
+  "tc_url": "https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/tipo-de-cambio"
+ },
+ "programas": [],
+ "enaho_resumen": {
+  "prima_pct": 60.5,
+  "etiqueta": "más gana quien tiene maestría/doctorado vs. universitario completo",
+  "detalle": "ENAHO 2024, mismo sexo, edad y zona · IC95 50–72 %"
+ },
+ "enaho_panel": {
+  "titulo": "Prima salarial del posgrado (cálculo propio con ENAHO)",
+  "fuente": "INEI, Encuesta Nacional de Hogares 2019-2024, módulo 500. Cálculo propio: etl/enaho_prima_posgrado.py",
+  "url": "https://proyectos.inei.gob.pe/microdatos/",
+  "cifra": "+61 %",
+  "texto": "En 2024 la mediana mensual de quien tiene maestría o doctorado fue S/ 3,958 frente a S/ 2,567 del universitario completo. Controlando edad, sexo y zona, la prima es +61 % y casi no cambió desde 2019 (2019: +62 %, 2022: +58 %, 2023: +51 %, 2024: +60 %). La prima es mucho mayor en el sector privado (+73 %) que en el público (+28 %), donde trabaja el 57 % de los posgraduados.",
+  "advertencia": "ENAHO no registra la especialidad del posgrado: incluye MBA, maestrías en educación, gestión pública, etc. El nivel 11 mezcla maestría y doctorado, completos o no. Es una correlación: quien hace un posgrado ya ganaba más antes (sesgo de selección), así que la prima causal es menor. n = 1,062 posgraduados y 4,566 universitarios en la muestra.",
+  "cortes": [
+   {
+    "grupo": "Hombres",
+    "prima_pct": 60.6,
+    "n": 532
+   },
+   {
+    "grupo": "Mujeres",
+    "prima_pct": 60.1,
+    "n": 530
+   },
+   {
+    "grupo": "Lima Metropolitana",
+    "prima_pct": 81.4,
+    "n": 180
+   },
+   {
+    "grupo": "Resto del país",
+    "prima_pct": 48.3,
+    "n": 882
+   },
+   {
+    "grupo": "Sector público",
+    "prima_pct": 28.0,
+    "n": 653
+   },
+   {
+    "grupo": "Sector privado",
+    "prima_pct": 73.5,
+    "n": 409
+   },
+   {
+    "grupo": "25–34 años",
+    "prima_pct": 55.7,
+    "n": 201
+   },
+   {
+    "grupo": "35–44 años",
+    "prima_pct": 57.7,
+    "n": 302
+   },
+   {
+    "grupo": "45–64 años",
+    "prima_pct": 65.9,
+    "n": 559
+   }
+  ],
+  "tendencia": {
+   "2019": 62.3,
+   "2022": 58.3,
+   "2023": 51.3,
+   "2024": 60.5
+  }
+ },
+ "salarios_escuelas": [
+  {
+   "escuela": "Pacífico (2023)",
+   "antes": 2739,
+   "despues": 3780,
+   "moneda": "US$/mes",
+   "anio": 2023,
+   "fuente": "AméricaEconomía Ranking MBA 2023",
+   "fuente_url": "https://negocios.udd.cl/files/2023/09/resultados-2023-6to-lugar-ae-rk-mba-23.pdf",
+   "var": 38
+  },
+  {
+   "escuela": "Pacífico (2024)",
+   "antes": 2971,
+   "despues": 4278,
+   "moneda": "US$/mes",
+   "anio": 2024,
+   "fuente": "AméricaEconomía Ranking MBA 2024",
+   "fuente_url": "https://negocios.udd.cl/files/2024/09/america-economia-ranking-mba-latino-2024_compressed.pdf",
+   "var": 44
+  },
+  {
+   "escuela": "USIL (2023)",
+   "antes": 2484,
+   "despues": 3180,
+   "moneda": "US$/mes",
+   "anio": 2023,
+   "fuente": "AméricaEconomía Ranking MBA 2023",
+   "fuente_url": "https://negocios.udd.cl/files/2023/09/resultados-2023-6to-lugar-ae-rk-mba-23.pdf",
+   "var": 28
+  },
+  {
+   "escuela": "USIL (2024)",
+   "antes": 1822,
+   "despues": 2624,
+   "moneda": "US$/mes",
+   "anio": 2024,
+   "fuente": "AméricaEconomía Ranking MBA 2024",
+   "fuente_url": "https://negocios.udd.cl/files/2024/09/america-economia-ranking-mba-latino-2024_compressed.pdf",
+   "var": 44
+  }
+ ],
+ "oferta": {
+  "titulo": "1,803 maestrías en 70 universidades",
+  "fuente": "SUNEDU - Programas Académicos (Plataforma Nacional de Datos Abiertos)",
+  "url": "https://www.datosabiertos.gob.pe/dataset/sunedu-programas-acad%C3%A9micos",
+  "texto": "Con datos abiertos de SUNEDU (corte 2024-08-28): 298 maestrías del campo Administración y Comercio, 64 de tipo MBA o administración general en 34 universidades, y 230 en educación. Para licenciarse se cerraron 3,243 programas (27 % maestrías); la UCV desistió de 21 maestrías.",
+  "serie": [
+   [
+    "Universidad de San Martín de Porres",
+    20
+   ],
+   [
+    "Pontificia Universidad Católica del Perú",
+    18
+   ],
+   [
+    "Universidad Nacional Federico Villarreal",
+    16
+   ],
+   [
+    "Universidad del Pacífico",
+    15
+   ],
+   [
+    "Universidad Peruana de Ciencias Aplicadas S.A.C.",
+    13
+   ],
+   [
+    "Universidad Nacional de San Agustín de Arequipa",
+    13
+   ],
+   [
+    "Universidad Esan",
+    12
+   ],
+   [
+    "Universidad Nacional José Faustino Sánchez Carrión",
+    11
+   ],
+   [
+    "Universidad Privada del Norte S.A.C.",
+    10
+   ],
+   [
+    "Universidad Nacional Mayor de San Marcos",
+    9
+   ],
+   [
+    "Universidad San Ignacio de Loyola S.R.L.",
+    9
+   ],
+   [
+    "Universidad Nacional del Callao",
+    9
+   ],
+   [
+    "Universidad Nacional del Altiplano",
+    9
+   ],
+   [
+    "Universidad de Piura",
+    8
+   ],
+   [
+    "Universidad Católica de Santa María",
+    8
+   ]
+  ],
+  "unidad": "maestrías en Administración y Comercio",
+  "nota": "Son programas autorizados, no graduados: SUNEDU no publica como dato abierto los grados otorgados por universidad (habría que pedirlos por Ley 27806)."
+ },
+ "estudios": [
+  {
+   "id": "lavado_martinez_yamada_2014_bcrp",
+   "autores": "Pablo Lavado, Joan J. Martínez, Gustavo Yamada",
+   "anio": 2014,
+   "titulo": "¿Una promesa incumplida? La calidad de la educación superior universitaria y el subempleo profesional en el Perú",
+   "institucion": "BCRP (DT 2014-021) / Universidad del Pacífico (WP 14-05)",
+   "tipo": "paper",
+   "url": "https://ideas.repec.org/p/rbp/wpaper/2014-021.html",
+   "url_alternativas": [
+    "https://www.bcrp.gob.pe/docs/Publicaciones/Documentos-de-Trabajo/2014/documento-de-trabajo-21-2014.pdf (bloquea bots: Incapsula, no verificable automáticamente)",
+    "https://repositorio.up.edu.pe/handle/11354/1102"
+   ],
+   "hallazgo_clave": "En 2012, 4 de cada 10 profesionales universitarios estaban sobreeducados (ocupaciones no profesionales y mal remuneradas). Tras la desregulación de los 90, la probabilidad de subempleo de egresados de universidades de menor calidad subió de 0.19 a 0.30.",
+   "cifra_clave": "Prob. subempleo egresados univ. baja calidad: 0.19 -> 0.30; 40% sobreeducados (2012)",
+   "signo": "negativo",
+   "relevancia_mba": "media",
+   "verificado_url": true,
+   "nota": "Trata pregrado; relevante para MBA por el mecanismo calidad-del-programa -> subempleo.",
+   "pais": "PE"
+  },
+  {
+   "id": "inei_a_la_carrera_2014",
+   "autores": "INEI, en colaboración con Gustavo Yamada y Joan Martínez",
+   "anio": 2014,
+   "titulo": "¿A la carrera por el título? Un modelo económico sobre la calidad de la educación universitaria y el subempleo profesional",
+   "institucion": "INEI",
+   "tipo": "informe",
+   "url": "https://www.inei.gob.pe/media/MenuRecursivo/investigaciones/a-la-carrera-documento-final-con-caratulas-para-la-web.pdf",
+   "hallazgo_clave": "Cuatro de cada diez profesionales universitarios al 2012 estaban sobreeducados, en vacantes no profesionales; la literatura citada indica que un profesional en una ocupación para la que no se formó gana 33% menos.",
+   "cifra_clave": "40% de profesionales sobreeducados (2012); penalidad salarial de 33% por ocupación no afín",
+   "signo": "negativo",
+   "relevancia_mba": "media",
+   "verificado_url": true,
+   "pais": "PE"
+  },
+  {
+   "id": "yamada_lavado_2017_brecha",
+   "autores": "Gustavo Yamada y Pablo Lavado (eds.); caps. de Oviedo, Manrique, Martínez",
+   "anio": 2017,
+   "titulo": "Educación superior y empleo en el Perú (libro; extracto: introducción e índice)",
+   "institucion": "Fondo Editorial Universidad del Pacífico",
+   "tipo": "paper",
+   "url": "https://fondoeditorial.up.edu.pe/wp-content/uploads/2020/07/Educaci%C3%B3n_superior_empleo_extracto.pdf",
+   "hallazgo_clave": "El subempleo profesional afecta a más del 40% de la fuerza laboral con estudios superiores (~45% trabaja en algo para lo que no estudió, 2004-2014, tendencia creciente). Sobreeducación = 35% de los ocupados; los adecuadamente educados ganan 55% más por hora que los sobreeducados y un año de sobreeducación rinde ~la mitad que un año requerido. 77% de sobreeducados sigue así al año siguiente. Muchas instituciones cobran pensiones altas sin compensar con retorno.",
+   "cifra_clave": "Subempleo profesional ~45%; sobreeducación 35%; brecha por hora 55%; persistencia 77%",
+   "signo": "negativo",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "nota": "Año inferido de los metadatos del PDF (creado oct-2017). Evidencia de pregrado, pero el mecanismo (año extra de educación no aprovechado rinde la mitad) aplica directo a maestrías de baja pertinencia.",
+   "pais": "PE"
+  },
+  {
+   "id": "yamada_oviedo_2016_ipae",
+   "autores": "Gustavo Yamada y Nelson Oviedo",
+   "anio": 2016,
+   "titulo": "Premio a la calidad universitaria en el mercado laboral peruano",
+   "institucion": "IPAE / Universidad del Pacífico",
+   "tipo": "paper",
+   "url": "https://www.ipae.pe/wp-content/uploads/2016/12/premio-a-la-calidad-universitaria-en-el-mercado-laboral-peruano.pdf",
+   "hallazgo_clave": "Con variables instrumentales (ENAHO 2014 + censos universitarios), estudiar en una institución de buena calidad da un premio bruto en ingresos de 15.9% a 48.9%. La calidad de la institución pesa tanto como el nivel.",
+   "cifra_clave": "Premio salarial por calidad institucional: 15.9%–48.9%",
+   "signo": "mixto",
+   "relevancia_mba": "media",
+   "verificado_url": true,
+   "nota": "En la muestra, 19.8% (vs 12.7%) reporta posgrado; no estima la prima del posgrado por separado.",
+   "pais": "PE"
+  },
+  {
+   "id": "castro_yamada_2012_convexificacion",
+   "autores": "Juan F. Castro y Gustavo Yamada",
+   "anio": 2012,
+   "titulo": "'Convexification' and 'deconvexification' of the Peruvian wage profile: a tale of declining education quality",
+   "institucion": "Universidad del Pacífico, WP 12-02",
+   "tipo": "paper",
+   "url": "https://econpapers.repec.org/paper/paiwpaper/12-02.htm",
+   "hallazgo_clave": "El perfil salarial peruano es convexo: el retorno a la educación superior es ~9 p.p. mayor que el de la básica; la caída de calidad de la educación superior explica la reciente 'deconvexificación' (retornos marginales a niveles altos que se aplanan).",
+   "cifra_clave": "Retorno educación superior ~9 p.p. mayor que básica",
+   "signo": "mixto",
+   "relevancia_mba": "media",
+   "verificado_url": true,
+   "pais": "PE"
+  },
+  {
+   "id": "yamada_2007_cies",
+   "autores": "Gustavo Yamada",
+   "anio": 2007,
+   "titulo": "Retornos a la educación superior en el mercado laboral: ¿vale la pena el esfuerzo?",
+   "institucion": "CIES / Universidad del Pacífico (DT 78)",
+   "tipo": "paper",
+   "url": "https://cies.org.pe/wp-content/uploads/2016/07/dyp-31.pdf",
+   "hallazgo_clave": "TIR privada de la universidad: 14.7% (pública) y 12.2% (privada); superior no universitaria privada apenas 1.2%. Advierte que el posgrado en ENAHO (preguntado desde 2000) tenía aún muy pocas observaciones para ser representativo.",
+   "cifra_clave": "TIR privada universidad pública 14.7%, privada 12.2%",
+   "signo": "positivo",
+   "relevancia_mba": "baja",
+   "verificado_url": true,
+   "pais": "PE"
+  },
+  {
+   "id": "sunedu_iii_bienal_2021",
+   "autores": "SUNEDU",
+   "anio": 2021,
+   "titulo": "III Informe Bienal sobre la Realidad Universitaria en el Perú",
+   "institucion": "SUNEDU",
+   "tipo": "informe",
+   "url": "https://cdn.www.gob.pe/uploads/document/file/3018068/III%20Informe%20Bienal.pdf?v=1649883911",
+   "url_alternativas": [
+    "https://repositorio.minedu.gob.pe/handle/20.500.12799/7913"
+   ],
+   "hallazgo_clave": "Matrícula de posgrado cayó 27.7% con la pandemia (~95 mil estudiantes en 2020). Subempleo invisible de egresados universitarios de 21-35 años subió 13.0 p.p. entre 2019 y 2020 (14% en 2018). Solo ~0.9% de la población de 21-35 años tenía posgrado. El registro de grados y títulos (RNGT) pasó de 103.3 mil (2015) a 352.1 mil registros (2019).",
+   "cifra_clave": "Contracción matrícula posgrado 2020: -27.7%; subempleo invisible egresados +13 p.p. (2019-2020)",
+   "signo": "negativo",
+   "relevancia_mba": "media",
+   "verificado_url": true,
+   "nota": "No reporta prima salarial del posgrado ni grados de maestría por universidad.",
+   "pais": "PE"
+  },
+  {
+   "id": "ue_infocard_posgrado_peru_2023",
+   "autores": "Comisión Europea (Infocard país Perú, posgrado), con datos SUNEDU/INEI",
+   "anio": 2023,
+   "titulo": "Perú: Infocard 2023 – estudios de postgrado",
+   "institucion": "Comisión Europea",
+   "tipo": "informe",
+   "url": "https://webgate.acceptance.ec.europa.eu/portal9/en/country-assets/pe_postgraduate_es.pdf",
+   "hallazgo_clave": "1,991 programas de maestría, 384 de doctorado y 1,778 de segunda especialidad (SUNEDU 2021); Administración y Derecho concentran la oferta de maestría. 104,252 estudiantes de posgrado (94,095 maestría). Solo 24% de profesionales tiene posgrado (INEI). MBA en Pacífico/USIL/ESAN/PUCP: S/60k–90k vs ~S/16k (UNMSM) y ~S/14k (UNALM) en maestría en administración.",
+   "cifra_clave": "Costo MBA top Lima S/60,000–90,000; 1,991 programas de maestría",
+   "signo": "neutral",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "nota": "El URL está en un dominio 'acceptance' de la CE pero respondió 200 con el PDF.",
+   "pais": "PE"
+  },
+  {
+   "id": "gestion_2022_titulos_bamba",
+   "autores": "Ani Lu Torres (Gestión)",
+   "anio": 2022,
+   "titulo": "Títulos 'bamba': ¿hay herramientas para combatir el mercantilismo en las universidades?",
+   "institucion": "Diario Gestión",
+   "tipo": "prensa",
+   "url": "https://gestion.pe/peru/titulos-bamba-hay-herramientas-para-combatir-el-mercantilismo-en-las-universidades-noticia/",
+   "hallazgo_clave": "Para licenciarse, 95 universidades renunciaron a 3,243 programas: 27.1% eran maestrías. La UCV dejó 39 programas (21 maestrías). Idel Vexler: los posgrados crecieron impulsados por la demanda (sobre todo del sector público) pero 'se debilitó la exigencia y rigurosidad técnica'.",
+   "cifra_clave": "27.1% de 3,243 programas desistidos eran maestrías (~879)",
+   "signo": "negativo",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "pais": "PE"
+  },
+  {
+   "id": "gestion_2026_posgrados_demandados_cappes",
+   "autores": "José Carlos Reyes Leyva (Gestión), con datos de CAPPES/SUNEDU",
+   "anio": 2026,
+   "titulo": "Los posgrados más demandados en Perú: crece preferencia por una segunda especialidad",
+   "institucion": "Diario Gestión / CAPPES",
+   "tipo": "prensa",
+   "url": "https://gestion.pe/peru/los-posgrados-mas-demandados-en-peru-crece-preferencia-por-una-segunda-especialidad-noticia/",
+   "hallazgo_clave": "Maestrías >70% de la matrícula de posgrado, pero su expansión se frena: entre 2022 y 2024 la demanda de maestrías cayó 31.7% en universidades públicas y 0.3% en privadas. Gestión Pública es el programa más estudiado (13.3%, >19,900 alumnos); 5 programas concentran 47.8% de la matrícula; 9 de 10 estudiantes trabajan.",
+   "cifra_clave": "Demanda de maestrías 2022-2024: -31.7% públicas, -0.3% privadas",
+   "signo": "mixto",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "nota": "La concentración en Gestión Pública sugiere demanda credencialista ligada a requisitos del empleo estatal (inferencia, no afirmación de la nota).",
+   "pais": "PE"
+  },
+  {
+   "id": "gestion_2026_horizonte_laboral",
+   "autores": "Gerardo Rosales Díaz (Gestión), con informe de Horizonte Laboral",
+   "anio": 2026,
+   "titulo": "Empleo y educación desconectados en Perú: los millones que le cuestan al país",
+   "institucion": "Diario Gestión / Horizonte Laboral",
+   "tipo": "prensa",
+   "url": "https://gestion.pe/economia/empleo-y-educacion-desconectados-en-peru-los-millones-que-le-cuestan-al-pais-y-la-situacion-de-los-trabajadores-jovenes-noticia/",
+   "hallazgo_clave": "Estima ~S/8,000 millones al año invertidos en formación superior con bajo retorno: ≥100 mil egresados/año con baja alineación carrera-demanda, a ~S/80 mil por estudiante. Subempleo juvenil 2025: 1.7 millones (43.5% de la PEA juvenil, INEI).",
+   "cifra_clave": "S/8,000 millones/año en formación de bajo retorno",
+   "signo": "negativo",
+   "relevancia_mba": "baja",
+   "verificado_url": true,
+   "pais": "PE"
+  },
+  {
+   "id": "infobae_2025_inei_desempleo_universitarios",
+   "autores": "Tomás Ezerskii (Infobae), datos INEI-EPEN",
+   "anio": 2025,
+   "titulo": "Tener título universitario no asegura trabajo: son los más golpeados por el desempleo en el Perú",
+   "institucion": "Infobae Perú / INEI",
+   "tipo": "prensa",
+   "url": "https://www.infobae.com/peru/2025/08/22/tener-titulo-universitario-no-asegura-trabajo-son-los-mas-golpeados-por-el-desempleo-en-el-peru/",
+   "hallazgo_clave": "Abr-jun 2025: desempleo de universitarios 7% vs 5.9% nacional y 4% con primaria; pero su ingreso promedio es el más alto (S/3,176.7 vs S/1,897.6 superior no universitaria y S/1,432.7 secundaria). INEI no desagrega posgrado en este boletín.",
+   "cifra_clave": "Ingreso universitario S/3,176.7/mes; desempleo 7%",
+   "signo": "mixto",
+   "relevancia_mba": "baja",
+   "verificado_url": true,
+   "pais": "PE"
+  },
+  {
+   "id": "ae_ranking_mba_2024",
+   "autores": "AméricaEconomía Intelligence",
+   "anio": 2024,
+   "titulo": "Ranking Las Mejores Escuelas de Negocios de América Latina 2024 (MBA)",
+   "institucion": "AméricaEconomía",
+   "tipo": "ranking",
+   "pais": "LATAM",
+   "url": "https://negocios.udd.cl/files/2024/09/america-economia-ranking-mba-latino-2024_compressed.pdf",
+   "hallazgo_clave": "Pacífico (PE): US$4,278/mes al 3er año post-MBA, +44% vs año previo al MBA, 63% con oferta a 3 meses. USIL (PE): US$2,624, +44%, 49%. Mediana regional (38 escuelas): US$4,160 y +57%; Perú queda por debajo de la mediana en incremento.",
+   "cifra_clave": "Incremento pre/post MBA: Pacífico 44%, USIL 44% (mediana LatAm 57%)",
+   "signo": "positivo",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "nota": "Encuesta a exalumnos (autoselección, sin grupo de control): mide cambio bruto, no efecto causal. ESAN, CENTRUM, PAD y UDEP no aparecen en la tabla de ingreso 2024."
+  },
+  {
+   "id": "ae_ranking_mba_2023",
+   "autores": "AméricaEconomía Intelligence",
+   "anio": 2023,
+   "titulo": "Ranking Las Mejores Escuelas de Negocios de América Latina 2023 (MBA)",
+   "institucion": "AméricaEconomía",
+   "tipo": "ranking",
+   "pais": "LATAM",
+   "url": "https://negocios.udd.cl/files/2023/09/resultados-2023-6to-lugar-ae-rk-mba-23.pdf",
+   "hallazgo_clave": "Pacífico: US$3,780/mes, +38%, 57% oferta a 3 meses. USIL: US$3,180, +28%, 38%. Mediana regional (37 escuelas): US$3,796 y +57%.",
+   "cifra_clave": "Incremento pre/post MBA: Pacífico 38%, USIL 28% (mediana LatAm 57%)",
+   "signo": "positivo",
+   "relevancia_mba": "alta",
+   "verificado_url": true
+  },
+  {
+   "id": "ae_ranking_mba_2020",
+   "autores": "AméricaEconomía Intelligence",
+   "anio": 2020,
+   "titulo": "Ranking Las Mejores Escuelas de Negocios de América Latina 2020 (subrankings ROI)",
+   "institucion": "AméricaEconomía (reproducido por ESPOL)",
+   "tipo": "ranking",
+   "pais": "LATAM",
+   "url": "https://www.espol.edu.ec/sites/default/files/espol/RK%20MBA%20AMLAT%20AE475.pdf",
+   "hallazgo_clave": "ESAN: ingreso a 3 años US$7,425 (PPA), +51% de variación, payback 38 meses, 41% con oferta al egreso, 71% movilidad positiva. Pacífico: US$6,174 PPA, +36%, payback 36 meses, 40% oferta, 80% movilidad positiva.",
+   "cifra_clave": "Variación ingreso: ESAN 51%, Pacífico 36%; payback 36-38 meses",
+   "signo": "positivo",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "nota": "Cifras 2020 en US$ PPA (no comparables con 2023-2024 en US$ nominales)."
+  },
+  {
+   "id": "pbs_gestion_beneficios_mba_2022",
+   "autores": "Diario Gestión (reproducido por Pacífico Business School)",
+   "anio": 2022,
+   "titulo": "Beneficios de un MBA",
+   "institucion": "Gestión / PBS",
+   "tipo": "prensa",
+   "url": "https://pbs.edu.pe/SiteAssets/Lists/UP_Noticias/NewForm/Beneficios%20de%20un%20MBA%20-%20Gesti%C3%B3n.pdf",
+   "hallazgo_clave": "Recuadro: 37% es el incremento salarial promedio de estudiantes del MBA de CENTRUM PUCP tras terminar el programa; un MBA en Perú puede costar hasta S/135,000 (Grupo Educación al Futuro). Cifra de la escuela, sin metodología.",
+   "cifra_clave": "CENTRUM: +37% salario post-MBA (autodeclarado)",
+   "signo": "positivo",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "nota": "Año según metadatos del PDF (sep-2022). Fuente promocional.",
+   "pais": "PE"
+  },
+  {
+   "id": "hamilton_emagister_fso_2024",
+   "autores": "Hamilton Global Intelligence / Emagister",
+   "anio": 2024,
+   "titulo": "Ranking de Formación Superior Online (9ª ed.): el salario de los titulados con un MBA online en Perú crece de media un 30%",
+   "institucion": "Corresponsables (nota de prensa)",
+   "tipo": "prensa",
+   "url": "https://www.corresponsables.com/per/buen-gobierno/hamilton-global-intelligence-el-salario-de-los-titulados-con-un-mba-online-en-peru-crece-de-media-un-30/",
+   "hallazgo_clave": "MBA online en Perú: salario medio de US$22,930/año antes vs US$29,867 después (+30%); promedio de los 9 países: +33.7%.",
+   "cifra_clave": "MBA online Perú +30% (US$22,930 -> 29,867 anual)",
+   "signo": "positivo",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "nota": "Encuesta a >4,000 alumnos/egresados de 200 instituciones; no desglosa n para Perú; ranking comercial.",
+   "pais": "PE"
+  },
+  {
+   "id": "esan_2025_adecco_guia_salarial",
+   "autores": "ESAN (Conexión ESAN), cita a Adecco Perú y a J. Merzthal",
+   "anio": 2025,
+   "titulo": "Invertir en una maestría es también invertir en tu futuro salarial",
+   "institucion": "Universidad ESAN",
+   "tipo": "prensa",
+   "url": "https://esan.edu.pe/conexion-esan/invertir-en-una-maestria-es-tambien-invertir-en-tu-futuro-salarial",
+   "hallazgo_clave": "Según la Guía Salarial 2025 de Adecco Perú, los posgrados podrían elevar las remuneraciones 'hasta en un 53%'; el director del MBA de ESAN habla de 30%-50% al cambiar de empresa y 25%-50% en ascensos.",
+   "cifra_clave": "Hasta +53% (Adecco, techo, no promedio)",
+   "signo": "positivo",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "nota": "Fuente promocional de la propia escuela; 'hasta' = cota superior. Fecha inferida (~jul-2025) por la ruta de la imagen.",
+   "pais": "PE"
+  },
+  {
+   "id": "esan_qs_2025",
+   "autores": "ESAN (Conexión ESAN)",
+   "anio": 2025,
+   "titulo": "ESAN lidera el QS Global MBA Rankings 2025 y es la mejor escuela de negocios del Perú",
+   "institucion": "Universidad ESAN / QS",
+   "tipo": "ranking",
+   "url": "https://esan.edu.pe/conexion-esan/esan-lidera-el-prestigioso-qs-global-mba-rankings-2025-y-es-la-mejor-escuela-de-negocios-del-peru",
+   "hallazgo_clave": "ESAN: 1° en Perú y 7° en América Latina en QS Global MBA 2025; 2° de LatAm en la dimensión ROI. No publica cifras monetarias.",
+   "cifra_clave": "ROI QS: 2° en LatAm",
+   "signo": "positivo",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "pais": "PE"
+  },
+  {
+   "id": "minedu_universidad_en_cifras_2023",
+   "autores": "MINEDU (DIGESU)",
+   "anio": 2023,
+   "titulo": "La Universidad en Cifras",
+   "institucion": "MINEDU",
+   "tipo": "informe",
+   "url": "https://repositorio.minedu.gob.pe/bitstream/handle/20.500.12799/9077/La%20Universidad%20en%20Cifras.pdf?sequence=1&isAllowed=y",
+   "hallazgo_clave": "1,423,731 estudiantes de pregrado en 2021 (74.5% en privadas); la UCV es la universidad con mayor matrícula (135,236). Contexto de masificación; sin cifras de posgrado por universidad.",
+   "cifra_clave": "Matrícula UCV 2021 (pregrado): 135,236",
+   "signo": "neutral",
+   "relevancia_mba": "baja",
+   "verificado_url": true,
+   "pais": "PE"
+  },
+  {
+   "id": "arcidiacono_cooley_hussey_2008",
+   "autores": "Peter Arcidiacono, Jane Cooley, Andrew Hussey",
+   "anio": 2008,
+   "pais": "EE.UU.",
+   "titulo": "The Economic Returns to an MBA",
+   "institucion": "International Economic Review 49(3): 873-899",
+   "tipo": "paper",
+   "url": "https://ideas.repec.org/a/ier/iecrev/v49y2008i3p873-899.html",
+   "hallazgo_clave": "Al controlar efectos fijos individuales (usando salarios previos), el retorno estimado del MBA cae, sobre todo en programas top: buena parte del 'premio' bruto es selección. Para full-time fuera del top-25 el retorno estimado sube con efectos fijos.",
+   "cifra_clave": "Retorno con efectos fijos < retorno bruto (programas top)",
+   "signo": "mixto",
+   "relevancia_mba": "alta",
+   "verificado_url": true,
+   "nota": "Comparable internacional metodológico: advierte que el +38-51% de AméricaEconomía no es efecto causal."
+  },
+  {
+   "id": "men_colombia_ole_2016",
+   "autores": "Ministerio de Educación Nacional de Colombia – Observatorio Laboral para la Educación",
+   "anio": 2016,
+   "pais": "CO",
+   "titulo": "Colombianos recién graduados de posgrado ganan 2,2 veces el salario de los recién titulados de pregrado",
+   "institucion": "MEN / OLE",
+   "tipo": "informe",
+   "url": "https://www.mineducacion.gov.co/portal/salaprensa/Noticias/358827:Colombianos-recien-graduados-de-posgrado-ganan-2-2-veces-el-salario-de-los-recien-titulados-de-pregrado",
+   "hallazgo_clave": "Graduados 2014 (empleo 2015): salario de enganche posgrado COP 3,370,059 vs universitario COP 1,756,853 (≈1.92x; 2.2x vs todo el pregrado).",
+   "cifra_clave": "Posgrado/universitario ≈ 1.92x (enganche)",
+   "signo": "positivo",
+   "relevancia_mba": "media",
+   "verificado_url": true,
+   "nota": "Datos administrativos (PILA) de formales; incluye especializaciones, maestrías y doctorados agregados; sin controles."
+  }
+ ],
+ "alertas": [
+  {
+   "id": "enaho_bajo_mediana",
+   "signo": "negativo",
+   "titulo": "Uno de cada cinco posgraduados gana menos que el universitario típico",
+   "hallazgo_clave": "En 2024 el 19 % de quienes tienen maestría/doctorado gana menos que la mediana de los universitarios completos (en 2019 era 23 %). Para ellos el posgrado, de hecho, no pagó.",
+   "autores": "Cálculo propio con ENAHO",
+   "anio": 2024,
+   "tipo": "microdatos",
+   "url": "https://proyectos.inei.gob.pe/microdatos/"
+  },
+  {
+   "id": "enaho_subempleo",
+   "signo": "negativo",
+   "titulo": "18 % de los posgraduados trabaja en ocupaciones no profesionales",
+   "hallazgo_clave": "Vendedores, oficinistas, operarios, etc. (CNO grupos 4-9). Es menos que entre universitarios (34 %), pero son ~55 mil personas con maestría en empleos que no la requieren.",
+   "autores": "Cálculo propio con ENAHO",
+   "anio": 2024,
+   "tipo": "microdatos",
+   "url": "https://proyectos.inei.gob.pe/microdatos/"
+  }
+ ],
+ "presets_prima": [
+  {
+   "etiqueta": "Programa no rankeado",
+   "valor": 0,
+   "fuente": "Altonji y Zhu (2021): retorno promedio negativo en programas no rankeados de EE.UU."
+  },
+  {
+   "etiqueta": "Causal EE.UU.",
+   "valor": 17,
+   "fuente": "Altonji y Zhu (2021): 0,156 log con efectos fijos = +17 %"
+  },
+  {
+   "etiqueta": "AméricaEconomía, Pacífico/USIL",
+   "valor": 44,
+   "fuente": "Variación bruta pre/post, autorreportada, 2024"
+  },
+  {
+   "etiqueta": "ENAHO posgrado (correlación)",
+   "valor": 60,
+   "fuente": "Cálculo propio ENAHO 2024, no causal"
+  }
+ ],
+ "textos": {
+  "retorno_sub": "Sí hay una prima salarial asociada al posgrado en el Perú, y es grande. Pero no toda se debe al título: quien estudia un MBA ya ganaba más, y la evidencia indica que la parte causal depende mucho de la calidad del programa.",
+  "salarios_nota": "Las cifras de rankings provienen de encuestas a exalumnos (autoselección, sesgo de supervivencia, sin grupo de control). Miden variación bruta pre/post (incluye crecimiento normal de carrera ~3-5 años), no el efecto causal del MBA. Las de escuelas/prensa son autodeclaradas. \"Antes\" se reconstruye a partir de la variación porcentual publicada."
+ },
+ "metodologia": [
+  "Costos: precio total publicado por cada universidad (web, brochures, tarifarios TUPA/TUSNE) o por prensa y portales cuando la universidad no lo publica; cada fila indica su nivel de confianza y su fuente. Los precios en dólares se convierten al tipo de cambio indicado. No incluyen descuentos corporativos, becas ni intereses de financiamiento.",
+  "Segmentos: «escuela con acreditación internacional» = el programa o la escuela tiene AACSB, AMBA o EQUIS; el resto se separa en universidad privada o pública según SUNEDU.",
+  "Prima salarial: regresión de Mincer ponderada con la ENAHO (INEI) de 2019, 2022, 2023 y 2024; ocupados de 25 a 64 años con ingreso positivo; maestría/doctorado (p301a = 11) frente a universitaria completa (p301a = 10); controles: edad, edad², sexo, Lima Metropolitana y área urbana; errores robustos. Prima = exp(β) − 1. Es una asociación, no un efecto causal.",
+  "Calculadora: flujo mensual descontado; el costo del programa se reparte en partes iguales durante su duración; en modalidad full-time se suma el sueldo que se deja de percibir; el aumento se aplica desde el mes siguiente al egreso. Sueldo anual = 14 sueldos.",
+  "Todo el código y los datos están en el repositorio; los enlaces se verificaron el 25-nov-2026."
+ ]
+}

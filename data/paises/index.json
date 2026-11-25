@@ -1,0 +1,35 @@
+{
+ "default": "pe",
+ "paises": [
+  {
+   "code": "pe",
+   "nombre": "Perú",
+   "bandera": "🇵🇪",
+   "listo": true
+  },
+  {
+   "code": "cl",
+   "nombre": "Chile",
+   "bandera": "🇨🇱",
+   "listo": false
+  },
+  {
+   "code": "co",
+   "nombre": "Colombia",
+   "bandera": "🇨🇴",
+   "listo": false
+  },
+  {
+   "code": "mx",
+   "nombre": "México",
+   "bandera": "🇲🇽",
+   "listo": false
+  },
+  {
+   "code": "ar",
+   "nombre": "Argentina",
+   "bandera": "🇦🇷",
+   "listo": false
+  }
+ ]
+}
