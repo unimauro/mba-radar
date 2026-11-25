@@ -7,6 +7,7 @@ import {nombreCorto, programasConCosto} from './data.js';
 import {simular} from './simular.js';
 import {combo} from './combo.js';
 import {baseOptions, fontSize, FONT_FAMILY, hasChart} from './charts-common.js';
+import {shareBar, siteUrl} from './share.js';
 
 const MONEY_INPUTS = ['c-costo', 'c-sueldo'];
 const SLIDERS = ['c-prima', 'c-hor', 'c-tasa', 'c-imp'];
@@ -121,6 +122,7 @@ export function calc() {
   $('o-imp').textContent = `${numVal('c-imp')} %`;
   if (inp.H * MESES_ANIO <= inp.D) {
     $('c-res').innerHTML = '<p class="empty">El horizonte debe ser mayor que la duración del programa.</p>';
+    $('c-share').hidden = true;
     setDock(null);
     return;
   }
@@ -130,6 +132,19 @@ export function calc() {
   const anio = s.pay ? Math.ceil(s.pay / MESES_ANIO) : null;
   setDock(v.kind, v.pierde ? `Pierdes ${money(Math.abs(s.npv))} en ${inp.H} años` : `Recuperas en el año ${anio} · +${money(s.npv)}`);
   drawCalcChart(s, inp);
+  compartirResultado(s, inp, v);
+}
+
+/** "Comparte tu resultado": costo del programa, aumento supuesto y veredicto. Nunca el sueldo ni datos personales. */
+function compartirResultado(s, inp, v) {
+  const host = $('c-share'); if (!host) return;
+  host.hidden = false;
+  const anio = s.pay ? Math.ceil(s.pay / MESES_ANIO) : null;
+  const prima = Math.round(inp.p * PORCENTAJE);
+  const res = v.pierde ? `no lo recupero en ${inp.H} años` : `lo recupero en el año ${anio}`;
+  const text = `Simulé un MBA de ${money(inp.C)} en MBA Radar: con un aumento de sueldo de ${prima} %, ${res}. Haz tus números antes de matricularte:`;
+  if (host._share?.text === text) return;
+  shareBar(host, {url: siteUrl('calculadora'), label: 'Comparte tu resultado', text});
 }
 
 function veredicto(s, inp) {

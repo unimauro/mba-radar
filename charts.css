@@ -45,13 +45,13 @@
 .cx-bars-host{--cx-valw:6.2em}
 .cx-bars{list-style:none;margin:0;padding:0;display:grid;gap:2px}
 .cx-row{margin:0}
-.cx-bar{display:grid;gap:3px;width:100%;padding:7px 6px;border:0;border-radius:8px;background:transparent;text-align:left;font:inherit;color:inherit;cursor:pointer;min-height:var(--tap)}
+.cx-bar{display:grid;gap:3px;width:100%;padding:5px 6px;border:0;border-radius:8px;background:transparent;text-align:left;font:inherit;color:inherit;cursor:pointer;min-height:var(--tap)}
 .cx-bar:hover,.cx-on .cx-bar{background:var(--bg-2)}
 .cx-bar:focus-visible{outline:2px solid var(--s1);outline-offset:1px}
 .cx-lab{font-size:.84rem;line-height:1.25;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .cx-lab b{color:var(--ink)}
 .cx-trk{display:flex;align-items:center;gap:6px;min-width:0}
-.cx-fill{display:block;height:12px;width:calc((100% - var(--cx-valw)) * var(--w));min-width:3px;border-radius:0 4px 4px 0;flex:none;transition:filter .15s}
+.cx-fill{display:block;height:12px;width:calc((100% - var(--cx-valw)) * var(--w));min-width:3px;border-radius:0 4px 4px 0;flex:none;transition:filter .15s;transform-origin:left center}
 .cx-bar:hover .cx-fill{filter:brightness(1.08)}
 .cx-val{flex:none;font:700 .8rem var(--font-b);color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
 .cx-badge{display:inline-block;margin-left:6px;padding:0 7px;border-radius:99px;font:700 .68rem/1.6 var(--font-b);font-style:normal;text-transform:uppercase;letter-spacing:.04em;vertical-align:1px}
@@ -115,3 +115,48 @@
 .cx-stbar + .studies{margin-top:10px}
 .panel .cx-stbar{margin-top:8px}
 @media(min-width:760px){.cx-stbar .cx-chips{flex:0 1 auto}}
+
+/* ---------- Efecto: barras que crecen al aparecer (html.fx lo pone js/fx.js) ---------- */
+.fx .cx-bars-host:not(.cx-seen) .cx-fill,.fx .cx-rngs:not(.cx-seen) .cx-rng-box{transform:scaleX(0)}
+.fx .cx-bars-host .cx-fill,.fx .cx-rngs .cx-rng-box{transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .15s}
+.fx .cx-bars-host .cx-row:nth-child(n+4) .cx-fill{transition-delay:.04s}
+.fx .cx-bars-host .cx-row:nth-child(n+8) .cx-fill{transition-delay:.08s}
+.fx .cx-bars-host:not(.cx-seen) .cx-val,.fx .cx-rngs:not(.cx-seen) .cx-rng-med{opacity:0}
+.fx .cx-bars-host .cx-val,.fx .cx-rngs .cx-rng-med{transition:opacity .3s .3s}
+
+/* ---------- Rango p25–p75 con mediana (distribución de ingresos) ---------- */
+.cx-rngs{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
+.cx-rng{display:grid;gap:4px}
+.cx-rng-t{font:700 .86rem var(--font-b);color:var(--ink);display:flex;align-items:center;gap:6px}
+.cx-rng-t i{width:10px;height:10px;border-radius:3px;flex:none}
+.cx-rng-t small{font-weight:400;color:var(--ink-3)}
+.cx-rng-trk{position:relative;height:30px;background:linear-gradient(var(--grid),var(--grid)) 0 50%/100% 2px no-repeat;margin-top:16px}
+.cx-rng-box{position:absolute;top:7px;height:16px;border-radius:4px;transform-origin:left center;opacity:.9}
+.cx-rng-med{position:absolute;top:0;height:30px;width:3px;margin-left:-1.5px;background:var(--ink);border-radius:2px;box-shadow:0 0 0 2px var(--surface)}
+.cx-rng-med b{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);white-space:nowrap;font:700 .78rem var(--font-b);color:var(--ink);padding-bottom:2px}
+.cx-rng-v{display:flex;justify-content:space-between;gap:8px;font-size:.76rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.cx-rng-axis{position:relative;height:18px;margin-top:6px;border-top:1px solid var(--line);font-size:.72rem;color:var(--ink-3)}
+.cx-rng-axis span{position:absolute;top:2px;transform:translateX(-50%);white-space:nowrap}
+.cx-rng-axis span:first-child{transform:none}
+.cx-rng-hl{font-size:.88rem;margin:10px 0 0}
+#p-dist .chips{margin-bottom:4px}
+
+/* ---------- Compartir ---------- */
+.cx-share{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.cx-share-l{font:700 .84rem var(--font-b);color:var(--ink-2)}
+.cx-share-b{display:flex;flex-wrap:wrap;gap:6px}
+.cx-sh{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border:1px solid var(--line-2);border-radius:99px;background:var(--surface);color:var(--ink);font:700 .82rem var(--font-b);text-decoration:none;cursor:pointer}
+.cx-sh:hover{border-color:var(--ink);color:var(--ink)}
+.cx-sh svg{flex:none}
+.cx-sh-whatsapp svg{color:#128c4a}.cx-sh-linkedin svg{color:#0a66c2}.cx-sh-facebook svg{color:#1b74e4}
+.cx-sh-native{background:var(--ink);border-color:var(--ink);color:#fff}
+.cx-sh-native:hover{color:#fff}
+.cx-share-ok{font-size:.8rem;color:var(--verde);min-height:1em;overflow-wrap:anywhere}
+.cx-share-ok:empty{display:none}
+@media(max-width:420px){.cx-share-b{gap:5px}.cx-sh span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.cx-sh{width:40px;min-height:40px;padding:0;justify-content:center}.cx-sh-native{width:auto;padding:0 14px}.cx-sh-native span{position:static;width:auto;height:auto;clip:auto}}
+.cx-share-dark{margin-top:14px}
+.cx-share-dark .cx-share-l{color:#ecdedb}
+.cx-share-dark .cx-sh{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.28);color:#fff}
+.cx-share-dark .cx-sh:hover{background:rgba(255,255,255,.16);border-color:#fff}
+.cx-share-dark .cx-sh svg{color:#fff}
+.cx-share-dark .cx-share-ok{color:#bfe8d0}

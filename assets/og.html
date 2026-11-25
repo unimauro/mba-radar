@@ -26,7 +26,7 @@
     background-size: 40px 40px;
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 60%);
   }
-  .wrap { position: absolute; inset: 0; padding: 52px 64px 44px; display: flex; flex-direction: column; }
+  .wrap { position: absolute; inset: 0; padding: 44px 64px 38px; display: flex; flex-direction: column; }
   .brand { display: flex; align-items: center; gap: 14px; }
   .logo {
     width: 46px; height: 46px; border-radius: 11px; background: #b3122e;
@@ -41,13 +41,15 @@
     color: #ffcc4d; border: 2px solid rgba(255,204,77,.5); padding: 6px 14px; border-radius: 999px;
   }
   h1 {
-    margin-top: 40px;
+    margin-top: 30px;
     font-family: 'Archivo', sans-serif; font-weight: 800;
-    font-size: 72px; line-height: 1.04; letter-spacing: -1.5px;
+    font-size: 64px; line-height: 1.04; letter-spacing: -1.5px;
     max-width: 1100px;
   }
   h1 .y { color: #ffcc4d; white-space: nowrap; }
   h1 .q { color: #ff6b7f; }
+  .sub { margin-top: 18px; font-size: 26px; line-height: 1.3; color: #e6d6d9; }
+  .sub b { color: #ffcc4d; }
   .stats { margin-top: auto; display: grid; grid-template-columns: 1fr 1.35fr 1fr; gap: 18px; }
   .stat {
     background: rgba(255,255,255,.06);
@@ -74,23 +76,24 @@
       <div class="tag">¿Vale la pena un MBA en el Perú?</div>
     </div>
     <h1>Tu MBA puede costar <span class="y">S/ 157 mil.</span><br><span class="q">¿Lo vas a recuperar?</span></h1>
+    <p class="sub">Precio mediano: escuelas acreditadas <b>S/ 80 mil</b> vs. universidades públicas <b>S/ 10 mil</b> (<b>×8</b>)</p>
     <div class="stats">
       <div class="stat">
         <div class="num y">×33</div>
-        <div class="lbl">entre el MBA más caro y el más barato</div>
+        <div class="lbl">entre el MBA más caro y el más barato comparable</div>
       </div>
       <div class="stat">
-        <div class="num r">1 de cada 5</div>
-        <div class="lbl">posgraduados gana menos que un universitario típico <small>(INEI)</small></div>
+        <div class="num r">1 de cada 4</div>
+        <div class="lbl">posgraduados gana menos que el universitario típico de su edad <small>(INEI, ENAHO 2024)</small></div>
       </div>
       <div class="stat">
-        <div class="num y">58</div>
-        <div class="lbl">programas de MBA comparados</div>
+        <div class="num y">69</div>
+        <div class="lbl">programas de MBA con precio <small>(de 78 revisados)</small></div>
       </div>
     </div>
     <div class="foot">
       <div class="url">unimauro.github.io/mba-radar</div>
-      <div class="src">Precios de las escuelas · INEI · SUNEDU · fuentes verificables</div>
+      <div class="src">Precios oficiales y de terceros · INEI ENAHO · SUNEDU</div>
     </div>
   </div>
 </body>

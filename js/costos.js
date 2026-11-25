@@ -35,11 +35,25 @@ function notaCostos(rows, conPrecio) {
 
 const avisosHTML = p => advertencias(p).map(a => `<br><small class="cx-aviso">${esc(a)}</small>`).join('');
 
-const COLUMNAS = ['Universidad', 'Programa', 'Modalidad', 'Sede', 'Meses', 'Costo total', 'Acreditación / ranking', 'Año', 'Dato', 'Fuente'];
+/* Columnas de la tabla: [clase, encabezado, etiqueta en móvil (vacía = sin etiqueta), celda(p)].
+   En móvil cada fila es una tarjeta: la etiqueta sale de data-label y la posición de la clase (styles.css),
+   así que agregar o mover columnas no desordena las etiquetas. */
+const COLUMNAS = [
+  ['t-uni', 'Universidad', '', p => esc(p.universidad)],
+  ['t-prog', 'Programa', '', p => `${esc(p.programa)}${p.nota ? `<br><small class="empty">${esc(p.nota)}</small>` : ''}${avisosHTML(p)}`],
+  ['t-mod', 'Modalidad', 'Modalidad', p => esc(p.modalidad || '—')],
+  ['t-sede', 'Sede', 'Sede', p => esc(p.sede || '—')],
+  ['t-dur num', 'Meses', 'Duración (meses)', p => esc(p.duracion_meses ?? '—')],
+  ['t-costo num', 'Costo total', '', p => `${money(p.costo_soles)}${usdNota(p, '<br><small>US$ ', '</small>')}`],
+  ['t-acr', 'Acreditación / ranking', 'Acreditación', p => esc(acreditacionTxt(p) || '—')],
+  ['t-anio', 'Año', 'Año del dato', p => esc(p.anio_precio ?? '—')],
+  ['t-conf', 'Dato', 'Confianza', p => confBadge(p.confianza || 'baja')],
+  ['t-fuente', 'Fuente', 'Fuente', p => p.fuente_url ? `<a href="${esc(safeUrl(p.fuente_url))}" target="_blank" rel="noopener">ver</a>` : '—'],
+];
 
 function tablaCostos(rows) {
-  const fila = p => `<tr><td>${esc(p.universidad)}</td><td>${esc(p.programa)}${p.nota ? `<br><small class="empty">${esc(p.nota)}</small>` : ''}${avisosHTML(p)}</td><td>${esc(p.modalidad || '—')}</td><td>${esc(p.sede || '—')}</td><td class="num">${esc(p.duracion_meses ?? '—')}</td><td class="num">${money(p.costo_soles)}${usdNota(p, '<br><small>US$ ', '</small>')}</td><td>${esc(acreditacionTxt(p) || '—')}</td><td>${esc(p.anio_precio ?? '—')}</td><td>${confBadge(p.confianza || 'baja')}</td><td>${p.fuente_url ? `<a href="${esc(safeUrl(p.fuente_url))}" target="_blank" rel="noopener">ver</a>` : '—'}</td></tr>`;
-  return `<thead><tr>${COLUMNAS.map(c => `<th>${c}</th>`).join('')}</tr></thead><tbody>` + rows.map(fila).join('') + '</tbody>';
+  const fila = p => `<tr>${COLUMNAS.map(([cls, , lab, cell]) => `<td class="${cls}"${lab ? ` data-label="${esc(lab)}"` : ''}>${cell(p)}</td>`).join('')}</tr>`;
+  return `<thead><tr>${COLUMNAS.map(([cls, h]) => `<th class="${cls}" scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>` + rows.map(fila).join('') + '</tbody>';
 }
 
 export function renderSegmentos() {

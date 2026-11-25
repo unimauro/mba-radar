@@ -5,10 +5,11 @@ import {data, FILTER_KEYS, money, resetBarState, resetFilters, ui} from './state
 import {nombreCorto, tieneCosto} from './data.js';
 import {aumentoNecesario} from './aumento.js';
 import {combo} from './combo.js';
+import {initialParams, setParams} from './router.js';
 
+/* Parámetros del hash (#/precios?seg=publica&precio=0-20000&q=…): ver route.js. */
 const HASH_KEY = {modalidad: 'mod', seg: 'seg', rng: 'precio', acr: 'acr', sede: 'sede', ord: 'orden'};
-const PAIS_RE = /pais=([a-z]{2})/;
-const PAIS_FALLBACK = 'pe';
+const PAIS_RE = /^[a-z]{2}$/;
 
 /** Grupos del panel: [clave, título, etiqueta "todos" (null = sin opción vacía)]. */
 const GRUPOS = [['modalidad', 'Modalidad', 'Todas'], ['seg', 'Tipo de institución', 'Todas'], ['rng', 'Precio total', 'Cualquiera'],
@@ -44,28 +45,51 @@ function opciones() {
   };
 }
 
-export const paisEnHash = () => (location.hash.match(PAIS_RE) || [])[1];
+/** País pedido en el hash inicial (#/…?pais=xx o el formato antiguo #pais=xx). */
+export const paisEnHash = () => { const p = initialParams().pais; return PAIS_RE.test(p || '') ? p : null; };
 
-/** Restablece los filtros y, si `fromHash`, toma los válidos del hash. */
-export function readHash(fromHash) {
+/** Restablece los filtros y toma los válidos de `params` (objeto del hash). */
+export function readHash(params = {}) {
   resetFilters();
-  if (fromHash) {
-    const hp = new URLSearchParams(location.hash.slice(1)), op = opciones();
-    FILTER_KEYS.forEach(k => { const v = hp.get(HASH_KEY[k]); if (v && op[k].some(o => o[0] === v)) ui[k] = v; });
-    const o = hp.get(HASH_KEY.ord);
-    if (o && ORDEN[o]) ui.ord = o;
-    ui.q = (hp.get('q') || '').slice(0, MAX_QUERY);
-  }
+  const op = opciones();
+  FILTER_KEYS.forEach(k => { const v = params[HASH_KEY[k]]; if (v && op[k].some(o => o[0] === v)) ui[k] = v; });
+  const o = params[HASH_KEY.ord];
+  if (o && ORDEN[o]) ui.ord = o;
+  ui.q = String(params.q || '').slice(0, MAX_QUERY);
   $('q').value = ui.q;
+  $('q').dispatchEvent(new Event('cx-sync'));
 }
 
-function writeHash() {
-  const hp = new URLSearchParams({pais: data.pais.pais.code || paisEnHash() || PAIS_FALLBACK});
-  if (ui.q.trim()) hp.set('q', ui.q.trim());
-  FILTER_KEYS.forEach(k => ui[k] && hp.set(HASH_KEY[k], ui[k]));
-  if (ui.ord !== ORDEN_DEFAULT) hp.set(HASH_KEY.ord, ui.ord);
-  try { history.replaceState(null, '', '#' + hp.toString()); } catch { /* file:// u otros */ }
+/** Parámetros del hash que reflejan el país y los filtros actuales. */
+export function filterParams() {
+  const hp = {};
+  const code = data.pais?.pais?.code;
+  if (code && code !== data.paisDefault) hp.pais = code;
+  if (ui.q.trim()) hp.q = ui.q.trim();
+  FILTER_KEYS.forEach(k => { if (ui[k]) hp[HASH_KEY[k]] = ui[k]; });
+  if (ui.ord !== ORDEN_DEFAULT) hp[HASH_KEY.ord] = ui.ord;
+  return hp;
 }
+
+/** ¿Trae `params` algún filtro? */
+export const tieneFiltros = params => Boolean(params.q) || Object.values(HASH_KEY).some(k => params[k]);
+
+const mismoFiltro = params => JSON.stringify(Object.entries(filterParams()).filter(([k]) => k !== 'pais').sort()) ===
+  JSON.stringify(Object.entries(params).filter(([k]) => k !== 'pais').sort());
+
+/**
+ * Al entrar a #/precios: si el hash trae filtros distintos de los vigentes, se aplican (true = hay que redibujar);
+ * si no trae ninguno, se conservan los vigentes.
+ */
+export function syncFiltros(params) {
+  if (!tieneFiltros(params) || mismoFiltro(params)) return false;
+  readHash(params);
+  resetBarState();
+  paintFiltros();
+  return true;
+}
+
+function writeHash() { setParams(filterParams(), 'precios'); }
 
 const nFiltros = () => FILTER_KEYS.filter(k => ui[k]).length;
 

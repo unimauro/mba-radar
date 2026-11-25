@@ -35,45 +35,57 @@
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPWDMFC5" height="0" width="0" style="display:none;visibility:hidden" title="GTM"></iframe></noscript>
-<a class="skip" href="#costos">Saltar al contenido</a>
+<a class="skip" href="#main">Saltar al contenido</a>
 
 <header class="top" id="top">
   <div class="top-in wrap">
-    <a class="brand" href="#" aria-label="MBA Radar, inicio">MBA<span aria-hidden="true">·</span>Radar</a>
-    <a class="top-apoya" href="#apoya">💚 Apóyanos</a>
+    <a class="brand" href="#/inicio" aria-label="MBA Radar, inicio">MBA<span aria-hidden="true">·</span>Radar</a>
+    <a class="top-apoya" href="#/fuentes?ir=apoya">💚 Apóyanos</a>
     <nav class="paises" id="paises" aria-label="País"></nav>
   </div>
-  <nav class="secnav" id="secnav" aria-label="Secciones">
+  <nav class="secnav" id="secnav" aria-label="Vistas">
     <div class="secnav-in wrap">
-      <a href="#costos">Costos</a>
-      <a href="#calculadora">Calculadora</a>
-      <a href="#retorno">Retorno</a>
-      <a href="#riesgos">Riesgos</a>
-      <a href="#mundo">Mundo</a>
-      <a href="#apoya">Apoya</a>
-      <a href="#fuentes">Fuentes</a>
+      <a href="#/inicio" data-view="inicio">Inicio</a>
+      <a href="#/precios" data-view="precios">Precios</a>
+      <a href="#/calculadora" data-view="calculadora">Calculadora</a>
+      <a href="#/retorno" data-view="retorno">Retorno</a>
+      <a href="#/mundo" data-view="mundo">Mundo</a>
+      <a href="#/fuentes" data-view="fuentes">Fuentes</a>
     </div>
   </nav>
 </header>
 
-<main>
+<main id="main" tabindex="-1">
+<!-- ===================== Vista: Inicio ===================== -->
+<div class="view" id="v-inicio" data-view="inicio" data-title="¿Vale la pena un MBA? · Costos y retorno en el Perú">
   <section class="hero-x" aria-labelledby="h-hero">
     <div class="wrap">
       <p class="eyebrow" id="hero-eyebrow">Perú · noviembre 2026</p>
-      <h1 id="h-hero"><span class="h1-a">Tu MBA puede costar</span> <em id="hero-max">lo que un auto</em><span class="h1-b">¿Lo vas a recuperar?</span></h1>
+      <h1 id="h-hero" tabindex="-1"><span class="h1-a">Tu MBA puede costar</span> <em id="hero-max">lo que un auto</em><span class="h1-b">¿Lo vas a recuperar?</span></h1>
       <p class="lead">Miles de peruanos pagan cada año por un MBA, muchas veces a crédito. Reunimos precios reales, microdatos del INEI y la investigación más reciente para responder lo que no te dicen en la charla informativa: <strong>el retorno no está garantizado y, según el programa y tu sueldo, puede no llegar nunca.</strong></p>
       <div class="shock-wrap">
         <div class="shock" id="shock" tabindex="0" aria-label="Cifras clave (desliza para ver más)"></div>
       </div>
-      <div class="cta"><a class="btn" href="#calculadora">Calcula si te conviene</a><a class="btn ghost" href="#costos">Ver precios por universidad</a></div>
+      <div class="cta"><a class="btn" href="#/calculadora">Calcula si te conviene</a><a class="btn ghost" href="#/precios">Ver precios por universidad</a></div>
+      <div id="hero-share"></div>
     </div>
   </section>
   <section class="wrap kpis-wrap" aria-label="Resumen de precios"><div class="kpis" id="kpis"></div></section>
-
-  <section id="costos" class="wrap block" aria-labelledby="h-costos">
+  <section class="wrap block block-first" aria-labelledby="h-resumen">
     <header class="sec-h">
-      <p class="sec-n">Costos</p>
-      <h2 id="h-costos">El mismo título, precios que no se parecen en nada</h2>
+      <p class="sec-n">Explora</p>
+      <h2 id="h-resumen">Cinco preguntas antes de matricularte</h2>
+    </header>
+    <div class="resumen" id="resumen"></div>
+  </section>
+</div>
+
+<!-- ===================== Vista: Precios ===================== -->
+<div class="view" id="v-precios" data-view="precios" data-title="Precios de MBA por universidad" hidden>
+  <section id="costos" class="wrap block block-first" aria-labelledby="h-costos">
+    <header class="sec-h">
+      <p class="sec-n">Precios</p>
+      <h2 id="h-costos" tabindex="-1">El mismo título, precios que no se parecen en nada</h2>
       <p class="alerta">Un precio más alto no garantiza un sueldo más alto. Antes de comparar marcas, mira cuánto tendría que subir tu sueldo solo para no perder dinero.</p>
     </header>
     <p class="sub" id="costos-sub">Costo total publicado de cada programa (soles). Cada barra es un programa; el color indica el tipo de institución. Toca una barra para ver el detalle y simularla.</p>
@@ -89,6 +101,32 @@
     <p class="note" id="costos-nota"></p>
     <details class="tabla"><summary>Ver tabla completa con fuentes</summary><div class="scroll"><table id="tb-costos"></table></div></details>
     <div class="cards3" id="segmentos"></div>
+
+    <div class="panel blk" id="meses">
+      <h3 class="blk-t">¿Cuántos sueldos cuesta tu MBA?</h3>
+      <p class="sub">Costo total del programa dividido entre un sueldo bruto mensual de referencia. Elige el sueldo que más se parezca al tuyo.</p>
+      <div class="chips" id="meses-base" role="group" aria-label="Sueldo de referencia"></div>
+      <p class="meses-hl" id="meses-hl"></p>
+      <div class="chart-box tall" id="box-meses"></div>
+      <p class="note" id="meses-nota"></p>
+    </div>
+
+    <div class="grid2">
+      <div class="panel">
+        <h3>Más caro no siempre es más largo</h3>
+        <p class="sub sub-s">Precio total frente a duración de cada programa. Toca o pasa el cursor sobre un punto para ver cuál es.</p>
+        <div class="legend" id="leg-disp"></div>
+        <div class="chart-box"><canvas id="ch-disp" role="img" aria-label="Dispersión de precio total frente a duración en meses, por tipo de institución"></canvas></div>
+        <p class="note" id="disp-nota"></p>
+      </div>
+      <div class="panel">
+        <h3>¿Cuánto pagas por cada mes de clase?</h3>
+        <p class="sub sub-s">Costo total ÷ meses de duración. Cada punto es un programa; la raya negra marca la mediana de su grupo.</p>
+        <div class="chart-box"><canvas id="ch-cmes" role="img" aria-label="Costo por mes de clase por tipo de institución"></canvas></div>
+        <p class="note" id="cmes-nota"></p>
+      </div>
+    </div>
+
     <div class="be" id="be">
       <h3 class="be-t">¿Cuánto tendría que subir tu sueldo para recuperar cada MBA?</h3>
       <p class="sub">Aumento salarial que necesitas solo para <strong>no perder dinero</strong> durante el horizonte elegido (descuento 8 % anual). Con más años de carrera por delante el umbral baja: cambia el sueldo de partida y el horizonte. Si es full-time, incluye el sueldo que dejas de ganar.</p>
@@ -98,15 +136,18 @@
       <p class="note" id="be-nota"></p>
     </div>
   </section>
+</div>
 
-  <section id="calculadora" class="block block-calc" aria-labelledby="h-calc">
+<!-- ===================== Vista: Calculadora ===================== -->
+<div class="view" id="v-calculadora" data-view="calculadora" data-title="Calculadora de retorno de un MBA" hidden>
+  <section id="calculadora" class="block block-calc block-first" aria-labelledby="h-calc">
     <div class="wrap">
       <header class="sec-h">
         <p class="sec-n">Calculadora</p>
-        <h2 id="h-calc">Haz tus números antes de firmar la matrícula</h2>
+        <h2 id="h-calc" tabindex="-1">Haz tus números antes de firmar la matrícula</h2>
         <p class="alerta">Si con supuestos realistas el resultado sale en rojo, ese MBA no se paga solo: lo pagas tú.</p>
       </header>
-      <p class="sub">Simula tu caso. Los valores por defecto salen de la evidencia de las secciones Retorno y Riesgos; cámbialos con tus números.</p>
+      <p class="sub">Simula tu caso. Los valores por defecto salen de la evidencia de las vistas Retorno y Mundo; cámbialos con tus números.</p>
       <div class="calc">
         <form class="calc-in" id="calc" onsubmit="return false">
           <label class="f-prog">Programa
@@ -131,23 +172,31 @@
         <div class="calc-out">
           <div class="res" id="c-res" aria-live="polite"></div>
           <div class="chart-box"><canvas id="ch-calc" role="img" aria-label="Flujo acumulado descontado del MBA"></canvas></div>
+          <div class="c-share" id="c-share"></div>
           <p class="note">Supuestos: sueldos ×14 al año (gratificaciones de julio y diciembre), el costo se paga en partes iguales durante el programa, el aumento empieza al terminar y se mantiene constante en términos reales. El aumento se descuenta con tu tasa marginal de impuesto a la renta (5.ª categoría); la matrícula ya se paga con dinero neto. No incluye intereses de préstamos ni ascensos que habrías tenido igual sin el MBA: por eso el aumento «atribuible» debe ser menor que la diferencia de sueldos observada.</p>
         </div>
       </div>
     </div>
     <a class="calc-dock" id="calc-dock" href="#c-res" hidden></a>
   </section>
+</div>
 
-  <section id="retorno" class="wrap block" aria-labelledby="h-ret">
+<!-- ===================== Vista: Retorno ===================== -->
+<div class="view" id="v-retorno" data-view="retorno" data-title="Retorno de un MBA en el Perú: la evidencia" hidden>
+  <section id="retorno" class="wrap block block-first" aria-labelledby="h-ret">
     <header class="sec-h">
       <p class="sec-n">Retorno</p>
-      <h2 id="h-ret">Sí, en promedio quien tiene posgrado gana más. El promedio engaña.</h2>
+      <h2 id="h-ret" tabindex="-1">Sí, en promedio quien tiene posgrado gana más. El promedio engaña.</h2>
       <p class="alerta">Muchos de quienes estudian un posgrado ya ganaban más antes de empezar. No todo ese aumento es efecto del MBA, y no todos lo reciben.</p>
     </header>
     <p class="sub" id="retorno-sub"></p>
     <div class="grid2">
       <div class="panel" id="p-enaho"></div>
       <div class="panel" id="p-escuelas"></div>
+    </div>
+    <div class="grid2">
+      <div class="panel" id="p-tend"></div>
+      <div class="panel" id="p-dist"></div>
     </div>
     <div class="studies" id="estudios-local"></div>
   </section>
@@ -163,11 +212,14 @@
       <div class="panel" id="p-negativos"></div>
     </div>
   </section>
+</div>
 
-  <section id="mundo" class="wrap block" aria-labelledby="h-mun">
+<!-- ===================== Vista: Mundo ===================== -->
+<div class="view" id="v-mundo" data-view="mundo" data-title="El MBA en el mundo: postulaciones, empleo y salarios" hidden>
+  <section id="mundo" class="wrap block block-first" aria-labelledby="h-mun">
     <header class="sec-h">
       <p class="sec-n">Contexto mundial</p>
-      <h2 id="h-mun">Afuera, el MBA ya no es la apuesta segura que era</h2>
+      <h2 id="h-mun" tabindex="-1">Afuera, el MBA ya no es la apuesta segura que era</h2>
       <p class="alerta">Hartley (2026) reconstruye 25 años de datos de más de 100 programas de EE.UU.: menos postulantes y más egresados sin oferta de trabajo. Sus ocho hallazgos y otras fuentes recientes.</p>
     </header>
     <div class="hallazgos" id="hallazgos" tabindex="0" aria-label="Hallazgos (en el celular, desliza para ver más)"></div>
@@ -177,7 +229,20 @@
       <div class="panel"><h3>Salario inicial que ofrecen los empleadores de EE.UU. (US$/año)</h3><div class="chart-box"><canvas id="ch-gmac" role="img" aria-label="Salario inicial MBA frente a bachiller"></canvas></div><p class="note" id="gmac-nota"></p></div>
       <div class="panel" id="p-ft"></div>
     </div>
+    <div class="ft-stats" id="ft-stats"></div>
+    <div class="minis" id="mundo-graf"></div>
     <div class="studies" id="estudios-mundo"></div>
+  </section>
+</div>
+
+<!-- ===================== Vista: Fuentes ===================== -->
+<div class="view" id="v-fuentes" data-view="fuentes" data-title="Fuentes, metodología y apoyo" hidden>
+  <section id="fuentes" class="wrap block block-first" aria-labelledby="h-fue">
+    <header class="sec-h">
+      <p class="sec-n">Fuentes</p>
+      <h2 id="h-fue" tabindex="-1">Todo lo que ves aquí se puede verificar</h2>
+    </header>
+    <div class="metodo" id="metodo"></div>
   </section>
 
   <section id="apoya" class="wrap block" aria-labelledby="h-apoya">
@@ -194,8 +259,9 @@
       <figure class="yape">
         <img src="img/yape.png" width="298" height="292" alt="Código QR de Yape">
         <figcaption>
-          <span>Yape</span>
+          <span class="yape-t"><b class="w-yape">Yape</b> o <b class="w-plin">Plin</b></span>
           <strong id="yape-num">940 584 307</strong>
+          <span class="yape-s">El QR es de Yape; con Plin, envía al número.</span>
           <button type="button" class="btn-copy" id="yape-copy" data-num="940584307">Copiar número</button>
           <span class="copy-ok" id="yape-ok" role="status" aria-live="polite"></span>
         </figcaption>
@@ -203,14 +269,11 @@
     </div>
   </section>
 
-  <section id="fuentes" class="wrap block" aria-labelledby="h-fue">
-    <header class="sec-h">
-      <p class="sec-n">Fuentes</p>
-      <h2 id="h-fue">Todo lo que ves aquí se puede verificar</h2>
-    </header>
-    <div class="metodo" id="metodo"></div>
+  <section class="wrap block" aria-labelledby="h-refs">
+    <h2 id="h-refs" class="h-refs">Referencias</h2>
     <ol class="refs" id="refs"></ol>
   </section>
+</div>
 </main>
 
 <footer class="foot">
@@ -232,10 +295,11 @@
       <p class="foot-h">Contacto</p>
       <ul class="foot-links">
         <li><a href="https://wa.me/51940584307" target="_blank" rel="noopener">Reportar un error en los datos</a></li>
-        <li><a href="#apoya">Apoyar el proyecto</a></li>
+        <li><a href="#/fuentes?ir=apoya">Apoyar el proyecto</a></li>
       </ul>
     </div>
   </div>
 </footer>
+<script type="module" src="js/chat.js"></script>
 </body>
 </html>
